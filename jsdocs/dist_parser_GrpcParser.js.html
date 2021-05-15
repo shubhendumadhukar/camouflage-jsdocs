@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: dist/parser/GrpcParser.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: dist/parser/GrpcParser.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>"use strict";
+var __importDefault = (this &amp;&amp; this.__importDefault) || function (mod) {
+    return (mod &amp;&amp; mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const path_1 = __importDefault(require("path"));
+const fs_1 = __importDefault(require("fs"));
+const os_1 = __importDefault(require("os"));
+const logger_1 = __importDefault(require("../logger"));
+const handlebars_1 = __importDefault(require("handlebars"));
+/**
+ * Parser class for GRPC Protocol mocks to define handlers for:
+ * - Unary calls
+ * - Server streaming calls
+ * - Client streaming calls
+ * - Bidirectional streaming calls
+ */
+class GrpcParser {
+    /**
+     *
+     * @param {string} grpcMocksDir location of mocks dir for grpc mocks
+     */
+    constructor(grpcMocksDir) {
+        /**
+         * - Get the path of the determined handler from the call
+         * - Find a mock file for the handler
+         * - If mock file exists, apply handler compilation to generate actual values from helpers
+         * - Execute callback with the response and delay
+         * - Remove delay key if present before sending the response
+         * - If mock file is not found, log error and send the same error to client
+         * @param {any} call call object recieved with every unary call
+         * @param {any} callback callback to be executed once server is ready to return response
+         */
+        this.camouflageMock = (call, callback) => {
+            try {
+                let handlerPath = call.call.handler.path;
+                let mockFile = handlerPath.replace(".", "/");
+                let mockFilePath = path_1.default.join(this.grpcMocksDir, mockFile + ".mock");
+                if (fs_1.default.existsSync(mockFilePath)) {
+                    const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFilePath, "utf-8").toString());
+                    const fileContent = template({ request: call.request });
+                    logger_1.default.debug(`Mock file path: ${mockFilePath}`);
+                    logger_1.default.debug(`Response: ${fileContent}`);
+                    const response = JSON.parse(fileContent);
+                    const delay = response.delay || 0;
+                    delete response.delay;
+                    setTimeout(() => {
+                        callback(null, response);
+                    }, delay);
+                }
+                else {
+                    logger_1.default.error(`No suitable mock file was found for ${mockFilePath}`);
+                    callback(null, { error: `No suitable mock file was found for ${mockFilePath}` });
+                }
+            }
+            catch (error) {
+                logger_1.default.error(error);
+                callback(null, { error: error });
+            }
+        };
+        /**
+         * - Get the path of the determined handler from the call
+         * - Find a mock file for the handler
+         * - If mock file exists, apply handler compilation to generate actual values from helpers
+         * - Split the contents of file with ==== to get responses each stream
+         * - Run a forEach and execute call.write() with the response and delay
+         * - On last index of streamArray, execute call.end()
+         * - Remove delay key if present before sending the response
+         * - If mock file is not found, log error and send the same error to client
+         * @param {any} call call object recieved with every unary call
+         * @param {any} callback callback to be executed once server is ready to return response
+         */
+        this.camouflageMockServerStream = (call, callback) => {
+            let handlerPath = call.call.handler.path;
+            let mockFile = handlerPath.replace(".", "/");
+            let mockFilePath = path_1.default.join(this.grpcMocksDir, mockFile + ".mock");
+            if (fs_1.default.existsSync(mockFilePath)) {
+                try {
+                    const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFilePath, "utf-8").toString());
+                    const fileContent = template({ request: call.request });
+                    logger_1.default.debug(`Mock file path: ${mockFilePath}`);
+                    let streamArr = fileContent.split("====");
+                    let delay = 0;
+                    streamArr.forEach((stream, index) => {
+                        let parsedStream = JSON.parse(stream.replace(os_1.default.EOL, ""));
+                        delay = delay + (parsedStream.delay || 0);
+                        delete parsedStream["delay"];
+                        logger_1.default.debug(`Sending stream: ${JSON.stringify(parsedStream, null, 2)}`);
+                        logger_1.default.debug(`Sending stream with delay of: ${delay}`);
+                        switch (index) {
+                            case streamArr.length - 1:
+                                setTimeout(() => {
+                                    call.write(JSON.parse(stream));
+                                    call.end();
+                                }, delay);
+                                break;
+                            default:
+                                setTimeout(() => {
+                                    call.write(JSON.parse(stream));
+                                }, delay);
+                                break;
+                        }
+                    });
+                }
+                catch (error) {
+                    logger_1.default.error(error);
+                    call.end();
+                }
+            }
+            else {
+                logger_1.default.error(`No suitable mock file was found for ${mockFilePath}`);
+                call.write({ error: `No suitable mock file was found for ${mockFilePath}` });
+                call.end();
+            }
+        };
+        /**
+         * - Get the path of the determined handler from the call
+         * - Find a mock file for the handler
+         * - If mock file exists, apply handler compilation to generate actual values from helpers
+         * - No action required on recieving client's streams
+         * - Once client calls end, respond with the compiled contents of the mockfile and delay
+         * - Remove delay key if present before sending the response
+         * - If mock file is not found, log error and send the same error to client
+         * @param {any} call call object recieved with every unary call
+         * @param {any} callback callback to be executed once server is ready to return response
+         */
+        this.camouflageMockClientStream = (call, callback) => {
+            call.on("data", () => {
+                // TODO: Not sure if it's needed
+            });
+            call.on("end", () => {
+                try {
+                    let handlerPath = call.call.handler.path;
+                    let mockFile = handlerPath.replace(".", "/");
+                    let mockFilePath = path_1.default.join(this.grpcMocksDir, mockFile + ".mock");
+                    if (fs_1.default.existsSync(mockFilePath)) {
+                        const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFilePath, "utf-8").toString());
+                        const fileContent = template({ request: call.request });
+                        logger_1.default.debug(`Mock file path: ${mockFilePath}`);
+                        logger_1.default.debug(`Response: ${fileContent}`);
+                        const response = JSON.parse(fileContent);
+                        const delay = response.delay || 0;
+                        delete response.delay;
+                        setTimeout(() => {
+                            callback(null, response);
+                        }, delay);
+                    }
+                    else {
+                        logger_1.default.error(`No suitable mock file was found for ${mockFilePath}`);
+                        callback(null, { error: `No suitable mock file was found for ${mockFilePath}` });
+                    }
+                }
+                catch (error) {
+                    logger_1.default.error(error);
+                    callback(null, { error: error });
+                }
+            });
+        };
+        /**
+         * - Get the path of the determined handler from the call
+         * - Find a mock file for the handler
+         * - If mock file exists, apply handler compilation to generate actual values from helpers
+         * - Follow a ping pong model, i.e. for every client's stream, respond with a server stream.
+         * - On client stream, respond with filecontent.data
+         * - Once client calls end, respond with filecontent.end
+         * - Remove delay key if present before sending the response
+         * - If mock file is not found, log error and send the same error to client
+         * @param {any} call call object recieved with every unary call
+         * @param {any} callback callback to be executed once server is ready to return response
+         */
+        this.camouflageMockBidiStream = (call, callback) => {
+            let handlerPath = call.call.handler.path;
+            let mockFile = handlerPath.replace(".", "/");
+            let mockFilePath = path_1.default.join(this.grpcMocksDir, mockFile + ".mock");
+            call.on("data", () => {
+                if (fs_1.default.existsSync(mockFilePath)) {
+                    try {
+                        const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFilePath, "utf-8").toString());
+                        const fileContent = template({ request: call.request });
+                        logger_1.default.debug(`Mock file path: ${mockFilePath}`);
+                        logger_1.default.debug(`Response: ${fileContent}`);
+                        const response = JSON.parse(fileContent);
+                        const delay = response.data.delay || 0;
+                        delete response.data.delay;
+                        setTimeout(() => {
+                            call.write(response.data);
+                        }, delay);
+                    }
+                    catch (error) {
+                        logger_1.default.error(error);
+                        call.end();
+                    }
+                }
+                else {
+                    logger_1.default.error(`No suitable mock file was found for ${mockFilePath}`);
+                    call.write({ error: `No suitable mock file was found for ${mockFilePath}` });
+                    call.end();
+                }
+            });
+            call.on("end", () => {
+                if (fs_1.default.existsSync(mockFilePath)) {
+                    try {
+                        const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFilePath, "utf-8").toString());
+                        const fileContent = template({ request: call.request });
+                        logger_1.default.debug(`Mock file path: ${mockFilePath}`);
+                        logger_1.default.debug(`Response: ${fileContent}`);
+                        const response = JSON.parse(fileContent);
+                        if (response.end) {
+                            const delay = response.end.delay || 0;
+                            delete response.end.delay;
+                            setTimeout(() => {
+                                call.write(response.end);
+                                call.end();
+                            }, delay);
+                        }
+                        else {
+                            call.end();
+                        }
+                    }
+                    catch (error) {
+                        logger_1.default.error(error);
+                        call.end();
+                    }
+                }
+                else {
+                    logger_1.default.error(`No suitable mock file was found for ${mockFilePath}`);
+                    call.write({ error: `No suitable mock file was found for ${mockFilePath}` });
+                    call.end();
+                }
+            });
+        };
+        this.grpcMocksDir = grpcMocksDir;
+    }
+}
+exports.default = GrpcParser;
+//# sourceMappingURL=GrpcParser.js.map</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BackupScheduler.html">BackupScheduler</a></li><li><a href="GlobalController.html">GlobalController</a></li><li><a href="GrpcParser.html">GrpcParser</a></li><li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li><li><a href="HttpParser.html">HttpParser</a></li><li><a href="MockController.html">MockController</a></li><li><a href="Protocols.html">Protocols</a></li><li><a href="WebsocketParser.html">WebsocketParser</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#inputs">inputs</a></li><li><a href="global.html#inputsKeys">inputsKeys</a></li><li><a href="global.html#logger">logger</a></li><li><a href="global.html#numCPUs">numCPUs</a></li><li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li><li><a href="global.html#registerHandlebars">registerHandlebars</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#ui_root">ui_root</a></li><li><a href="global.html#walk">walk</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat May 15 2021 22:08:02 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

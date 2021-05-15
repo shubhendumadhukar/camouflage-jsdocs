@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: dist/parser/WebsocketParser.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: dist/parser/WebsocketParser.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>"use strict";
+var __importDefault = (this &amp;&amp; this.__importDefault) || function (mod) {
+    return (mod &amp;&amp; mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const handlebars_1 = __importDefault(require("handlebars"));
+const fs_1 = __importDefault(require("fs"));
+const logger_1 = __importDefault(require("../logger"));
+const ws_1 = __importDefault(require("ws"));
+/**
+ * Parser class for Websocket Protocol mocks
+ */
+class WebsocketParser {
+    /**
+     *
+     * @param {any} wss Instance of WebSocket server
+     */
+    constructor(wss) {
+        /**
+         * Compiles and transforms the handlerbars in a given mockfile and according to the key, i.e.
+         * - broadcast
+         * - emit; or
+         * - self
+         * sends the message from message.mock
+         * If it's the first message to be sent after connection, mockfile would be connection.mock
+         * @param {string} mockFile mockFile for the current connection
+         * @param {WebSocket} ws current socket
+         * @param {IncomingMessage} request incoming request
+         * @param {any} incomingMessage incoming data
+         */
+        this.send = (mockFile, ws, request, incomingMessage) => {
+            const template = handlebars_1.default.compile(fs_1.default.readFileSync(mockFile).toString());
+            let message;
+            let delay;
+            try {
+                message = JSON.parse(template({ request: request }));
+                delay = message.delay || 0;
+                logger_1.default.debug(`Delay set to ${delay}`);
+                if (message.broadcast) {
+                    this.wss.clients.forEach(function each(client) {
+                        if (client.readyState === ws_1.default.OPEN) {
+                            setTimeout(() => {
+                                client.send(message.broadcast);
+                                logger_1.default.debug(`Responded with ${message.broadcast}`);
+                            }, delay);
+                        }
+                    });
+                }
+                if (message.self) {
+                    setTimeout(() => {
+                        ws.send(message.self);
+                        logger_1.default.debug(`Responded with ${message.self}`);
+                    }, delay);
+                }
+                if (message.emit) {
+                    this.wss.clients.forEach((client) => {
+                        if (client !== ws &amp;&amp; client.readyState === ws_1.default.OPEN) {
+                            setTimeout(() => {
+                                client.send(message.emit);
+                                logger_1.default.debug(`Responded with ${message.emit}`);
+                            }, delay);
+                        }
+                    });
+                }
+            }
+            catch (e) {
+                logger_1.default.error(e.message);
+            }
+        };
+        /**
+         * Sends a list of current clients connected to the server, id of the new client, and status (joining or leaving)
+         * @param {WebSocket} ws current socket
+         * @param {IncomingMessage} request Incoming request
+         * @param {string[]} clients List of existin clients
+         * @param {string} clientId new clientId
+         * @param {string} status joining or leaving
+         * @param {string} mockFile mockfile, i.e. connection.mock
+         */
+        this.sendConnect = (ws, request, clients, clientId, status, mockFile) => {
+            let clientsInfo = {
+                clients: clients,
+                client: clientId,
+                status: status,
+            };
+            if (mockFile) {
+                this.send(mockFile, ws, request);
+                logger_1.default.debug(`Added client ${clientId}`);
+            }
+            else {
+                if (status === "joining") {
+                    logger_1.default.warn(`No suitable connection.mock file found for ${request.url}`);
+                }
+            }
+            this.wss.clients.forEach(function each(client) {
+                if (client.readyState === ws_1.default.OPEN) {
+                    client.send(JSON.stringify(clientsInfo));
+                }
+            });
+        };
+        this.wss = wss;
+    }
+}
+exports.default = WebsocketParser;
+//# sourceMappingURL=WebsocketParser.js.map</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BackupScheduler.html">BackupScheduler</a></li><li><a href="GlobalController.html">GlobalController</a></li><li><a href="GrpcParser.html">GrpcParser</a></li><li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li><li><a href="HttpParser.html">HttpParser</a></li><li><a href="MockController.html">MockController</a></li><li><a href="Protocols.html">Protocols</a></li><li><a href="WebsocketParser.html">WebsocketParser</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#inputs">inputs</a></li><li><a href="global.html#inputsKeys">inputsKeys</a></li><li><a href="global.html#logger">logger</a></li><li><a href="global.html#numCPUs">numCPUs</a></li><li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li><li><a href="global.html#registerHandlebars">registerHandlebars</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#ui_root">ui_root</a></li><li><a href="global.html#walk">walk</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat May 15 2021 22:08:02 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

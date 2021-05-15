@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: dist/index.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: dist/index.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>"use strict";
+var __createBinding = (this &amp;&amp; this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this &amp;&amp; this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this &amp;&amp; this.__importStar) || function (mod) {
+    if (mod &amp;&amp; mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" &amp;&amp; Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this &amp;&amp; this.__importDefault) || function (mod) {
+    return (mod &amp;&amp; mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+// Import dependencies
+const express_1 = __importDefault(require("express"));
+const body_parser_1 = __importDefault(require("body-parser"));
+const cluster_1 = __importDefault(require("cluster"));
+const path_1 = __importDefault(require("path"));
+const expressWinston = __importStar(require("express-winston"));
+const handlebar_1 = __importDefault(require("./handlebar"));
+const protocols_1 = __importDefault(require("./protocols"));
+const GlobalController_1 = __importDefault(require("./routes/GlobalController"));
+const CamouflageController_1 = __importDefault(require("./routes/CamouflageController"));
+const BackupScheduler_1 = __importDefault(require("./BackupScheduler"));
+const logger_1 = __importDefault(require("./logger"));
+const logger_2 = require("./logger");
+const child_process_1 = __importDefault(require("child_process"));
+// @ts-ignore
+const filemanager = __importStar(require("@opuscapita/filemanager-server"));
+const filemanagerMiddleware = filemanager.middleware;
+// @ts-ignore
+const swagger_stats_1 = __importDefault(require("swagger-stats"));
+/**
+ * Gets the location of documentation folder
+ */
+let ui_root = path_1.default.join(child_process_1.default.execSync("npm root -g").toString().trim(), "camouflage-server", "public");
+// Initialize variables with default values
+let mocksDir = "";
+let grpcMocksDir = "";
+let wsMocksDir = "";
+let grpcProtosDir = "";
+let grpcHost = "localhost";
+let port = 8080;
+let httpsPort = 8443;
+let http2Port = 8081;
+let grpcPort = 4312;
+let wsPort = 8082;
+const app = express_1.default();
+// Configure logging for express requests
+app.use(expressWinston.logger({
+    level: (req, res) => "level",
+    winstonInstance: logger_1.default,
+    statusLevels: { error: "error", success: "debug", warn: "warn" },
+    msg: "HTTP {{req.method}} {{req.path}} :: Query Parameters: {{JSON.stringify(req.query)}} | Request Headers {{JSON.stringify(req.headers)}} | Request Body {{JSON.stringify(req.body)}}",
+}));
+// Configure swagger-stats middleware for monitoring
+app.use(swagger_stats_1.default.getMiddleware({
+    name: "Camouflage",
+    uriPath: "/monitoring",
+}));
+// Configure express to understand json request body
+app.use(body_parser_1.default.json());
+// Configure public directory as a source for static resources for file-explorer (eg. js, css, image)
+app.use(express_1.default.static(ui_root));
+app.get("/stats", function (req, res) {
+    res.setHeader("Content-Type", "application/json");
+    res.send(swagger_stats_1.default.getCoreStats());
+});
+/**
+ * Initializes required variables and starts a 1 master X workers configuration
+ * @param {string} inputMocksDir Mocks directory from config file, overrides default mocksDir
+ * @param {number} inputPort Input http port, overrides default 8080 port
+ * @param {boolean} enableHttps true if https is to be enabled
+ * @param {boolean} enableHttp2 true if http2 is to be enabled
+ * @param {boolean} enableGrpc true if grpc is to be enabled
+ * @param {string} key location of server.key file if https is enabled
+ * @param {string} cert location of server.cert file if https is enabled
+ * @param {number} inputHttpsPort Input https port, overrides httpsPort
+ * @param {number} inputHttp2Port Input http2 port, overrides httpsPort
+ * @param {string} inputGrpcHost Input gRPC host, overrides grpcHost
+ * @param {number} inputGrpcPort Input gRPC port, overrides grpcPort
+ * @param {string} inputGrpcMocksDir Input gRPC mocks directory location, overrides grpcMocksDir
+ * @param {string} inputGrpcProtosDir Input gRPC protos directory location, overrides grpcProtos
+ * @param {string} loglevel Desired loglevel
+ * @param {string} backupEnable true if backup is enabled
+ * @param {string} backupCron cron schedule for backup
+ * @param {string} configFilePath location of config file
+ * @param {string} extHelpers location of the external handlebars json file
+ */
+const start = (inputMocksDir, inputWsMocksDir, inputPort, enableHttps, enableHttp2, enableGrpc, enableWs, key, cert, inputHttpsPort, inputHttp2Port, inputWsPort, inputGrpcHost, inputGrpcPort, inputGrpcMocksDir, inputGrpcProtosDir, loglevel, backupEnable, backupCron, configFilePath, extHelpers) => {
+    const config = {
+        fsRoot: path_1.default.resolve(mocksDir),
+        readOnly: false,
+        rootName: "Camouflage",
+        logger: logger_1.default,
+    };
+    app.use(filemanagerMiddleware(config));
+    // Set log level to the configured level from config.yaml
+    logger_2.setLogLevel(loglevel);
+    logger_1.default.info(`[${process.pid}] Worker started`);
+    // Replace the default values for defined variables with actual values provided as input from config
+    mocksDir = inputMocksDir;
+    grpcMocksDir = inputGrpcMocksDir;
+    wsMocksDir = inputWsMocksDir;
+    grpcProtosDir = inputGrpcProtosDir;
+    httpsPort = inputHttpsPort ? inputHttpsPort : httpsPort;
+    http2Port = inputHttp2Port ? inputHttp2Port : http2Port;
+    grpcHost = inputGrpcHost ? inputGrpcHost : grpcHost;
+    grpcPort = inputGrpcPort ? inputGrpcPort : grpcPort;
+    wsPort = inputWsPort ? inputWsPort : wsPort;
+    port = inputPort;
+    swagger_stats_1.default.getPromClient().register.setDefaultLabels({ workerId: typeof cluster_1.default.worker !== "undefined" ? cluster_1.default.worker.id : 0 });
+    // Define route for /ui to host a single page UI to manage the mocks
+    app.get("/", (req, res) => {
+        res.sendFile("index.html", { root: ui_root });
+    });
+    // Register Handlebars
+    handlebar_1.default(extHelpers);
+    // Register Controllers
+    new CamouflageController_1.default(app, mocksDir, grpcMocksDir);
+    new GlobalController_1.default(app, mocksDir);
+    // Start the http server on the specified port
+    const protocols = new protocols_1.default(app, port, httpsPort);
+    protocols.initHttp();
+    // If https protocol is enabled, start https server with additional inputs
+    if (enableHttps) {
+        protocols.initHttps(key, cert);
+    }
+    // If https protocol is enabled, start https server with additional inputs
+    if (enableHttp2) {
+        protocols.initHttp2(http2Port, key, cert);
+    }
+    // If grpc protocol is enabled, start grpc server with additional inputs
+    if (enableGrpc) {
+        protocols.initGrpc(grpcProtosDir, grpcMocksDir, grpcHost, grpcPort);
+    }
+    // If websocket protocol is enabled, start ws server with additional inputs
+    if (enableWs) {
+        protocols.initws(wsPort, wsMocksDir);
+    }
+    // If backup is enabled, schedule a cron job to copy file to backup directory
+    if (backupEnable) {
+        const backupScheduler = new BackupScheduler_1.default(backupCron, mocksDir, grpcMocksDir, grpcProtosDir, wsMocksDir, key, cert, configFilePath);
+        backupScheduler.schedule(enableHttps, enableHttp2, enableGrpc, enableWs);
+    }
+};
+/**
+ * Exports the start function which should be called from bin/camouflage.js with required parameters
+ */
+module.exports.start = start;
+/**
+ * Exports app for testing purpose
+ */
+module.exports.app = app;
+//# sourceMappingURL=index.js.map</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BackupScheduler.html">BackupScheduler</a></li><li><a href="GlobalController.html">GlobalController</a></li><li><a href="GrpcParser.html">GrpcParser</a></li><li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li><li><a href="HttpParser.html">HttpParser</a></li><li><a href="MockController.html">MockController</a></li><li><a href="Protocols.html">Protocols</a></li><li><a href="WebsocketParser.html">WebsocketParser</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#inputs">inputs</a></li><li><a href="global.html#inputsKeys">inputsKeys</a></li><li><a href="global.html#logger">logger</a></li><li><a href="global.html#numCPUs">numCPUs</a></li><li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li><li><a href="global.html#registerHandlebars">registerHandlebars</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#ui_root">ui_root</a></li><li><a href="global.html#walk">walk</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat May 15 2021 22:08:02 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
