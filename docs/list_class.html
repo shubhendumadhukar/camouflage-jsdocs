@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>GlobalController</title>
+		<title>Classes</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -83,118 +83,87 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">class</span>
-				<h1><span class="name">GlobalController</span></h1>
-			</div>
+				<span class="kind">list</span>
+				<h1><span class="name">Classes</span></h1>
+				<div class="summary"><p>All documented classes.</p></div>			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-9 main-content">
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">GlobalController</li>
+							<li class="active">Classes</li>
 						</ol>
 					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">GlobalController</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+		<h2><span class="name">Classes</span></h2>
+		<article class="secondary">
+				<dl class="symbol">
+						
+						<dt class="symbol-title class public">
+			<h4 id="BackupScheduler" class="class public"><a href="BackupScheduler.html"><span class="signature-new">new&nbsp;</span><span class="name">BackupScheduler</span><span class="signature-params">( <span class="signature-param">cron</span>, <span class="signature-param">mocksDir</span>, <span class="signature-param">grpcMocksDir</span>, <span class="signature-param">grpcProtosDir</span>, <span class="signature-param">wsMocksDir</span>, <span class="signature-param">key</span>, <span class="signature-param">cert</span>, <span class="signature-param">configFilePath</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
 </dt>
-<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+<dd class="symbol-details class public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Defines and registers global contoller which will handle any request not handled by admin/management endpoints</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_routes_GlobalController.js.html">dist/routes/GlobalController.js</a>, <a href="dist_routes_GlobalController.js.html#line-7">line 7</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
+	</div>
 </dd>
-							</dl>
-							<article class="secondary">
-									<h3>Methods</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="register" class="function public"><span class="name">register</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="GlobalController" class="class public"><a href="GlobalController.html"><span class="signature-new">new&nbsp;</span><span class="name">GlobalController</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Define a generic route for all requests
-			Following holds true for all the generic routes i.e. GET, POST, DELETE, PUT
-			We create a parser object by initializing our Parser class with request, response and mocksDir objects
-			The parser object in turn will give us access to the path of a matched directory for an incoming request.
-			Depending on the HTTP Method of the incoming request we append /GET.mock, /POST.mock, /DELETE.mock or /PUT.mock to the matched directory
-			Parse object also gives us access to a method getResponse which does the following tasks:</p>
-			<ul>
-			<li>Read the response from the specified file</li>
-			<li>Run all the handlebars compilations as required.</li>
-			<li>Generate a HTTP Response</li>
-			<li>Send the response to client.</li>
-			</ul></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_routes_GlobalController.js.html">dist/routes/GlobalController.js</a>, <a href="dist_routes_GlobalController.js.html#line-22">line 22</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
+	</div>
 </dd>
-									</dl>
-							</article>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="GrpcParser" class="class public"><a href="GrpcParser.html"><span class="signature-new">new&nbsp;</span><span class="name">GrpcParser</span><span class="signature-params">( <span class="signature-param">grpcMocksDir</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="HandlerBarHelper" class="class public"><a href="HandlerBarHelper.html"><span class="signature-new">new&nbsp;</span><span class="name">HandlerBarHelper</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="HttpParser" class="class public"><a href="HttpParser.html"><span class="signature-new">new&nbsp;</span><span class="name">HttpParser</span><span class="signature-params">( <span class="signature-param">req</span>, <span class="signature-param">res</span>, <span class="signature-param">mockDir</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="MockController" class="class public"><a href="MockController.html"><span class="signature-new">new&nbsp;</span><span class="name">MockController</span><span class="signature-params">( <span class="signature-param">app</span>, <span class="signature-param">mocksDir</span>, <span class="signature-param">grpcMocksDir</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Protocols" class="class public"><a href="Protocols.html"><span class="signature-new">new&nbsp;</span><span class="name">Protocols</span><span class="signature-params">( <span class="signature-param">grpcMocksDir</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="WebsocketParser" class="class public"><a href="WebsocketParser.html"><span class="signature-new">new&nbsp;</span><span class="name">WebsocketParser</span><span class="signature-params">( <span class="signature-param">wss</span>&nbsp;)</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+				</dl>
+		</article>
 					</section>
 			</div>
 				<div class="col-md-3 side-content">
