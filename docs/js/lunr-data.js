@@ -122,6 +122,78 @@ window.lunrData = {
           "turn",
           "void"
         ],
+        "CodeHelper.html": [
+          "class",
+          "code",
+          "codehelp",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "regist"
+        ],
+        "CodeHelper.html#register": [
+          "allow",
+          "check",
+          "code",
+          "codehelper#regist",
+          "context",
+          "defin",
+          "evalu",
+          "exist",
+          "file",
+          "function",
+          "helper",
+          "httpparser",
+          "logger",
+          "mock",
+          "object",
+          "pass",
+          "path",
+          "process",
+          "regist",
+          "request",
+          "respons",
+          "result",
+          "return",
+          "scope",
+          "send",
+          "us",
+          "user",
+          "valu",
+          "void"
+        ],
+        "InjectHelper.html": [
+          "class",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "inject",
+          "injecthelp",
+          "regist"
+        ],
+        "InjectHelper.html#register": [
+          "code",
+          "context",
+          "defin",
+          "evalu",
+          "function",
+          "helper",
+          "httpparser",
+          "inject",
+          "injecthelper#regist",
+          "logger",
+          "object",
+          "pass",
+          "regist",
+          "request",
+          "respons",
+          "result",
+          "return",
+          "scope",
+          "void"
+        ],
         "MockController.html": [
           "admin/manag",
           "class",
@@ -142,6 +214,150 @@ window.lunrData = {
           "regist",
           "restart",
           "void"
+        ],
+        "NowHelper.html": [
+          "class",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "now",
+          "nowhelp",
+          "regist"
+        ],
+        "NowHelper.html#register": [
+          "0s",
+          "ad",
+          "amount",
+          "call",
+          "context.hash.offset",
+          "day",
+          "dd",
+          "default",
+          "defin",
+          "eg",
+          "element",
+          "first",
+          "format",
+          "function",
+          "helper",
+          "hh:mm:ss",
+          "i.",
+          "mm",
+          "now",
+          "nowhelper#regist",
+          "offset",
+          "provid",
+          "regist",
+          "return",
+          "second",
+          "set",
+          "space",
+          "specifi",
+          "split",
+          "store",
+          "unit",
+          "us",
+          "valu",
+          "void",
+          "without",
+          "x",
+          "yyyi"
+        ],
+        "NumBetweenHelper.html": [
+          "class",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "num_between",
+          "numbetweenhelp",
+          "regist"
+        ],
+        "NumBetweenHelper.html#register": [
+          "0",
+          "error",
+          "function",
+          "greater",
+          "helper",
+          "log",
+          "lower",
+          "num_between",
+          "numbetweenhelper#regist",
+          "pass",
+          "regist",
+          "return",
+          "upper",
+          "valu",
+          "void"
+        ],
+        "RandomValueHelper.html": [
+          "class",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "randomvalu",
+          "randomvaluehelp",
+          "regist"
+        ],
+        "RandomValueHelper.html#register": [
+          "16",
+          "_upper",
+          "add",
+          "alphabet",
+          "alphanumer",
+          "default",
+          "function",
+          "gener",
+          "helper",
+          "length",
+          "random",
+          "randomvalu",
+          "randomvaluehelper#regist",
+          "regist",
+          "return",
+          "set",
+          "specifi",
+          "type",
+          "uppercas",
+          "uuid",
+          "valu",
+          "void"
+        ],
+        "RandomValueHelper.html#randomString": [
+          "char",
+          "charact",
+          "function",
+          "gener",
+          "length",
+          "random",
+          "randomstr",
+          "randomvaluehelper#randomstr",
+          "sequenc",
+          "string"
+        ],
+        "RandomValueHelper.html#randomFixedInteger": [
+          "function",
+          "gener",
+          "given",
+          "length",
+          "number",
+          "random",
+          "randomfixedinteg",
+          "randomvaluehelper#randomfixedinteg"
+        ],
+        "RandomValueHelper.html#genCharArray": [
+          "charact",
+          "function",
+          "genchararray",
+          "gener",
+          "random",
+          "randomstr",
+          "randomvaluehelper#genchararray",
+          "string",
+          "type",
+          "us"
         ],
         "WebsocketParser.html": [
           "class",
@@ -196,6 +412,239 @@ window.lunrData = {
           "statu",
           "websocketparser#sendconnect",
           "ws"
+        ],
+        "CsvHelper.html": [
+          "class",
+          "csv",
+          "csvhelper",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "regist"
+        ],
+        "CsvHelper.html#register": [
+          "allow",
+          "appropri",
+          "code",
+          "context",
+          "csv",
+          "csvhelper#regist",
+          "defin",
+          "error",
+          "evalu",
+          "fetch",
+          "file",
+          "function",
+          "helper",
+          "key",
+          "log",
+          "logger",
+          "match",
+          "mock",
+          "on",
+          "path",
+          "pattern",
+          "random",
+          "regist",
+          "request",
+          "respons",
+          "return",
+          "row",
+          "scope",
+          "search",
+          "specifi",
+          "throw",
+          "true",
+          "us",
+          "user",
+          "valu",
+          "variabl",
+          "void"
+        ],
+        "FileHelper.html": [
+          "class",
+          "custom",
+          "defin",
+          "file",
+          "filehelp",
+          "handlebar",
+          "helper",
+          "regist"
+        ],
+        "FileHelper.html#register": [
+          "check",
+          "defin",
+          "error",
+          "exist",
+          "file",
+          "filehelper#regist",
+          "function",
+          "handlebar",
+          "helper",
+          "httpparser",
+          "includ",
+          "log",
+          "pass",
+          "path",
+          "process",
+          "regist",
+          "return",
+          "send",
+          "valu",
+          "void"
+        ],
+        "RequestHelper.html": [
+          "class",
+          "csv",
+          "custom",
+          "defin",
+          "handlebar",
+          "helper",
+          "regist",
+          "requesthelp"
+        ],
+        "RequestHelper.html#register": [
+          "accept",
+          "addit",
+          "automat",
+          "bodi",
+          "call",
+          "captur",
+          "context",
+          "error",
+          "found",
+          "function",
+          "header",
+          "helper",
+          "input",
+          "key",
+          "mandatori",
+          "null/undefin",
+          "object",
+          "pass",
+          "path",
+          "queri",
+          "regex",
+          "regist",
+          "req",
+          "request",
+          "requesthelper#regist",
+          "requir",
+          "return",
+          "selector",
+          "template({request",
+          "us",
+          "valu",
+          "void"
+        ],
+        "HandlerBarHelper.html": [
+          "captur",
+          "class",
+          "custom",
+          "defin",
+          "handlebar",
+          "handlerbarhelp",
+          "helper",
+          "now",
+          "num_between",
+          "randomvalu",
+          "regist"
+        ],
+        "HandlerBarHelper.html#numBetweenHelper": [
+          "0",
+          "error",
+          "function",
+          "greater",
+          "handlerbarhelper#numbetweenhelp",
+          "helper",
+          "log",
+          "lower",
+          "num_between",
+          "numbetweenhelp",
+          "pass",
+          "regist",
+          "return",
+          "upper",
+          "valu",
+          "void"
+        ],
+        "HandlerBarHelper.html#fileHelper": [
+          "check",
+          "defin",
+          "error",
+          "exist",
+          "file",
+          "filehelp",
+          "function",
+          "handlebar",
+          "handlerbarhelper#filehelp",
+          "helper",
+          "httpparser",
+          "includ",
+          "log",
+          "pass",
+          "path",
+          "process",
+          "regist",
+          "return",
+          "send",
+          "valu",
+          "void"
+        ],
+        "HandlerBarHelper.html#codeHelper": [
+          "allow",
+          "check",
+          "code",
+          "codehelp",
+          "context",
+          "defin",
+          "evalu",
+          "exist",
+          "file",
+          "function",
+          "handlerbarhelper#codehelp",
+          "helper",
+          "httpparser",
+          "logger",
+          "mock",
+          "object",
+          "pass",
+          "path",
+          "process",
+          "regist",
+          "request",
+          "respons",
+          "result",
+          "return",
+          "scope",
+          "send",
+          "us",
+          "user",
+          "valu",
+          "void"
+        ],
+        "HandlerBarHelper.html#injectHelper": [
+          "code",
+          "context",
+          "defin",
+          "evalu",
+          "function",
+          "handlerbarhelper#injecthelp",
+          "helper",
+          "httpparser",
+          "inject",
+          "injecthelp",
+          "logger",
+          "object",
+          "pass",
+          "regist",
+          "request",
+          "respons",
+          "result",
+          "return",
+          "scope",
+          "void"
         ],
         "GrpcParser.html": [
           "bidirect",
@@ -445,6 +894,7 @@ window.lunrData = {
           "current",
           "default",
           "delay",
+          "delimit",
           "empti",
           "express.respons",
           "fals",
@@ -474,12 +924,15 @@ window.lunrData = {
           "met",
           "mockfil",
           "object",
+          "on",
           "os.eol",
           "pars",
           "parse_bodi",
           "parser",
           "part",
+          "pick",
           "preparerespons",
+          "random",
           "raw",
           "read",
           "reader",
@@ -506,248 +959,6 @@ window.lunrData = {
           "valu",
           "variabl",
           "whitespac"
-        ],
-        "HandlerBarHelper.html": [
-          "captur",
-          "class",
-          "custom",
-          "defin",
-          "handlebar",
-          "handlerbarhelp",
-          "helper",
-          "now",
-          "num_between",
-          "randomvalu",
-          "regist"
-        ],
-        "HandlerBarHelper.html#nowHelper": [
-          "0s",
-          "ad",
-          "amount",
-          "call",
-          "context.hash.offset",
-          "day",
-          "dd",
-          "default",
-          "defin",
-          "eg",
-          "element",
-          "first",
-          "format",
-          "function",
-          "handlerbarhelper#nowhelp",
-          "helper",
-          "hh:mm:ss",
-          "i.",
-          "mm",
-          "now",
-          "nowhelp",
-          "offset",
-          "provid",
-          "regist",
-          "return",
-          "second",
-          "set",
-          "space",
-          "specifi",
-          "split",
-          "store",
-          "unit",
-          "us",
-          "valu",
-          "void",
-          "without",
-          "x",
-          "yyyi"
-        ],
-        "HandlerBarHelper.html#randomValueHelper": [
-          "16",
-          "_upper",
-          "add",
-          "alphabet",
-          "alphanumer",
-          "default",
-          "function",
-          "gener",
-          "handlerbarhelper#randomvaluehelp",
-          "helper",
-          "length",
-          "random",
-          "randomvalu",
-          "randomvaluehelp",
-          "regist",
-          "return",
-          "set",
-          "specifi",
-          "type",
-          "uppercas",
-          "uuid",
-          "valu",
-          "void"
-        ],
-        "HandlerBarHelper.html#requestHelper": [
-          "accept",
-          "addit",
-          "automat",
-          "bodi",
-          "call",
-          "captur",
-          "context",
-          "error",
-          "found",
-          "function",
-          "handlerbarhelper#requesthelp",
-          "header",
-          "helper",
-          "input",
-          "key",
-          "mandatori",
-          "null/undefin",
-          "object",
-          "pass",
-          "path",
-          "queri",
-          "regex",
-          "regist",
-          "req",
-          "request",
-          "requesthelp",
-          "requir",
-          "return",
-          "selector",
-          "template({request",
-          "us",
-          "valu",
-          "void"
-        ],
-        "HandlerBarHelper.html#numBetweenHelper": [
-          "0",
-          "error",
-          "function",
-          "greater",
-          "handlerbarhelper#numbetweenhelp",
-          "helper",
-          "log",
-          "lower",
-          "num_between",
-          "numbetweenhelp",
-          "pass",
-          "regist",
-          "return",
-          "upper",
-          "valu",
-          "void"
-        ],
-        "HandlerBarHelper.html#fileHelper": [
-          "check",
-          "defin",
-          "error",
-          "exist",
-          "file",
-          "filehelp",
-          "function",
-          "handlebar",
-          "handlerbarhelper#filehelp",
-          "helper",
-          "httpparser",
-          "includ",
-          "log",
-          "pass",
-          "path",
-          "process",
-          "regist",
-          "return",
-          "send",
-          "valu",
-          "void"
-        ],
-        "HandlerBarHelper.html#codeHelper": [
-          "allow",
-          "check",
-          "code",
-          "codehelp",
-          "context",
-          "defin",
-          "evalu",
-          "exist",
-          "file",
-          "function",
-          "handlerbarhelper#codehelp",
-          "helper",
-          "httpparser",
-          "logger",
-          "mock",
-          "object",
-          "pass",
-          "path",
-          "process",
-          "regist",
-          "request",
-          "respons",
-          "result",
-          "return",
-          "scope",
-          "send",
-          "us",
-          "user",
-          "valu",
-          "void"
-        ],
-        "HandlerBarHelper.html#injectHelper": [
-          "code",
-          "context",
-          "defin",
-          "evalu",
-          "function",
-          "handlerbarhelper#injecthelp",
-          "helper",
-          "httpparser",
-          "inject",
-          "injecthelp",
-          "logger",
-          "object",
-          "pass",
-          "regist",
-          "request",
-          "respons",
-          "result",
-          "return",
-          "scope",
-          "void"
-        ],
-        "HandlerBarHelper.html#randomString": [
-          "char",
-          "charact",
-          "function",
-          "gener",
-          "handlerbarhelper#randomstr",
-          "length",
-          "random",
-          "randomstr",
-          "sequenc",
-          "string"
-        ],
-        "HandlerBarHelper.html#randomFixedInteger": [
-          "function",
-          "gener",
-          "given",
-          "handlerbarhelper#randomfixedinteg",
-          "length",
-          "number",
-          "random",
-          "randomfixedinteg"
-        ],
-        "HandlerBarHelper.html#genCharArray": [
-          "charact",
-          "function",
-          "genchararray",
-          "gener",
-          "handlerbarhelper#genchararray",
-          "random",
-          "randomstr",
-          "string",
-          "type",
-          "us"
         ],
         "BackupScheduler.html": [
           "backup",
@@ -929,12 +1140,16 @@ window.lunrData = {
           "wsport"
         ]
       },
-      "length": 39
+      "length": 52
     },
     "tokenStore": {
       "root": {
         "0": {
           "docs": {
+            "NumBetweenHelper.html#register": {
+              "ref": "NumBetweenHelper.html#register",
+              "tf": 5.555555555555555
+            },
             "HandlerBarHelper.html#numBetweenHelper": {
               "ref": "HandlerBarHelper.html#numBetweenHelper",
               "tf": 5.555555555555555
@@ -942,8 +1157,8 @@ window.lunrData = {
           },
           "s": {
             "docs": {
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
                 "tf": 0.8620689655172413
               }
             }
@@ -952,8 +1167,8 @@ window.lunrData = {
         "1": {
           "6": {
             "docs": {
-              "HandlerBarHelper.html#randomValueHelper": {
-                "ref": "HandlerBarHelper.html#randomValueHelper",
+              "RandomValueHelper.html#register": {
+                "ref": "RandomValueHelper.html#register",
                 "tf": 1.4285714285714286
               }
             }
@@ -968,7 +1183,7 @@ window.lunrData = {
               "docs": {
                 "HttpParser.html#prepareResponse": {
                   "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
+                  "tf": 0.29940119760479045
                 }
               }
             }
@@ -1000,7 +1215,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   },
                   "BackupScheduler.html#schedule": {
                     "ref": "BackupScheduler.html#schedule",
@@ -1163,13 +1378,13 @@ window.lunrData = {
               "docs": {},
               "i": {
                 "docs": {
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
+                    "tf": 2.1739130434782608
+                  },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 1.6025641025641024
-                  },
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
-                    "tf": 2.1739130434782608
+                    "tf": 1.4970059880239521
                   }
                 }
               }
@@ -1180,7 +1395,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               }
@@ -1296,7 +1511,7 @@ window.lunrData = {
                   "docs": {
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 1.282051282051282
+                      "tf": 1.1976047904191618
                     }
                   }
                 }
@@ -1343,7 +1558,7 @@ window.lunrData = {
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.641025641025641
+                        "tf": 0.5988023952095809
                       },
                       "BackupScheduler.html#createBackup": {
                         "ref": "BackupScheduler.html#createBackup",
@@ -1368,42 +1583,26 @@ window.lunrData = {
                 }
               }
             },
-            "u": {
+            "r": {
               "docs": {},
-              "n": {
+              "m": {
                 "docs": {},
-                "d": {
-                  "docs": {
-                    "GrpcParser.html#camouflageMock": {
-                      "ref": "GrpcParser.html#camouflageMock",
-                      "tf": 1.3157894736842104
-                    },
-                    "GrpcParser.html#camouflageMockServerStream": {
-                      "ref": "GrpcParser.html#camouflageMockServerStream",
-                      "tf": 0.9803921568627451
-                    },
-                    "GrpcParser.html#camouflageMockClientStream": {
-                      "ref": "GrpcParser.html#camouflageMockClientStream",
-                      "tf": 1.0416666666666665
-                    },
-                    "GrpcParser.html#camouflageMockBidiStream": {
-                      "ref": "GrpcParser.html#camouflageMockBidiStream",
-                      "tf": 0.9259259259259258
-                    },
-                    "HttpParser.html#getResponse": {
-                      "ref": "HttpParser.html#getResponse",
-                      "tf": 3.571428571428571
-                    },
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
-                      "tf": 1.0869565217391304
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 3.4482758620689653
+                      },
+                      "HttpParser.html#prepareResponse": {
+                        "ref": "HttpParser.html#prepareResponse",
+                        "tf": 0.29940119760479045
+                      }
                     }
                   }
                 }
-              }
-            },
-            "r": {
-              "docs": {},
+              },
               "e": {
                 "docs": {},
                 "a": {
@@ -1424,21 +1623,37 @@ window.lunrData = {
                     }
                   }
                 }
-              },
-              "m": {
+              }
+            },
+            "u": {
+              "docs": {},
+              "n": {
                 "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "HttpParser.html#prepareResponse": {
-                        "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
-                      },
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 3.4482758620689653
-                      }
+                "d": {
+                  "docs": {
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
+                      "tf": 1.0869565217391304
+                    },
+                    "GrpcParser.html#camouflageMock": {
+                      "ref": "GrpcParser.html#camouflageMock",
+                      "tf": 1.3157894736842104
+                    },
+                    "GrpcParser.html#camouflageMockServerStream": {
+                      "ref": "GrpcParser.html#camouflageMockServerStream",
+                      "tf": 0.9803921568627451
+                    },
+                    "GrpcParser.html#camouflageMockClientStream": {
+                      "ref": "GrpcParser.html#camouflageMockClientStream",
+                      "tf": 1.0416666666666665
+                    },
+                    "GrpcParser.html#camouflageMockBidiStream": {
+                      "ref": "GrpcParser.html#camouflageMockBidiStream",
+                      "tf": 0.9259259259259258
+                    },
+                    "HttpParser.html#getResponse": {
+                      "ref": "HttpParser.html#getResponse",
+                      "tf": 3.571428571428571
                     }
                   }
                 }
@@ -1454,6 +1669,30 @@ window.lunrData = {
                   "GlobalController.html#register": {
                     "ref": "GlobalController.html#register",
                     "tf": 0.7462686567164178
+                  },
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 4.054054054054054
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 4.545454545454546
+                  },
+                  "FileHelper.html": {
+                    "ref": "FileHelper.html",
+                    "tf": 8.333333333333332
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 9.523809523809524
+                  },
+                  "HandlerBarHelper.html#fileHelper": {
+                    "ref": "HandlerBarHelper.html#fileHelper",
+                    "tf": 9.523809523809524
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 4.054054054054054
                   },
                   "GrpcParser.html#camouflageMock": {
                     "ref": "GrpcParser.html#camouflageMock",
@@ -1477,15 +1716,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.9615384615384616
-                  },
-                  "HandlerBarHelper.html#fileHelper": {
-                    "ref": "HandlerBarHelper.html#fileHelper",
-                    "tf": 9.523809523809524
-                  },
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 4.054054054054054
+                    "tf": 0.8982035928143712
                   },
                   "BackupScheduler.html#createBackup": {
                     "ref": "BackupScheduler.html#createBackup",
@@ -1494,6 +1725,59 @@ window.lunrData = {
                   "Protocols.html#initGrpc": {
                     "ref": "Protocols.html#initGrpc",
                     "tf": 0.5747126436781609
+                  }
+                },
+                "h": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "p": {
+                        "docs": {
+                          "FileHelper.html": {
+                            "ref": "FileHelper.html",
+                            "tf": 1900
+                          },
+                          "HandlerBarHelper.html#fileHelper": {
+                            "ref": "HandlerBarHelper.html#fileHelper",
+                            "tf": 700
+                          }
+                        },
+                        "e": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "#": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "g": {
+                                    "docs": {},
+                                    "i": {
+                                      "docs": {},
+                                      "s": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "FileHelper.html#register": {
+                                              "ref": "FileHelper.html#register",
+                                              "tf": 1150
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 },
                 "c": {
@@ -1550,23 +1834,6 @@ window.lunrData = {
                       }
                     }
                   }
-                },
-                "h": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "p": {
-                        "docs": {
-                          "HandlerBarHelper.html#fileHelper": {
-                            "ref": "HandlerBarHelper.html#fileHelper",
-                            "tf": 700
-                          }
-                        }
-                      }
-                    }
-                  }
                 }
               },
               "t": {
@@ -1590,17 +1857,17 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
+                    "NowHelper.html#register": {
+                      "ref": "NowHelper.html#register",
+                      "tf": 0.8620689655172413
+                    },
                     "WebsocketParser.html#send": {
                       "ref": "WebsocketParser.html#send",
                       "tf": 2.380952380952381
                     },
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.641025641025641
-                    },
-                    "HandlerBarHelper.html#nowHelper": {
-                      "ref": "HandlerBarHelper.html#nowHelper",
-                      "tf": 0.8620689655172413
+                      "tf": 0.5988023952095809
                     }
                   }
                 }
@@ -1632,7 +1899,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               },
@@ -1642,7 +1909,7 @@ window.lunrData = {
                   "docs": {
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.3205128205128205
+                      "tf": 0.29940119760479045
                     },
                     "Protocols.html#initGrpc": {
                       "ref": "Protocols.html#initGrpc",
@@ -1671,9 +1938,41 @@ window.lunrData = {
                             "ref": "GlobalController.html#register",
                             "tf": 110
                           },
+                          "CodeHelper.html#register": {
+                            "ref": "CodeHelper.html#register",
+                            "tf": 111.35135135135135
+                          },
+                          "InjectHelper.html#register": {
+                            "ref": "InjectHelper.html#register",
+                            "tf": 112.63157894736842
+                          },
                           "MockController.html#register": {
                             "ref": "MockController.html#register",
                             "tf": 110
+                          },
+                          "NowHelper.html#register": {
+                            "ref": "NowHelper.html#register",
+                            "tf": 110
+                          },
+                          "NumBetweenHelper.html#register": {
+                            "ref": "NumBetweenHelper.html#register",
+                            "tf": 110
+                          },
+                          "RandomValueHelper.html#register": {
+                            "ref": "RandomValueHelper.html#register",
+                            "tf": 110
+                          },
+                          "RandomValueHelper.html#randomString": {
+                            "ref": "RandomValueHelper.html#randomString",
+                            "tf": 110
+                          },
+                          "RandomValueHelper.html#randomFixedInteger": {
+                            "ref": "RandomValueHelper.html#randomFixedInteger",
+                            "tf": 110
+                          },
+                          "RandomValueHelper.html#genCharArray": {
+                            "ref": "RandomValueHelper.html#genCharArray",
+                            "tf": 117.14285714285714
                           },
                           "WebsocketParser.html#send": {
                             "ref": "WebsocketParser.html#send",
@@ -1682,6 +1981,34 @@ window.lunrData = {
                           "WebsocketParser.html#sendConnect": {
                             "ref": "WebsocketParser.html#sendConnect",
                             "tf": 110
+                          },
+                          "CsvHelper.html#register": {
+                            "ref": "CsvHelper.html#register",
+                            "tf": 110
+                          },
+                          "FileHelper.html#register": {
+                            "ref": "FileHelper.html#register",
+                            "tf": 110
+                          },
+                          "RequestHelper.html#register": {
+                            "ref": "RequestHelper.html#register",
+                            "tf": 110
+                          },
+                          "HandlerBarHelper.html#numBetweenHelper": {
+                            "ref": "HandlerBarHelper.html#numBetweenHelper",
+                            "tf": 110
+                          },
+                          "HandlerBarHelper.html#fileHelper": {
+                            "ref": "HandlerBarHelper.html#fileHelper",
+                            "tf": 110
+                          },
+                          "HandlerBarHelper.html#codeHelper": {
+                            "ref": "HandlerBarHelper.html#codeHelper",
+                            "tf": 111.35135135135135
+                          },
+                          "HandlerBarHelper.html#injectHelper": {
+                            "ref": "HandlerBarHelper.html#injectHelper",
+                            "tf": 112.63157894736842
                           },
                           "GrpcParser.html#camouflageMock": {
                             "ref": "GrpcParser.html#camouflageMock",
@@ -1710,46 +2037,6 @@ window.lunrData = {
                           "HttpParser.html#prepareResponse": {
                             "ref": "HttpParser.html#prepareResponse",
                             "tf": 110
-                          },
-                          "HandlerBarHelper.html#nowHelper": {
-                            "ref": "HandlerBarHelper.html#nowHelper",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#randomValueHelper": {
-                            "ref": "HandlerBarHelper.html#randomValueHelper",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#requestHelper": {
-                            "ref": "HandlerBarHelper.html#requestHelper",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#numBetweenHelper": {
-                            "ref": "HandlerBarHelper.html#numBetweenHelper",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#fileHelper": {
-                            "ref": "HandlerBarHelper.html#fileHelper",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#codeHelper": {
-                            "ref": "HandlerBarHelper.html#codeHelper",
-                            "tf": 111.35135135135135
-                          },
-                          "HandlerBarHelper.html#injectHelper": {
-                            "ref": "HandlerBarHelper.html#injectHelper",
-                            "tf": 112.63157894736842
-                          },
-                          "HandlerBarHelper.html#randomString": {
-                            "ref": "HandlerBarHelper.html#randomString",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#randomFixedInteger": {
-                            "ref": "HandlerBarHelper.html#randomFixedInteger",
-                            "tf": 110
-                          },
-                          "HandlerBarHelper.html#genCharArray": {
-                            "ref": "HandlerBarHelper.html#genCharArray",
-                            "tf": 117.14285714285714
                           },
                           "BackupScheduler.html#schedule": {
                             "ref": "BackupScheduler.html#schedule",
@@ -1807,6 +2094,23 @@ window.lunrData = {
               }
             }
           },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "h": {
+                  "docs": {
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 0.9090909090909091
+                    }
+                  }
+                }
+              }
+            }
+          },
           "a": {
             "docs": {},
             "l": {
@@ -1815,7 +2119,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.641025641025641
+                    "tf": 0.5988023952095809
                   }
                 }
               }
@@ -1829,7 +2133,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.9615384615384616
+                    "tf": 0.8982035928143712
                   }
                 }
               }
@@ -1867,9 +2171,41 @@ window.lunrData = {
                               "ref": "GlobalController.html#register",
                               "tf": 0.7462686567164178
                             },
-                            "HttpParser.html#prepareResponse": {
-                              "ref": "HttpParser.html#prepareResponse",
-                              "tf": 0.9615384615384616
+                            "CodeHelper.html": {
+                              "ref": "CodeHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "InjectHelper.html": {
+                              "ref": "InjectHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "NowHelper.html": {
+                              "ref": "NowHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "NumBetweenHelper.html": {
+                              "ref": "NumBetweenHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "RandomValueHelper.html": {
+                              "ref": "RandomValueHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "CsvHelper.html": {
+                              "ref": "CsvHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "FileHelper.html": {
+                              "ref": "FileHelper.html",
+                              "tf": 8.333333333333332
+                            },
+                            "FileHelper.html#register": {
+                              "ref": "FileHelper.html#register",
+                              "tf": 2.380952380952381
+                            },
+                            "RequestHelper.html": {
+                              "ref": "RequestHelper.html",
+                              "tf": 8.333333333333332
                             },
                             "HandlerBarHelper.html": {
                               "ref": "HandlerBarHelper.html",
@@ -1878,6 +2214,10 @@ window.lunrData = {
                             "HandlerBarHelper.html#fileHelper": {
                               "ref": "HandlerBarHelper.html#fileHelper",
                               "tf": 2.380952380952381
+                            },
+                            "HttpParser.html#prepareResponse": {
+                              "ref": "HttpParser.html#prepareResponse",
+                              "tf": 0.8982035928143712
                             }
                           }
                         }
@@ -1942,29 +2282,6 @@ window.lunrData = {
                                           "docs": {},
                                           "n": {
                                             "docs": {},
-                                            "o": {
-                                              "docs": {},
-                                              "w": {
-                                                "docs": {},
-                                                "h": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "l": {
-                                                      "docs": {},
-                                                      "p": {
-                                                        "docs": {
-                                                          "HandlerBarHelper.html#nowHelper": {
-                                                            "ref": "HandlerBarHelper.html#nowHelper",
-                                                            "tf": 1150
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
                                             "u": {
                                               "docs": {},
                                               "m": {
@@ -1997,140 +2314,6 @@ window.lunrData = {
                                                                         }
                                                                       }
                                                                     }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "r": {
-                                            "docs": {},
-                                            "a": {
-                                              "docs": {},
-                                              "n": {
-                                                "docs": {},
-                                                "d": {
-                                                  "docs": {},
-                                                  "o": {
-                                                    "docs": {},
-                                                    "m": {
-                                                      "docs": {},
-                                                      "v": {
-                                                        "docs": {},
-                                                        "a": {
-                                                          "docs": {},
-                                                          "l": {
-                                                            "docs": {},
-                                                            "u": {
-                                                              "docs": {},
-                                                              "e": {
-                                                                "docs": {},
-                                                                "h": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {},
-                                                                      "p": {
-                                                                        "docs": {
-                                                                          "HandlerBarHelper.html#randomValueHelper": {
-                                                                            "ref": "HandlerBarHelper.html#randomValueHelper",
-                                                                            "tf": 1150
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "s": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "r": {
-                                                            "docs": {
-                                                              "HandlerBarHelper.html#randomString": {
-                                                                "ref": "HandlerBarHelper.html#randomString",
-                                                                "tf": 1150
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "f": {
-                                                        "docs": {},
-                                                        "i": {
-                                                          "docs": {},
-                                                          "x": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "n": {
-                                                                    "docs": {},
-                                                                    "t": {
-                                                                      "docs": {},
-                                                                      "e": {
-                                                                        "docs": {},
-                                                                        "g": {
-                                                                          "docs": {
-                                                                            "HandlerBarHelper.html#randomFixedInteger": {
-                                                                              "ref": "HandlerBarHelper.html#randomFixedInteger",
-                                                                              "tf": 1150
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
-                                            "e": {
-                                              "docs": {},
-                                              "q": {
-                                                "docs": {},
-                                                "u": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "s": {
-                                                      "docs": {},
-                                                      "t": {
-                                                        "docs": {},
-                                                        "h": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "l": {
-                                                              "docs": {},
-                                                              "p": {
-                                                                "docs": {
-                                                                  "HandlerBarHelper.html#requestHelper": {
-                                                                    "ref": "HandlerBarHelper.html#requestHelper",
-                                                                    "tf": 1150
                                                                   }
                                                                 }
                                                               }
@@ -2225,47 +2408,6 @@ window.lunrData = {
                                                                 "HandlerBarHelper.html#injectHelper": {
                                                                   "ref": "HandlerBarHelper.html#injectHelper",
                                                                   "tf": 1150
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "g": {
-                                            "docs": {},
-                                            "e": {
-                                              "docs": {},
-                                              "n": {
-                                                "docs": {},
-                                                "c": {
-                                                  "docs": {},
-                                                  "h": {
-                                                    "docs": {},
-                                                    "a": {
-                                                      "docs": {},
-                                                      "r": {
-                                                        "docs": {},
-                                                        "a": {
-                                                          "docs": {},
-                                                          "r": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "y": {
-                                                                  "docs": {
-                                                                    "HandlerBarHelper.html#genCharArray": {
-                                                                      "ref": "HandlerBarHelper.html#genCharArray",
-                                                                      "tf": 1150
-                                                                    }
-                                                                  }
                                                                 }
                                                               }
                                                             }
@@ -2402,7 +2544,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   },
                   "Protocols.html": {
                     "ref": "Protocols.html",
@@ -2429,9 +2571,17 @@ window.lunrData = {
                           "docs": {},
                           "r": {
                             "docs": {
-                              "HttpParser.html": {
-                                "ref": "HttpParser.html",
-                                "tf": 1900
+                              "CodeHelper.html#register": {
+                                "ref": "CodeHelper.html#register",
+                                "tf": 2.7027027027027026
+                              },
+                              "InjectHelper.html#register": {
+                                "ref": "InjectHelper.html#register",
+                                "tf": 2.631578947368421
+                              },
+                              "FileHelper.html#register": {
+                                "ref": "FileHelper.html#register",
+                                "tf": 2.380952380952381
                               },
                               "HandlerBarHelper.html#fileHelper": {
                                 "ref": "HandlerBarHelper.html#fileHelper",
@@ -2444,6 +2594,10 @@ window.lunrData = {
                               "HandlerBarHelper.html#injectHelper": {
                                 "ref": "HandlerBarHelper.html#injectHelper",
                                 "tf": 2.631578947368421
+                              },
+                              "HttpParser.html": {
+                                "ref": "HttpParser.html",
+                                "tf": 1900
                               }
                             },
                             "#": {
@@ -2584,7 +2738,7 @@ window.lunrData = {
                           "docs": {
                             "HttpParser.html#prepareResponse": {
                               "ref": "HttpParser.html#prepareResponse",
-                              "tf": 0.3205128205128205
+                              "tf": 0.29940119760479045
                             }
                           }
                         }
@@ -2605,37 +2759,73 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "GrpcParser.html#camouflageMock": {
-                        "ref": "GrpcParser.html#camouflageMock",
-                        "tf": 1.3157894736842104
+                      "CodeHelper.html": {
+                        "ref": "CodeHelper.html",
+                        "tf": 8.333333333333332
                       },
-                      "GrpcParser.html#camouflageMockServerStream": {
-                        "ref": "GrpcParser.html#camouflageMockServerStream",
-                        "tf": 0.9803921568627451
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 2.7027027027027026
                       },
-                      "GrpcParser.html#camouflageMockClientStream": {
-                        "ref": "GrpcParser.html#camouflageMockClientStream",
-                        "tf": 1.0416666666666665
+                      "InjectHelper.html": {
+                        "ref": "InjectHelper.html",
+                        "tf": 8.333333333333332
                       },
-                      "GrpcParser.html#camouflageMockBidiStream": {
-                        "ref": "GrpcParser.html#camouflageMockBidiStream",
-                        "tf": 0.9259259259259258
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 5.263157894736842
+                      },
+                      "NowHelper.html": {
+                        "ref": "NowHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 1.7241379310344827
+                      },
+                      "NumBetweenHelper.html": {
+                        "ref": "NumBetweenHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NumBetweenHelper.html#register": {
+                        "ref": "NumBetweenHelper.html#register",
+                        "tf": 2.7777777777777777
+                      },
+                      "RandomValueHelper.html": {
+                        "ref": "RandomValueHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
+                        "tf": 1.4285714285714286
+                      },
+                      "CsvHelper.html": {
+                        "ref": "CsvHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 2.727272727272727
+                      },
+                      "FileHelper.html": {
+                        "ref": "FileHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "FileHelper.html#register": {
+                        "ref": "FileHelper.html#register",
+                        "tf": 2.380952380952381
+                      },
+                      "RequestHelper.html": {
+                        "ref": "RequestHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 1.0869565217391304
                       },
                       "HandlerBarHelper.html": {
                         "ref": "HandlerBarHelper.html",
                         "tf": 5.555555555555555
-                      },
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 1.7241379310344827
-                      },
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
-                        "tf": 1.4285714285714286
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 1.0869565217391304
                       },
                       "HandlerBarHelper.html#numBetweenHelper": {
                         "ref": "HandlerBarHelper.html#numBetweenHelper",
@@ -2652,6 +2842,22 @@ window.lunrData = {
                       "HandlerBarHelper.html#injectHelper": {
                         "ref": "HandlerBarHelper.html#injectHelper",
                         "tf": 5.263157894736842
+                      },
+                      "GrpcParser.html#camouflageMock": {
+                        "ref": "GrpcParser.html#camouflageMock",
+                        "tf": 1.3157894736842104
+                      },
+                      "GrpcParser.html#camouflageMockServerStream": {
+                        "ref": "GrpcParser.html#camouflageMockServerStream",
+                        "tf": 0.9803921568627451
+                      },
+                      "GrpcParser.html#camouflageMockClientStream": {
+                        "ref": "GrpcParser.html#camouflageMockClientStream",
+                        "tf": 1.0416666666666665
+                      },
+                      "GrpcParser.html#camouflageMockBidiStream": {
+                        "ref": "GrpcParser.html#camouflageMockBidiStream",
+                        "tf": 0.9259259259259258
                       }
                     }
                   }
@@ -2666,13 +2872,13 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 2.1739130434782608
+                      },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 1.6025641025641024
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 2.1739130434782608
+                        "tf": 1.4970059880239521
                       }
                     },
                     "k": {
@@ -2683,7 +2889,7 @@ window.lunrData = {
                           "docs": {
                             "HttpParser.html#prepareResponse": {
                               "ref": "HttpParser.html#prepareResponse",
-                              "tf": 0.3205128205128205
+                              "tf": 0.29940119760479045
                             }
                           }
                         }
@@ -2699,7 +2905,7 @@ window.lunrData = {
                             "docs": {
                               "HttpParser.html#prepareResponse": {
                                 "ref": "HttpParser.html#prepareResponse",
-                                "tf": 0.3205128205128205
+                                "tf": 0.29940119760479045
                               }
                             }
                           }
@@ -2725,8 +2931,8 @@ window.lunrData = {
                       "docs": {},
                       "s": {
                         "docs": {
-                          "HandlerBarHelper.html#nowHelper": {
-                            "ref": "HandlerBarHelper.html#nowHelper",
+                          "NowHelper.html#register": {
+                            "ref": "NowHelper.html#register",
                             "tf": 0.8620689655172413
                           }
                         }
@@ -2815,13 +3021,17 @@ window.lunrData = {
                   "docs": {},
                   "d": {
                     "docs": {
-                      "HttpParser.html#prepareResponse": {
-                        "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                      "FileHelper.html#register": {
+                        "ref": "FileHelper.html#register",
+                        "tf": 2.380952380952381
                       },
                       "HandlerBarHelper.html#fileHelper": {
                         "ref": "HandlerBarHelper.html#fileHelper",
                         "tf": 2.380952380952381
+                      },
+                      "HttpParser.html#prepareResponse": {
+                        "ref": "HttpParser.html#prepareResponse",
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -2920,20 +3130,6 @@ window.lunrData = {
                 }
               }
             },
-            "p": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
-                      "tf": 2.1739130434782608
-                    }
-                  }
-                }
-              }
-            },
             "j": {
               "docs": {},
               "e": {
@@ -2942,6 +3138,14 @@ window.lunrData = {
                   "docs": {},
                   "t": {
                     "docs": {
+                      "InjectHelper.html": {
+                        "ref": "InjectHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 2.631578947368421
+                      },
                       "HandlerBarHelper.html#injectHelper": {
                         "ref": "HandlerBarHelper.html#injectHelper",
                         "tf": 2.631578947368421
@@ -2955,14 +3159,64 @@ window.lunrData = {
                           "docs": {},
                           "p": {
                             "docs": {
+                              "InjectHelper.html": {
+                                "ref": "InjectHelper.html",
+                                "tf": 1900
+                              },
                               "HandlerBarHelper.html#injectHelper": {
                                 "ref": "HandlerBarHelper.html#injectHelper",
                                 "tf": 700
+                              }
+                            },
+                            "e": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "#": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "s": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {
+                                                "InjectHelper.html#register": {
+                                                  "ref": "InjectHelper.html#register",
+                                                  "tf": 1150
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
+                      "tf": 2.1739130434782608
                     }
                   }
                 }
@@ -2995,6 +3249,10 @@ window.lunrData = {
                 "ref": "GlobalController.html#register",
                 "tf": 0.7462686567164178
               },
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
+                "tf": 2.586206896551724
+              },
               "WebsocketParser.html#send": {
                 "ref": "WebsocketParser.html#send",
                 "tf": 2.380952380952381
@@ -3005,11 +3263,7 @@ window.lunrData = {
               },
               "HttpParser.html#prepareResponse": {
                 "ref": "HttpParser.html#prepareResponse",
-                "tf": 1.282051282051282
-              },
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
-                "tf": 2.586206896551724
+                "tf": 1.1976047904191618
               },
               "Protocols.html#initGrpc": {
                 "ref": "Protocols.html#initGrpc",
@@ -3027,7 +3281,7 @@ window.lunrData = {
                 },
                 "HttpParser.html#prepareResponse": {
                   "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
+                  "tf": 0.29940119760479045
                 }
               }
             }
@@ -3121,7 +3375,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   },
                   "Protocols.html#initGrpc": {
                     "ref": "Protocols.html#initGrpc",
@@ -3142,7 +3396,7 @@ window.lunrData = {
                     "docs": {
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -3165,6 +3419,22 @@ window.lunrData = {
                         "ref": "GlobalController.html#register",
                         "tf": 700
                       },
+                      "CodeHelper.html": {
+                        "ref": "CodeHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 701.3513513513514
+                      },
+                      "InjectHelper.html": {
+                        "ref": "InjectHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 702.6315789473684
+                      },
                       "MockController.html": {
                         "ref": "MockController.html",
                         "tf": 12.5
@@ -3173,21 +3443,57 @@ window.lunrData = {
                         "ref": "MockController.html#register",
                         "tf": 705
                       },
+                      "NowHelper.html": {
+                        "ref": "NowHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 700.8620689655172
+                      },
+                      "NumBetweenHelper.html": {
+                        "ref": "NumBetweenHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NumBetweenHelper.html#register": {
+                        "ref": "NumBetweenHelper.html#register",
+                        "tf": 702.7777777777778
+                      },
+                      "RandomValueHelper.html": {
+                        "ref": "RandomValueHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
+                        "tf": 701.4285714285714
+                      },
+                      "CsvHelper.html": {
+                        "ref": "CsvHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 700.9090909090909
+                      },
+                      "FileHelper.html": {
+                        "ref": "FileHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "FileHelper.html#register": {
+                        "ref": "FileHelper.html#register",
+                        "tf": 702.3809523809524
+                      },
+                      "RequestHelper.html": {
+                        "ref": "RequestHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 701.0869565217391
+                      },
                       "HandlerBarHelper.html": {
                         "ref": "HandlerBarHelper.html",
                         "tf": 5.555555555555555
-                      },
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 0.8620689655172413
-                      },
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
-                        "tf": 1.4285714285714286
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 1.0869565217391304
                       },
                       "HandlerBarHelper.html#numBetweenHelper": {
                         "ref": "HandlerBarHelper.html#numBetweenHelper",
@@ -3213,8 +3519,8 @@ window.lunrData = {
                 "docs": {},
                 "x": {
                   "docs": {
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
                       "tf": 1.0869565217391304
                     }
                   }
@@ -3223,8 +3529,8 @@ window.lunrData = {
             },
             "q": {
               "docs": {
-                "HandlerBarHelper.html#requestHelper": {
-                  "ref": "HandlerBarHelper.html#requestHelper",
+                "RequestHelper.html#register": {
+                  "ref": "RequestHelper.html#register",
                   "tf": 1.0869565217391304
                 }
               },
@@ -3244,6 +3550,14 @@ window.lunrData = {
                           "ref": "GlobalController.html#register",
                           "tf": 2.9850746268656714
                         },
+                        "CodeHelper.html#register": {
+                          "ref": "CodeHelper.html#register",
+                          "tf": 2.7027027027027026
+                        },
+                        "InjectHelper.html#register": {
+                          "ref": "InjectHelper.html#register",
+                          "tf": 2.631578947368421
+                        },
                         "WebsocketParser.html#send": {
                           "ref": "WebsocketParser.html#send",
                           "tf": 20
@@ -3252,16 +3566,12 @@ window.lunrData = {
                           "ref": "WebsocketParser.html#sendConnect",
                           "tf": 14.285714285714285
                         },
-                        "HttpParser.html": {
-                          "ref": "HttpParser.html",
-                          "tf": 2.941176470588235
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 1.8181818181818181
                         },
-                        "HttpParser.html#getMatchedDir": {
-                          "ref": "HttpParser.html#getMatchedDir",
-                          "tf": 8.333333333333332
-                        },
-                        "HandlerBarHelper.html#requestHelper": {
-                          "ref": "HandlerBarHelper.html#requestHelper",
+                        "RequestHelper.html#register": {
+                          "ref": "RequestHelper.html#register",
                           "tf": 1.0869565217391304
                         },
                         "HandlerBarHelper.html#codeHelper": {
@@ -3271,6 +3581,14 @@ window.lunrData = {
                         "HandlerBarHelper.html#injectHelper": {
                           "ref": "HandlerBarHelper.html#injectHelper",
                           "tf": 2.631578947368421
+                        },
+                        "HttpParser.html": {
+                          "ref": "HttpParser.html",
+                          "tf": 2.941176470588235
+                        },
+                        "HttpParser.html#getMatchedDir": {
+                          "ref": "HttpParser.html#getMatchedDir",
+                          "tf": 8.333333333333332
                         },
                         "Protocols.html#initGrpc": {
                           "ref": "Protocols.html#initGrpc",
@@ -3285,9 +3603,41 @@ window.lunrData = {
                             "docs": {},
                             "p": {
                               "docs": {
-                                "HandlerBarHelper.html#requestHelper": {
-                                  "ref": "HandlerBarHelper.html#requestHelper",
-                                  "tf": 700
+                                "RequestHelper.html": {
+                                  "ref": "RequestHelper.html",
+                                  "tf": 1900
+                                }
+                              },
+                              "e": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "#": {
+                                    "docs": {},
+                                    "r": {
+                                      "docs": {},
+                                      "e": {
+                                        "docs": {},
+                                        "g": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {},
+                                            "s": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {
+                                                  "RequestHelper.html#register": {
+                                                    "ref": "RequestHelper.html#register",
+                                                    "tf": 1150
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }
@@ -3305,17 +3655,17 @@ window.lunrData = {
                         "ref": "GlobalController.html#register",
                         "tf": 0.7462686567164178
                       },
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 1.0869565217391304
+                      },
                       "GrpcParser.html#camouflageMockClientStream": {
                         "ref": "GrpcParser.html#camouflageMockClientStream",
                         "tf": 1.0416666666666665
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 1.0869565217391304
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -3335,6 +3685,26 @@ window.lunrData = {
                         "GlobalController.html#register": {
                           "ref": "GlobalController.html#register",
                           "tf": 2.9850746268656714
+                        },
+                        "CodeHelper.html#register": {
+                          "ref": "CodeHelper.html#register",
+                          "tf": 2.7027027027027026
+                        },
+                        "InjectHelper.html#register": {
+                          "ref": "InjectHelper.html#register",
+                          "tf": 5.263157894736842
+                        },
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 1.8181818181818181
+                        },
+                        "HandlerBarHelper.html#codeHelper": {
+                          "ref": "HandlerBarHelper.html#codeHelper",
+                          "tf": 2.7027027027027026
+                        },
+                        "HandlerBarHelper.html#injectHelper": {
+                          "ref": "HandlerBarHelper.html#injectHelper",
+                          "tf": 5.263157894736842
                         },
                         "GrpcParser.html#camouflageMock": {
                           "ref": "GrpcParser.html#camouflageMock",
@@ -3362,15 +3732,7 @@ window.lunrData = {
                         },
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 4.166666666666666
-                        },
-                        "HandlerBarHelper.html#codeHelper": {
-                          "ref": "HandlerBarHelper.html#codeHelper",
-                          "tf": 2.7027027027027026
-                        },
-                        "HandlerBarHelper.html#injectHelper": {
-                          "ref": "HandlerBarHelper.html#injectHelper",
-                          "tf": 5.263157894736842
+                          "tf": 4.191616766467066
                         }
                       },
                       "e": {
@@ -3389,7 +3751,7 @@ window.lunrData = {
                                     "docs": {
                                       "HttpParser.html#prepareResponse": {
                                         "ref": "HttpParser.html#prepareResponse",
-                                        "tf": 0.3205128205128205
+                                        "tf": 0.29940119760479045
                                       }
                                     }
                                   }
@@ -3408,7 +3770,7 @@ window.lunrData = {
                                 "docs": {
                                   "HttpParser.html#prepareResponse": {
                                     "ref": "HttpParser.html#prepareResponse",
-                                    "tf": 1.282051282051282
+                                    "tf": 1.1976047904191618
                                   }
                                 }
                               }
@@ -3427,6 +3789,32 @@ window.lunrData = {
                           "ref": "GrpcParser.html#camouflageMockBidiStream",
                           "tf": 2.7777777777777777
                         }
+                      }
+                    }
+                  }
+                }
+              },
+              "u": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 1.3513513513513513
+                      },
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 2.631578947368421
+                      },
+                      "HandlerBarHelper.html#codeHelper": {
+                        "ref": "HandlerBarHelper.html#codeHelper",
+                        "tf": 1.3513513513513513
+                      },
+                      "HandlerBarHelper.html#injectHelper": {
+                        "ref": "HandlerBarHelper.html#injectHelper",
+                        "tf": 2.631578947368421
                       }
                     }
                   }
@@ -3453,16 +3841,59 @@ window.lunrData = {
                     }
                   }
                 }
-              },
+              }
+            },
+            "t": {
+              "docs": {},
               "u": {
                 "docs": {},
-                "l": {
+                "r": {
                   "docs": {},
-                  "t": {
+                  "n": {
                     "docs": {
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 2.7027027027027026
+                      },
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 2.631578947368421
+                      },
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 0.8620689655172413
+                      },
+                      "NumBetweenHelper.html#register": {
+                        "ref": "NumBetweenHelper.html#register",
+                        "tf": 5.555555555555555
+                      },
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
+                        "tf": 1.4285714285714286
+                      },
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 0.9090909090909091
+                      },
+                      "FileHelper.html#register": {
+                        "ref": "FileHelper.html#register",
+                        "tf": 2.380952380952381
+                      },
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 3.260869565217391
+                      },
+                      "HandlerBarHelper.html#numBetweenHelper": {
+                        "ref": "HandlerBarHelper.html#numBetweenHelper",
+                        "tf": 5.555555555555555
+                      },
+                      "HandlerBarHelper.html#fileHelper": {
+                        "ref": "HandlerBarHelper.html#fileHelper",
+                        "tf": 2.380952380952381
+                      },
                       "HandlerBarHelper.html#codeHelper": {
                         "ref": "HandlerBarHelper.html#codeHelper",
-                        "tf": 1.3513513513513513
+                        "tf": 2.7027027027027026
                       },
                       "HandlerBarHelper.html#injectHelper": {
                         "ref": "HandlerBarHelper.html#injectHelper",
@@ -3497,7 +3928,7 @@ window.lunrData = {
                     },
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.3205128205128205
+                      "tf": 0.29940119760479045
                     }
                   }
                 }
@@ -3530,48 +3961,7 @@ window.lunrData = {
                     "docs": {
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 0.8620689655172413
-                      },
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
-                        "tf": 1.4285714285714286
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 3.260869565217391
-                      },
-                      "HandlerBarHelper.html#numBetweenHelper": {
-                        "ref": "HandlerBarHelper.html#numBetweenHelper",
-                        "tf": 5.555555555555555
-                      },
-                      "HandlerBarHelper.html#fileHelper": {
-                        "ref": "HandlerBarHelper.html#fileHelper",
-                        "tf": 2.380952380952381
-                      },
-                      "HandlerBarHelper.html#codeHelper": {
-                        "ref": "HandlerBarHelper.html#codeHelper",
-                        "tf": 2.7027027027027026
-                      },
-                      "HandlerBarHelper.html#injectHelper": {
-                        "ref": "HandlerBarHelper.html#injectHelper",
-                        "tf": 2.631578947368421
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -3589,6 +3979,14 @@ window.lunrData = {
                     "ref": "GlobalController.html#register",
                     "tf": 1.4925373134328357
                   }
+                }
+              }
+            },
+            "w": {
+              "docs": {
+                "CsvHelper.html#register": {
+                  "ref": "CsvHelper.html#register",
+                  "tf": 1.8181818181818181
                 }
               }
             }
@@ -3614,14 +4012,6 @@ window.lunrData = {
           },
           "a": {
             "docs": {},
-            "w": {
-              "docs": {
-                "HttpParser.html#prepareResponse": {
-                  "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
-                }
-              }
-            },
             "n": {
               "docs": {},
               "d": {
@@ -3630,21 +4020,29 @@ window.lunrData = {
                   "docs": {},
                   "m": {
                     "docs": {
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
                         "tf": 1.4285714285714286
                       },
-                      "HandlerBarHelper.html#randomString": {
-                        "ref": "HandlerBarHelper.html#randomString",
+                      "RandomValueHelper.html#randomString": {
+                        "ref": "RandomValueHelper.html#randomString",
                         "tf": 12.5
                       },
-                      "HandlerBarHelper.html#randomFixedInteger": {
-                        "ref": "HandlerBarHelper.html#randomFixedInteger",
+                      "RandomValueHelper.html#randomFixedInteger": {
+                        "ref": "RandomValueHelper.html#randomFixedInteger",
                         "tf": 10
                       },
-                      "HandlerBarHelper.html#genCharArray": {
-                        "ref": "HandlerBarHelper.html#genCharArray",
+                      "RandomValueHelper.html#genCharArray": {
+                        "ref": "RandomValueHelper.html#genCharArray",
                         "tf": 7.142857142857142
+                      },
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 2.727272727272727
+                      },
+                      "HttpParser.html#prepareResponse": {
+                        "ref": "HttpParser.html#prepareResponse",
+                        "tf": 0.29940119760479045
                       }
                     },
                     "v": {
@@ -3655,13 +4053,17 @@ window.lunrData = {
                           "docs": {},
                           "u": {
                             "docs": {
+                              "RandomValueHelper.html": {
+                                "ref": "RandomValueHelper.html",
+                                "tf": 8.333333333333332
+                              },
+                              "RandomValueHelper.html#register": {
+                                "ref": "RandomValueHelper.html#register",
+                                "tf": 4.285714285714286
+                              },
                               "HandlerBarHelper.html": {
                                 "ref": "HandlerBarHelper.html",
                                 "tf": 5.555555555555555
-                              },
-                              "HandlerBarHelper.html#randomValueHelper": {
-                                "ref": "HandlerBarHelper.html#randomValueHelper",
-                                "tf": 4.285714285714286
                               }
                             },
                             "e": {
@@ -3674,9 +4076,146 @@ window.lunrData = {
                                     "docs": {},
                                     "p": {
                                       "docs": {
-                                        "HandlerBarHelper.html#randomValueHelper": {
-                                          "ref": "HandlerBarHelper.html#randomValueHelper",
-                                          "tf": 700
+                                        "RandomValueHelper.html": {
+                                          "ref": "RandomValueHelper.html",
+                                          "tf": 1900
+                                        }
+                                      },
+                                      "e": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "#": {
+                                            "docs": {},
+                                            "r": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {},
+                                                    "s": {
+                                                      "docs": {},
+                                                      "t": {
+                                                        "docs": {
+                                                          "RandomValueHelper.html#register": {
+                                                            "ref": "RandomValueHelper.html#register",
+                                                            "tf": 1150
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "a": {
+                                                "docs": {},
+                                                "n": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {},
+                                                    "o": {
+                                                      "docs": {},
+                                                      "m": {
+                                                        "docs": {},
+                                                        "s": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {
+                                                                "RandomValueHelper.html#randomString": {
+                                                                  "ref": "RandomValueHelper.html#randomString",
+                                                                  "tf": 1150
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "f": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "x": {
+                                                              "docs": {},
+                                                              "e": {
+                                                                "docs": {},
+                                                                "d": {
+                                                                  "docs": {},
+                                                                  "i": {
+                                                                    "docs": {},
+                                                                    "n": {
+                                                                      "docs": {},
+                                                                      "t": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "g": {
+                                                                            "docs": {
+                                                                              "RandomValueHelper.html#randomFixedInteger": {
+                                                                                "ref": "RandomValueHelper.html#randomFixedInteger",
+                                                                                "tf": 1150
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "g": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "n": {
+                                                  "docs": {},
+                                                  "c": {
+                                                    "docs": {},
+                                                    "h": {
+                                                      "docs": {},
+                                                      "a": {
+                                                        "docs": {},
+                                                        "r": {
+                                                          "docs": {},
+                                                          "a": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {},
+                                                              "r": {
+                                                                "docs": {},
+                                                                "a": {
+                                                                  "docs": {},
+                                                                  "y": {
+                                                                    "docs": {
+                                                                      "RandomValueHelper.html#genCharArray": {
+                                                                        "ref": "RandomValueHelper.html#genCharArray",
+                                                                        "tf": 1150
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
                                         }
                                       }
                                     }
@@ -3694,12 +4233,12 @@ window.lunrData = {
                         "docs": {},
                         "r": {
                           "docs": {
-                            "HandlerBarHelper.html#randomString": {
-                              "ref": "HandlerBarHelper.html#randomString",
+                            "RandomValueHelper.html#randomString": {
+                              "ref": "RandomValueHelper.html#randomString",
                               "tf": 675
                             },
-                            "HandlerBarHelper.html#genCharArray": {
-                              "ref": "HandlerBarHelper.html#genCharArray",
+                            "RandomValueHelper.html#genCharArray": {
+                              "ref": "RandomValueHelper.html#genCharArray",
                               "tf": 7.142857142857142
                             }
                           }
@@ -3726,8 +4265,8 @@ window.lunrData = {
                                       "docs": {},
                                       "g": {
                                         "docs": {
-                                          "HandlerBarHelper.html#randomFixedInteger": {
-                                            "ref": "HandlerBarHelper.html#randomFixedInteger",
+                                          "RandomValueHelper.html#randomFixedInteger": {
+                                            "ref": "RandomValueHelper.html#randomFixedInteger",
                                             "tf": 683.3333333333334
                                           }
                                         }
@@ -3742,6 +4281,14 @@ window.lunrData = {
                       }
                     }
                   }
+                }
+              }
+            },
+            "w": {
+              "docs": {
+                "HttpParser.html#prepareResponse": {
+                  "ref": "HttpParser.html#prepareResponse",
+                  "tf": 0.29940119760479045
                 }
               }
             }
@@ -3786,8 +4333,8 @@ window.lunrData = {
                                         "docs": {},
                                         "t": {
                                           "docs": {
-                                            "HandlerBarHelper.html#requestHelper": {
-                                              "ref": "HandlerBarHelper.html#requestHelper",
+                                            "RequestHelper.html#register": {
+                                              "ref": "RequestHelper.html#register",
                                               "tf": 1.0869565217391304
                                             }
                                           }
@@ -3812,7 +4359,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               }
@@ -3842,9 +4389,13 @@ window.lunrData = {
                     "ref": "GlobalController.html#register",
                     "tf": 0.7462686567164178
                   },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 0.9090909090909091
+                  },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               }
@@ -3879,14 +4430,14 @@ window.lunrData = {
               "docs": {
                 "HttpParser.html#prepareResponse": {
                   "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
+                  "tf": 0.29940119760479045
                 }
               },
               "m": {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               }
@@ -3906,6 +4457,45 @@ window.lunrData = {
               }
             }
           },
+          "y": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "RandomValueHelper.html#register": {
+                    "ref": "RandomValueHelper.html#register",
+                    "tf": 8.571428571428571
+                  },
+                  "RandomValueHelper.html#genCharArray": {
+                    "ref": "RandomValueHelper.html#genCharArray",
+                    "tf": 33.33333333333333
+                  },
+                  "Protocols.html#initGrpc": {
+                    "ref": "Protocols.html#initGrpc",
+                    "tf": 0.5747126436781609
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "w": {
+                  "docs": {
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 0.9090909090909091
+                    }
+                  }
+                }
+              }
+            }
+          },
           "i": {
             "docs": {},
             "l": {
@@ -3914,7 +4504,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.3205128205128205
+                    "tf": 0.29940119760479045
                   }
                 }
               }
@@ -3931,32 +4521,10 @@ window.lunrData = {
                       "docs": {
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.3205128205128205
+                          "tf": 0.29940119760479045
                         }
                       }
                     }
-                  }
-                }
-              }
-            }
-          },
-          "y": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "HandlerBarHelper.html#randomValueHelper": {
-                    "ref": "HandlerBarHelper.html#randomValueHelper",
-                    "tf": 8.571428571428571
-                  },
-                  "HandlerBarHelper.html#genCharArray": {
-                    "ref": "HandlerBarHelper.html#genCharArray",
-                    "tf": 33.33333333333333
-                  },
-                  "Protocols.html#initGrpc": {
-                    "ref": "Protocols.html#initGrpc",
-                    "tf": 0.5747126436781609
                   }
                 }
               }
@@ -4011,29 +4579,65 @@ window.lunrData = {
                       "ref": "GlobalController.html#register",
                       "tf": 0.7462686567164178
                     },
+                    "CodeHelper.html": {
+                      "ref": "CodeHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "InjectHelper.html": {
+                      "ref": "InjectHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "InjectHelper.html#register": {
+                      "ref": "InjectHelper.html#register",
+                      "tf": 2.631578947368421
+                    },
                     "MockController.html": {
                       "ref": "MockController.html",
                       "tf": 12.5
                     },
-                    "GrpcParser.html": {
-                      "ref": "GrpcParser.html",
-                      "tf": 2.7777777777777777
+                    "NowHelper.html": {
+                      "ref": "NowHelper.html",
+                      "tf": 8.333333333333332
                     },
-                    "HttpParser.html": {
-                      "ref": "HttpParser.html",
-                      "tf": 2.941176470588235
+                    "NowHelper.html#register": {
+                      "ref": "NowHelper.html#register",
+                      "tf": 0.8620689655172413
                     },
-                    "HttpParser.html#getResponse": {
-                      "ref": "HttpParser.html#getResponse",
-                      "tf": 3.571428571428571
+                    "NumBetweenHelper.html": {
+                      "ref": "NumBetweenHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "RandomValueHelper.html": {
+                      "ref": "RandomValueHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "CsvHelper.html": {
+                      "ref": "CsvHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 1.8181818181818181
+                    },
+                    "FileHelper.html": {
+                      "ref": "FileHelper.html",
+                      "tf": 8.333333333333332
+                    },
+                    "FileHelper.html#register": {
+                      "ref": "FileHelper.html#register",
+                      "tf": 2.380952380952381
+                    },
+                    "RequestHelper.html": {
+                      "ref": "RequestHelper.html",
+                      "tf": 8.333333333333332
                     },
                     "HandlerBarHelper.html": {
                       "ref": "HandlerBarHelper.html",
                       "tf": 5.555555555555555
-                    },
-                    "HandlerBarHelper.html#nowHelper": {
-                      "ref": "HandlerBarHelper.html#nowHelper",
-                      "tf": 0.8620689655172413
                     },
                     "HandlerBarHelper.html#fileHelper": {
                       "ref": "HandlerBarHelper.html#fileHelper",
@@ -4046,6 +4650,18 @@ window.lunrData = {
                     "HandlerBarHelper.html#injectHelper": {
                       "ref": "HandlerBarHelper.html#injectHelper",
                       "tf": 2.631578947368421
+                    },
+                    "GrpcParser.html": {
+                      "ref": "GrpcParser.html",
+                      "tf": 2.7777777777777777
+                    },
+                    "HttpParser.html": {
+                      "ref": "HttpParser.html",
+                      "tf": 2.941176470588235
+                    },
+                    "HttpParser.html#getResponse": {
+                      "ref": "HttpParser.html#getResponse",
+                      "tf": 3.571428571428571
                     },
                     "BackupScheduler.html": {
                       "ref": "BackupScheduler.html",
@@ -4077,21 +4693,21 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
+                        "NowHelper.html#register": {
+                          "ref": "NowHelper.html#register",
+                          "tf": 2.586206896551724
+                        },
+                        "RandomValueHelper.html#register": {
+                          "ref": "RandomValueHelper.html#register",
+                          "tf": 2.857142857142857
+                        },
                         "HttpParser.html#getResponse": {
                           "ref": "HttpParser.html#getResponse",
                           "tf": 7.142857142857142
                         },
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.641025641025641
-                        },
-                        "HandlerBarHelper.html#nowHelper": {
-                          "ref": "HandlerBarHelper.html#nowHelper",
-                          "tf": 2.586206896551724
-                        },
-                        "HandlerBarHelper.html#randomValueHelper": {
-                          "ref": "HandlerBarHelper.html#randomValueHelper",
-                          "tf": 2.857142857142857
+                          "tf": 0.5988023952095809
                         }
                       }
                     }
@@ -4161,7 +4777,24 @@ window.lunrData = {
                     },
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.9615384615384616
+                      "tf": 0.8982035928143712
+                    }
+                  }
+                }
+              },
+              "i": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "HttpParser.html#prepareResponse": {
+                          "ref": "HttpParser.html#prepareResponse",
+                          "tf": 0.5988023952095809
+                        }
+                      }
                     }
                   }
                 }
@@ -4322,8 +4955,8 @@ window.lunrData = {
             "docs": {},
             "y": {
               "docs": {
-                "HandlerBarHelper.html#nowHelper": {
-                  "ref": "HandlerBarHelper.html#nowHelper",
+                "NowHelper.html#register": {
+                  "ref": "NowHelper.html#register",
                   "tf": 1.7241379310344827
                 }
               }
@@ -4331,8 +4964,8 @@ window.lunrData = {
           },
           "d": {
             "docs": {
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
                 "tf": 0.8620689655172413
               }
             }
@@ -4441,6 +5074,22 @@ window.lunrData = {
                       "ref": "GlobalController.html#register",
                       "tf": 2.2388059701492535
                     },
+                    "RandomValueHelper.html#register": {
+                      "ref": "RandomValueHelper.html#register",
+                      "tf": 1.4285714285714286
+                    },
+                    "RandomValueHelper.html#randomString": {
+                      "ref": "RandomValueHelper.html#randomString",
+                      "tf": 12.5
+                    },
+                    "RandomValueHelper.html#randomFixedInteger": {
+                      "ref": "RandomValueHelper.html#randomFixedInteger",
+                      "tf": 10
+                    },
+                    "RandomValueHelper.html#genCharArray": {
+                      "ref": "RandomValueHelper.html#genCharArray",
+                      "tf": 7.142857142857142
+                    },
                     "GrpcParser.html#camouflageMock": {
                       "ref": "GrpcParser.html#camouflageMock",
                       "tf": 1.3157894736842104
@@ -4463,23 +5112,7 @@ window.lunrData = {
                     },
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.9615384615384616
-                    },
-                    "HandlerBarHelper.html#randomValueHelper": {
-                      "ref": "HandlerBarHelper.html#randomValueHelper",
-                      "tf": 1.4285714285714286
-                    },
-                    "HandlerBarHelper.html#randomString": {
-                      "ref": "HandlerBarHelper.html#randomString",
-                      "tf": 12.5
-                    },
-                    "HandlerBarHelper.html#randomFixedInteger": {
-                      "ref": "HandlerBarHelper.html#randomFixedInteger",
-                      "tf": 10
-                    },
-                    "HandlerBarHelper.html#genCharArray": {
-                      "ref": "HandlerBarHelper.html#genCharArray",
-                      "tf": 7.142857142857142
+                      "tf": 0.8982035928143712
                     },
                     "Protocols.html#initGrpc": {
                       "ref": "Protocols.html#initGrpc",
@@ -4506,8 +5139,8 @@ window.lunrData = {
                               "docs": {},
                               "y": {
                                 "docs": {
-                                  "HandlerBarHelper.html#genCharArray": {
-                                    "ref": "HandlerBarHelper.html#genCharArray",
+                                  "RandomValueHelper.html#genCharArray": {
+                                    "ref": "RandomValueHelper.html#genCharArray",
                                     "tf": 683.3333333333334
                                   }
                                 }
@@ -4623,13 +5256,13 @@ window.lunrData = {
                 },
                 "n": {
                   "docs": {
+                    "RandomValueHelper.html#randomFixedInteger": {
+                      "ref": "RandomValueHelper.html#randomFixedInteger",
+                      "tf": 10
+                    },
                     "WebsocketParser.html#send": {
                       "ref": "WebsocketParser.html#send",
                       "tf": 2.380952380952381
-                    },
-                    "HandlerBarHelper.html#randomFixedInteger": {
-                      "ref": "HandlerBarHelper.html#randomFixedInteger",
-                      "tf": 10
                     },
                     "Protocols.html#initGrpc": {
                       "ref": "Protocols.html#initGrpc",
@@ -4642,6 +5275,30 @@ window.lunrData = {
           },
           "r": {
             "docs": {},
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "NumBetweenHelper.html#register": {
+                          "ref": "NumBetweenHelper.html#register",
+                          "tf": 2.7777777777777777
+                        },
+                        "HandlerBarHelper.html#numBetweenHelper": {
+                          "ref": "HandlerBarHelper.html#numBetweenHelper",
+                          "tf": 2.7777777777777777
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "p": {
               "docs": {},
               "c": {
@@ -5002,26 +5659,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "HandlerBarHelper.html#numBetweenHelper": {
-                          "ref": "HandlerBarHelper.html#numBetweenHelper",
-                          "tf": 2.7777777777777777
-                        }
-                      }
-                    }
-                  }
-                }
-              }
             }
           }
         },
@@ -5047,13 +5684,49 @@ window.lunrData = {
                       "ref": "GlobalController.html#register",
                       "tf": 0.7462686567164178
                     },
+                    "CodeHelper.html": {
+                      "ref": "CodeHelper.html",
+                      "tf": 110
+                    },
+                    "InjectHelper.html": {
+                      "ref": "InjectHelper.html",
+                      "tf": 110
+                    },
                     "MockController.html": {
                       "ref": "MockController.html",
+                      "tf": 110
+                    },
+                    "NowHelper.html": {
+                      "ref": "NowHelper.html",
+                      "tf": 110
+                    },
+                    "NumBetweenHelper.html": {
+                      "ref": "NumBetweenHelper.html",
+                      "tf": 110
+                    },
+                    "RandomValueHelper.html": {
+                      "ref": "RandomValueHelper.html",
                       "tf": 110
                     },
                     "WebsocketParser.html": {
                       "ref": "WebsocketParser.html",
                       "tf": 120
+                    },
+                    "CsvHelper.html": {
+                      "ref": "CsvHelper.html",
+                      "tf": 110
+                    },
+                    "FileHelper.html": {
+                      "ref": "FileHelper.html",
+                      "tf": 110
+                    },
+                    "RequestHelper.html": {
+                      "ref": "RequestHelper.html",
+                      "tf": 110
+                    },
+                    "HandlerBarHelper.html": {
+                      "ref": "HandlerBarHelper.html",
+                      "tf": 110
                     },
                     "GrpcParser.html": {
                       "ref": "GrpcParser.html",
@@ -5062,10 +5735,6 @@ window.lunrData = {
                     "HttpParser.html": {
                       "ref": "HttpParser.html",
                       "tf": 112.94117647058823
-                    },
-                    "HandlerBarHelper.html": {
-                      "ref": "HandlerBarHelper.html",
-                      "tf": 110
                     },
                     "BackupScheduler.html": {
                       "ref": "BackupScheduler.html",
@@ -5187,35 +5856,24 @@ window.lunrData = {
                 },
                 "e": {
                   "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "GrpcParser.html#camouflageMockServerStream": {
-                          "ref": "GrpcParser.html#camouflageMockServerStream",
-                          "tf": 0.9803921568627451
-                        },
-                        "GrpcParser.html#camouflageMockClientStream": {
-                          "ref": "GrpcParser.html#camouflageMockClientStream",
-                          "tf": 1.0416666666666665
-                        },
-                        "HttpParser.html": {
-                          "ref": "HttpParser.html",
-                          "tf": 2.941176470588235
-                        },
-                        "HttpParser.html#prepareResponse": {
-                          "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.9615384615384616
-                        }
-                      }
-                    }
-                  },
                   "x": {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "HandlerBarHelper.html#requestHelper": {
-                          "ref": "HandlerBarHelper.html#requestHelper",
+                        "CodeHelper.html#register": {
+                          "ref": "CodeHelper.html#register",
+                          "tf": 1.3513513513513513
+                        },
+                        "InjectHelper.html#register": {
+                          "ref": "InjectHelper.html#register",
+                          "tf": 2.631578947368421
+                        },
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 0.9090909090909091
+                        },
+                        "RequestHelper.html#register": {
+                          "ref": "RequestHelper.html#register",
                           "tf": 1.0869565217391304
                         },
                         "HandlerBarHelper.html#codeHelper": {
@@ -5251,8 +5909,8 @@ window.lunrData = {
                                             "docs": {},
                                             "t": {
                                               "docs": {
-                                                "HandlerBarHelper.html#nowHelper": {
-                                                  "ref": "HandlerBarHelper.html#nowHelper",
+                                                "NowHelper.html#register": {
+                                                  "ref": "NowHelper.html#register",
                                                   "tf": 0.8620689655172413
                                                 }
                                               }
@@ -5269,6 +5927,29 @@ window.lunrData = {
                         }
                       }
                     }
+                  },
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "GrpcParser.html#camouflageMockServerStream": {
+                          "ref": "GrpcParser.html#camouflageMockServerStream",
+                          "tf": 0.9803921568627451
+                        },
+                        "GrpcParser.html#camouflageMockClientStream": {
+                          "ref": "GrpcParser.html#camouflageMockClientStream",
+                          "tf": 1.0416666666666665
+                        },
+                        "HttpParser.html": {
+                          "ref": "HttpParser.html",
+                          "tf": 2.941176470588235
+                        },
+                        "HttpParser.html#prepareResponse": {
+                          "ref": "HttpParser.html#prepareResponse",
+                          "tf": 1.1976047904191618
+                        }
+                      }
+                    }
                   }
                 },
                 "a": {
@@ -5279,7 +5960,7 @@ window.lunrData = {
                       "docs": {
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.3205128205128205
+                          "tf": 0.5988023952095809
                         }
                       }
                     }
@@ -5348,7 +6029,7 @@ window.lunrData = {
                         "docs": {
                           "HttpParser.html#prepareResponse": {
                             "ref": "HttpParser.html#prepareResponse",
-                            "tf": 0.3205128205128205
+                            "tf": 0.29940119760479045
                           }
                         }
                       }
@@ -5364,7 +6045,7 @@ window.lunrData = {
                     "docs": {
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -5464,7 +6145,7 @@ window.lunrData = {
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.641025641025641
+                        "tf": 0.5988023952095809
                       }
                     }
                   }
@@ -5475,9 +6156,21 @@ window.lunrData = {
               "docs": {},
               "e": {
                 "docs": {
-                  "HttpParser.html#prepareResponse": {
-                    "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.641025641025641
+                  "CodeHelper.html": {
+                    "ref": "CodeHelper.html",
+                    "tf": 8.333333333333332
+                  },
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 2.7027027027027026
+                  },
+                  "InjectHelper.html#register": {
+                    "ref": "InjectHelper.html#register",
+                    "tf": 2.631578947368421
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 0.9090909090909091
                   },
                   "HandlerBarHelper.html#codeHelper": {
                     "ref": "HandlerBarHelper.html#codeHelper",
@@ -5486,6 +6179,10 @@ window.lunrData = {
                   "HandlerBarHelper.html#injectHelper": {
                     "ref": "HandlerBarHelper.html#injectHelper",
                     "tf": 2.631578947368421
+                  },
+                  "HttpParser.html#prepareResponse": {
+                    "ref": "HttpParser.html#prepareResponse",
+                    "tf": 0.5988023952095809
                   }
                 },
                 "h": {
@@ -5496,9 +6193,45 @@ window.lunrData = {
                       "docs": {},
                       "p": {
                         "docs": {
+                          "CodeHelper.html": {
+                            "ref": "CodeHelper.html",
+                            "tf": 1900
+                          },
                           "HandlerBarHelper.html#codeHelper": {
                             "ref": "HandlerBarHelper.html#codeHelper",
                             "tf": 700
+                          }
+                        },
+                        "e": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "#": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "g": {
+                                    "docs": {},
+                                    "i": {
+                                      "docs": {},
+                                      "s": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "CodeHelper.html#register": {
+                                              "ref": "CodeHelper.html#register",
+                                              "tf": 1150
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -5591,6 +6324,55 @@ window.lunrData = {
           },
           "u": {
             "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "CodeHelper.html": {
+                        "ref": "CodeHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "InjectHelper.html": {
+                        "ref": "InjectHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NowHelper.html": {
+                        "ref": "NowHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "NumBetweenHelper.html": {
+                        "ref": "NumBetweenHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RandomValueHelper.html": {
+                        "ref": "RandomValueHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "CsvHelper.html": {
+                        "ref": "CsvHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "FileHelper.html": {
+                        "ref": "FileHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "RequestHelper.html": {
+                        "ref": "RequestHelper.html",
+                        "tf": 8.333333333333332
+                      },
+                      "HandlerBarHelper.html": {
+                        "ref": "HandlerBarHelper.html",
+                        "tf": 5.555555555555555
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "r": {
               "docs": {},
               "r": {
@@ -5607,7 +6389,7 @@ window.lunrData = {
                         },
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.641025641025641
+                          "tf": 0.5988023952095809
                         },
                         "Protocols.html": {
                           "ref": "Protocols.html",
@@ -5618,18 +6400,59 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "s": {
+            }
+          },
+          "h": {
+            "docs": {},
+            "e": {
               "docs": {},
-              "t": {
+              "c": {
                 "docs": {},
-                "o": {
+                "k": {
+                  "docs": {
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "FileHelper.html#register": {
+                      "ref": "FileHelper.html#register",
+                      "tf": 2.380952380952381
+                    },
+                    "HandlerBarHelper.html#fileHelper": {
+                      "ref": "HandlerBarHelper.html#fileHelper",
+                      "tf": 2.380952380952381
+                    },
+                    "HandlerBarHelper.html#codeHelper": {
+                      "ref": "HandlerBarHelper.html#codeHelper",
+                      "tf": 1.3513513513513513
+                    }
+                  }
+                }
+              }
+            },
+            "a": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "RandomValueHelper.html#randomString": {
+                    "ref": "RandomValueHelper.html#randomString",
+                    "tf": 25
+                  }
+                },
+                "a": {
                   "docs": {},
-                  "m": {
-                    "docs": {
-                      "HandlerBarHelper.html": {
-                        "ref": "HandlerBarHelper.html",
-                        "tf": 5.555555555555555
+                  "c": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "RandomValueHelper.html#randomString": {
+                          "ref": "RandomValueHelper.html#randomString",
+                          "tf": 12.5
+                        },
+                        "RandomValueHelper.html#genCharArray": {
+                          "ref": "RandomValueHelper.html#genCharArray",
+                          "tf": 7.142857142857142
+                        }
                       }
                     }
                   }
@@ -5643,6 +6466,14 @@ window.lunrData = {
               "docs": {},
               "l": {
                 "docs": {
+                  "NowHelper.html#register": {
+                    "ref": "NowHelper.html#register",
+                    "tf": 0.8620689655172413
+                  },
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
+                    "tf": 2.1739130434782608
+                  },
                   "GrpcParser.html": {
                     "ref": "GrpcParser.html",
                     "tf": 11.11111111111111
@@ -5662,14 +6493,6 @@ window.lunrData = {
                   "GrpcParser.html#camouflageMockBidiStream": {
                     "ref": "GrpcParser.html#camouflageMockBidiStream",
                     "tf": 35.18518518518518
-                  },
-                  "HandlerBarHelper.html#nowHelper": {
-                    "ref": "HandlerBarHelper.html#nowHelper",
-                    "tf": 0.8620689655172413
-                  },
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
-                    "tf": 2.1739130434782608
                   }
                 },
                 "b": {
@@ -5731,6 +6554,27 @@ window.lunrData = {
                             }
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
+                        "tf": 2.1739130434782608
+                      },
+                      "HandlerBarHelper.html": {
+                        "ref": "HandlerBarHelper.html",
+                        "tf": 5.555555555555555
                       }
                     }
                   }
@@ -5903,71 +6747,68 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "p": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "HandlerBarHelper.html": {
-                        "ref": "HandlerBarHelper.html",
-                        "tf": 5.555555555555555
-                      },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
-                        "tf": 2.1739130434782608
-                      }
-                    }
-                  }
-                }
-              }
             }
           },
-          "h": {
+          "s": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "HandlerBarHelper.html#fileHelper": {
-                      "ref": "HandlerBarHelper.html#fileHelper",
-                      "tf": 2.380952380952381
-                    },
-                    "HandlerBarHelper.html#codeHelper": {
-                      "ref": "HandlerBarHelper.html#codeHelper",
-                      "tf": 1.3513513513513513
-                    }
-                  }
-                }
-              }
-            },
-            "a": {
-              "docs": {},
-              "r": {
-                "docs": {
-                  "HandlerBarHelper.html#randomString": {
-                    "ref": "HandlerBarHelper.html#randomString",
-                    "tf": 25
-                  }
+            "v": {
+              "docs": {
+                "CsvHelper.html": {
+                  "ref": "CsvHelper.html",
+                  "tf": 8.333333333333332
                 },
-                "a": {
+                "CsvHelper.html#register": {
+                  "ref": "CsvHelper.html#register",
+                  "tf": 2.727272727272727
+                },
+                "RequestHelper.html": {
+                  "ref": "RequestHelper.html",
+                  "tf": 8.333333333333332
+                }
+              },
+              "h": {
+                "docs": {},
+                "e": {
                   "docs": {},
-                  "c": {
+                  "l": {
                     "docs": {},
-                    "t": {
-                      "docs": {
-                        "HandlerBarHelper.html#randomString": {
-                          "ref": "HandlerBarHelper.html#randomString",
-                          "tf": 12.5
-                        },
-                        "HandlerBarHelper.html#genCharArray": {
-                          "ref": "HandlerBarHelper.html#genCharArray",
-                          "tf": 7.142857142857142
+                    "p": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "r": {
+                          "docs": {
+                            "CsvHelper.html": {
+                              "ref": "CsvHelper.html",
+                              "tf": 1900
+                            }
+                          },
+                          "#": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {
+                                          "CsvHelper.html#register": {
+                                            "ref": "CsvHelper.html#register",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -6043,60 +6884,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 3.8461538461538463
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "v": {
-                "docs": {
-                  "WebsocketParser.html#sendConnect": {
-                    "ref": "WebsocketParser.html#sendConnect",
-                    "tf": 4.166666666666666
-                  }
-                }
-              }
-            },
-            "v": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "HttpParser.html#getResponse": {
-                      "ref": "HttpParser.html#getResponse",
-                      "tf": 3.571428571428571
-                    }
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
-                        "tf": 4.285714285714286
-                      },
-                      "HandlerBarHelper.html#randomString": {
-                        "ref": "HandlerBarHelper.html#randomString",
-                        "tf": 25
-                      },
-                      "HandlerBarHelper.html#randomFixedInteger": {
-                        "ref": "HandlerBarHelper.html#randomFixedInteger",
-                        "tf": 43.33333333333333
-                      }
-                    }
+                    "tf": 3.592814371257485
                   }
                 }
               }
@@ -6106,6 +6894,26 @@ window.lunrData = {
             "docs": {},
             "g": {
               "docs": {
+                "NumBetweenHelper.html#register": {
+                  "ref": "NumBetweenHelper.html#register",
+                  "tf": 2.7777777777777777
+                },
+                "CsvHelper.html#register": {
+                  "ref": "CsvHelper.html#register",
+                  "tf": 0.9090909090909091
+                },
+                "FileHelper.html#register": {
+                  "ref": "FileHelper.html#register",
+                  "tf": 2.380952380952381
+                },
+                "HandlerBarHelper.html#numBetweenHelper": {
+                  "ref": "HandlerBarHelper.html#numBetweenHelper",
+                  "tf": 2.7777777777777777
+                },
+                "HandlerBarHelper.html#fileHelper": {
+                  "ref": "HandlerBarHelper.html#fileHelper",
+                  "tf": 2.380952380952381
+                },
                 "GrpcParser.html#camouflageMock": {
                   "ref": "GrpcParser.html#camouflageMock",
                   "tf": 1.3157894736842104
@@ -6121,25 +6929,6 @@ window.lunrData = {
                 "GrpcParser.html#camouflageMockBidiStream": {
                   "ref": "GrpcParser.html#camouflageMockBidiStream",
                   "tf": 0.9259259259259258
-                },
-                "HandlerBarHelper.html#numBetweenHelper": {
-                  "ref": "HandlerBarHelper.html#numBetweenHelper",
-                  "tf": 2.7777777777777777
-                },
-                "HandlerBarHelper.html#fileHelper": {
-                  "ref": "HandlerBarHelper.html#fileHelper",
-                  "tf": 2.380952380952381
-                }
-              },
-              "i": {
-                "docs": {},
-                "c": {
-                  "docs": {
-                    "HttpParser.html#prepareResponse": {
-                      "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.3205128205128205
-                    }
-                  }
                 }
               },
               "g": {
@@ -6148,6 +6937,18 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 2.7027027027027026
+                      },
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 2.631578947368421
+                      },
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 1.8181818181818181
+                      },
                       "HandlerBarHelper.html#codeHelper": {
                         "ref": "HandlerBarHelper.html#codeHelper",
                         "tf": 2.7027027027027026
@@ -6156,6 +6957,35 @@ window.lunrData = {
                         "ref": "HandlerBarHelper.html#injectHelper",
                         "tf": 2.631578947368421
                       }
+                    }
+                  }
+                }
+              },
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "HttpParser.html#prepareResponse": {
+                      "ref": "HttpParser.html#prepareResponse",
+                      "tf": 0.29940119760479045
+                    }
+                  }
+                }
+              }
+            },
+            "w": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "NumBetweenHelper.html#register": {
+                      "ref": "NumBetweenHelper.html#register",
+                      "tf": 5.555555555555555
+                    },
+                    "HandlerBarHelper.html#numBetweenHelper": {
+                      "ref": "HandlerBarHelper.html#numBetweenHelper",
+                      "tf": 5.555555555555555
                     }
                   }
                 }
@@ -6172,20 +7002,6 @@ window.lunrData = {
                   "BackupScheduler.html#createBackup": {
                     "ref": "BackupScheduler.html#createBackup",
                     "tf": 1.7241379310344827
-                  }
-                }
-              }
-            },
-            "w": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "HandlerBarHelper.html#numBetweenHelper": {
-                      "ref": "HandlerBarHelper.html#numBetweenHelper",
-                      "tf": 5.555555555555555
-                    }
                   }
                 }
               }
@@ -6216,6 +7032,59 @@ window.lunrData = {
               }
             }
           },
+          "e": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
+                        "tf": 4.285714285714286
+                      },
+                      "RandomValueHelper.html#randomString": {
+                        "ref": "RandomValueHelper.html#randomString",
+                        "tf": 25
+                      },
+                      "RandomValueHelper.html#randomFixedInteger": {
+                        "ref": "RandomValueHelper.html#randomFixedInteger",
+                        "tf": 43.33333333333333
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "a": {
+              "docs": {},
+              "v": {
+                "docs": {
+                  "WebsocketParser.html#sendConnect": {
+                    "ref": "WebsocketParser.html#sendConnect",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "HttpParser.html#getResponse": {
+                      "ref": "HttpParser.html#getResponse",
+                      "tf": 3.571428571428571
+                    }
+                  }
+                }
+              }
+            }
+          },
           "a": {
             "docs": {},
             "s": {
@@ -6228,7 +7097,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.641025641025641
+                    "tf": 0.5988023952095809
                   }
                 }
               }
@@ -6239,8 +7108,8 @@ window.lunrData = {
           "docs": {},
           "d": {
             "docs": {
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
                 "tf": 0.8620689655172413
               }
             },
@@ -6282,8 +7151,8 @@ window.lunrData = {
             },
             "d": {
               "docs": {
-                "HandlerBarHelper.html#randomValueHelper": {
-                  "ref": "HandlerBarHelper.html#randomValueHelper",
+                "RandomValueHelper.html#register": {
+                  "ref": "RandomValueHelper.html#register",
                   "tf": 1.4285714285714286
                 },
                 "Protocols.html#initGrpc": {
@@ -6295,8 +7164,8 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
                       "tf": 2.1739130434782608
                     }
                   }
@@ -6325,8 +7194,8 @@ window.lunrData = {
                   "docs": {},
                   "t": {
                     "docs": {
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
                         "tf": 1.0869565217391304
                       }
                     }
@@ -6345,7 +7214,7 @@ window.lunrData = {
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -6378,7 +7247,7 @@ window.lunrData = {
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.641025641025641
+                        "tf": 0.5988023952095809
                       }
                     }
                   }
@@ -6426,6 +7295,26 @@ window.lunrData = {
                   }
                 }
               },
+              "r": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "p": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "i": {
+                        "docs": {
+                          "CsvHelper.html#register": {
+                            "ref": "CsvHelper.html#register",
+                            "tf": 0.9090909090909091
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "l": {
                 "docs": {},
                 "i": {
@@ -6467,28 +7356,30 @@ window.lunrData = {
               }
             }
           },
-          "m": {
+          "l": {
             "docs": {},
-            "o": {
+            "l": {
               "docs": {},
-              "u": {
+              "o": {
                 "docs": {},
-                "n": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 0.8620689655172413
-                      }
+                "w": {
+                  "docs": {
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 0.9090909090909091
+                    },
+                    "HandlerBarHelper.html#codeHelper": {
+                      "ref": "HandlerBarHelper.html#codeHelper",
+                      "tf": 1.3513513513513513
                     }
                   }
                 }
               }
-            }
-          },
-          "l": {
-            "docs": {},
+            },
             "p": {
               "docs": {},
               "h": {
@@ -6501,8 +7392,8 @@ window.lunrData = {
                       "docs": {},
                       "t": {
                         "docs": {
-                          "HandlerBarHelper.html#randomValueHelper": {
-                            "ref": "HandlerBarHelper.html#randomValueHelper",
+                          "RandomValueHelper.html#register": {
+                            "ref": "RandomValueHelper.html#register",
                             "tf": 1.4285714285714286
                           }
                         }
@@ -6519,8 +7410,8 @@ window.lunrData = {
                           "docs": {},
                           "r": {
                             "docs": {
-                              "HandlerBarHelper.html#randomValueHelper": {
-                                "ref": "HandlerBarHelper.html#randomValueHelper",
+                              "RandomValueHelper.html#register": {
+                                "ref": "RandomValueHelper.html#register",
                                 "tf": 2.857142857142857
                               }
                             }
@@ -6531,16 +7422,22 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "l": {
+            }
+          },
+          "m": {
+            "docs": {},
+            "o": {
               "docs": {},
-              "o": {
+              "u": {
                 "docs": {},
-                "w": {
-                  "docs": {
-                    "HandlerBarHelper.html#codeHelper": {
-                      "ref": "HandlerBarHelper.html#codeHelper",
-                      "tf": 1.3513513513513513
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 0.8620689655172413
+                      }
                     }
                   }
                 }
@@ -6559,8 +7456,8 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "HandlerBarHelper.html#requestHelper": {
-                          "ref": "HandlerBarHelper.html#requestHelper",
+                        "RequestHelper.html#register": {
+                          "ref": "RequestHelper.html#register",
                           "tf": 1.0869565217391304
                         }
                       }
@@ -6736,69 +7633,33 @@ window.lunrData = {
               }
             }
           },
-          "m": {
+          "v": {
             "docs": {},
-            "i": {
+            "a": {
               "docs": {},
-              "t": {
-                "docs": {
-                  "WebsocketParser.html#send": {
-                    "ref": "WebsocketParser.html#send",
-                    "tf": 2.380952380952381
-                  }
-                }
-              }
-            },
-            "p": {
-              "docs": {},
-              "t": {
+              "l": {
                 "docs": {},
-                "i": {
+                "u": {
                   "docs": {
-                    "HttpParser.html#prepareResponse": {
-                      "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.3205128205128205
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "GrpcParser.html#camouflageMock": {
-                      "ref": "GrpcParser.html#camouflageMock",
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "InjectHelper.html#register": {
+                      "ref": "InjectHelper.html#register",
                       "tf": 2.631578947368421
                     },
-                    "GrpcParser.html#camouflageMockServerStream": {
-                      "ref": "GrpcParser.html#camouflageMockServerStream",
-                      "tf": 1.9607843137254901
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 1.8181818181818181
                     },
-                    "GrpcParser.html#camouflageMockClientStream": {
-                      "ref": "GrpcParser.html#camouflageMockClientStream",
-                      "tf": 2.083333333333333
+                    "HandlerBarHelper.html#codeHelper": {
+                      "ref": "HandlerBarHelper.html#codeHelper",
+                      "tf": 1.3513513513513513
                     },
-                    "GrpcParser.html#camouflageMockBidiStream": {
-                      "ref": "GrpcParser.html#camouflageMockBidiStream",
-                      "tf": 1.8518518518518516
-                    },
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
-                      "tf": 2.1739130434782608
-                    },
-                    "HandlerBarHelper.html#numBetweenHelper": {
-                      "ref": "HandlerBarHelper.html#numBetweenHelper",
-                      "tf": 2.7777777777777777
-                    },
-                    "HandlerBarHelper.html#fileHelper": {
-                      "ref": "HandlerBarHelper.html#fileHelper",
-                      "tf": 2.380952380952381
+                    "HandlerBarHelper.html#injectHelper": {
+                      "ref": "HandlerBarHelper.html#injectHelper",
+                      "tf": 2.631578947368421
                     }
                   }
                 }
@@ -6807,6 +7668,48 @@ window.lunrData = {
           },
           "x": {
             "docs": {},
+            "i": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "FileHelper.html#register": {
+                      "ref": "FileHelper.html#register",
+                      "tf": 2.380952380952381
+                    },
+                    "HandlerBarHelper.html#fileHelper": {
+                      "ref": "HandlerBarHelper.html#fileHelper",
+                      "tf": 2.380952380952381
+                    },
+                    "HandlerBarHelper.html#codeHelper": {
+                      "ref": "HandlerBarHelper.html#codeHelper",
+                      "tf": 1.3513513513513513
+                    },
+                    "GrpcParser.html#camouflageMock": {
+                      "ref": "GrpcParser.html#camouflageMock",
+                      "tf": 1.3157894736842104
+                    },
+                    "GrpcParser.html#camouflageMockServerStream": {
+                      "ref": "GrpcParser.html#camouflageMockServerStream",
+                      "tf": 0.9803921568627451
+                    },
+                    "GrpcParser.html#camouflageMockClientStream": {
+                      "ref": "GrpcParser.html#camouflageMockClientStream",
+                      "tf": 1.0416666666666665
+                    },
+                    "GrpcParser.html#camouflageMockBidiStream": {
+                      "ref": "GrpcParser.html#camouflageMockBidiStream",
+                      "tf": 0.9259259259259258
+                    }
+                  }
+                }
+              }
+            },
             "e": {
               "docs": {},
               "c": {
@@ -6823,40 +7726,6 @@ window.lunrData = {
                         "ref": "GrpcParser.html#camouflageMockServerStream",
                         "tf": 1.9607843137254901
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "GrpcParser.html#camouflageMock": {
-                      "ref": "GrpcParser.html#camouflageMock",
-                      "tf": 1.3157894736842104
-                    },
-                    "GrpcParser.html#camouflageMockServerStream": {
-                      "ref": "GrpcParser.html#camouflageMockServerStream",
-                      "tf": 0.9803921568627451
-                    },
-                    "GrpcParser.html#camouflageMockClientStream": {
-                      "ref": "GrpcParser.html#camouflageMockClientStream",
-                      "tf": 1.0416666666666665
-                    },
-                    "GrpcParser.html#camouflageMockBidiStream": {
-                      "ref": "GrpcParser.html#camouflageMockBidiStream",
-                      "tf": 0.9259259259259258
-                    },
-                    "HandlerBarHelper.html#fileHelper": {
-                      "ref": "HandlerBarHelper.html#fileHelper",
-                      "tf": 2.380952380952381
-                    },
-                    "HandlerBarHelper.html#codeHelper": {
-                      "ref": "HandlerBarHelper.html#codeHelper",
-                      "tf": 1.3513513513513513
                     }
                   }
                 }
@@ -6890,7 +7759,7 @@ window.lunrData = {
                                       "docs": {
                                         "HttpParser.html#prepareResponse": {
                                           "ref": "HttpParser.html#prepareResponse",
-                                          "tf": 0.3205128205128205
+                                          "tf": 0.29940119760479045
                                         }
                                       }
                                     }
@@ -6901,6 +7770,118 @@ window.lunrData = {
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "g": {
+            "docs": {
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
+                "tf": 0.8620689655172413
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "NowHelper.html#register": {
+                          "ref": "NowHelper.html#register",
+                          "tf": 1.7241379310344827
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "NumBetweenHelper.html#register": {
+                      "ref": "NumBetweenHelper.html#register",
+                      "tf": 2.7777777777777777
+                    },
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 1.8181818181818181
+                    },
+                    "FileHelper.html#register": {
+                      "ref": "FileHelper.html#register",
+                      "tf": 2.380952380952381
+                    },
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
+                      "tf": 2.1739130434782608
+                    },
+                    "HandlerBarHelper.html#numBetweenHelper": {
+                      "ref": "HandlerBarHelper.html#numBetweenHelper",
+                      "tf": 2.7777777777777777
+                    },
+                    "HandlerBarHelper.html#fileHelper": {
+                      "ref": "HandlerBarHelper.html#fileHelper",
+                      "tf": 2.380952380952381
+                    },
+                    "GrpcParser.html#camouflageMock": {
+                      "ref": "GrpcParser.html#camouflageMock",
+                      "tf": 2.631578947368421
+                    },
+                    "GrpcParser.html#camouflageMockServerStream": {
+                      "ref": "GrpcParser.html#camouflageMockServerStream",
+                      "tf": 1.9607843137254901
+                    },
+                    "GrpcParser.html#camouflageMockClientStream": {
+                      "ref": "GrpcParser.html#camouflageMockClientStream",
+                      "tf": 2.083333333333333
+                    },
+                    "GrpcParser.html#camouflageMockBidiStream": {
+                      "ref": "GrpcParser.html#camouflageMockBidiStream",
+                      "tf": 1.8518518518518516
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "m": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "WebsocketParser.html#send": {
+                    "ref": "WebsocketParser.html#send",
+                    "tf": 2.380952380952381
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "HttpParser.html#prepareResponse": {
+                      "ref": "HttpParser.html#prepareResponse",
+                      "tf": 0.29940119760479045
                     }
                   }
                 }
@@ -6924,58 +7905,6 @@ window.lunrData = {
                 }
               }
             }
-          },
-          "g": {
-            "docs": {
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
-                "tf": 0.8620689655172413
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "HandlerBarHelper.html#nowHelper": {
-                          "ref": "HandlerBarHelper.html#nowHelper",
-                          "tf": 1.7241379310344827
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "v": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "u": {
-                  "docs": {
-                    "HandlerBarHelper.html#codeHelper": {
-                      "ref": "HandlerBarHelper.html#codeHelper",
-                      "tf": 1.3513513513513513
-                    },
-                    "HandlerBarHelper.html#injectHelper": {
-                      "ref": "HandlerBarHelper.html#injectHelper",
-                      "tf": 2.631578947368421
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "m": {
@@ -6991,6 +7920,10 @@ window.lunrData = {
                     "GlobalController.html#register": {
                       "ref": "GlobalController.html#register",
                       "tf": 1.4925373134328357
+                    },
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 0.9090909090909091
                     },
                     "HttpParser.html": {
                       "ref": "HttpParser.html",
@@ -7049,8 +7982,8 @@ window.lunrData = {
                         "docs": {},
                         "i": {
                           "docs": {
-                            "HandlerBarHelper.html#requestHelper": {
-                              "ref": "HandlerBarHelper.html#requestHelper",
+                            "RequestHelper.html#register": {
+                              "ref": "RequestHelper.html#register",
                               "tf": 2.1739130434782608
                             }
                           }
@@ -7085,7 +8018,7 @@ window.lunrData = {
               "docs": {
                 "HttpParser.html#prepareResponse": {
                   "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
+                  "tf": 0.29940119760479045
                 }
               },
               "h": {
@@ -7169,6 +8102,10 @@ window.lunrData = {
               "docs": {},
               "k": {
                 "docs": {
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 1.3513513513513513
+                  },
                   "MockController.html#register": {
                     "ref": "MockController.html#register",
                     "tf": 10
@@ -7176,6 +8113,14 @@ window.lunrData = {
                   "WebsocketParser.html": {
                     "ref": "WebsocketParser.html",
                     "tf": 10
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 0.9090909090909091
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 1.3513513513513513
                   },
                   "GrpcParser.html": {
                     "ref": "GrpcParser.html",
@@ -7200,10 +8145,6 @@ window.lunrData = {
                   "HttpParser.html": {
                     "ref": "HttpParser.html",
                     "tf": 2.941176470588235
-                  },
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 1.3513513513513513
                   },
                   "BackupScheduler.html#createBackup": {
                     "ref": "BackupScheduler.html#createBackup",
@@ -7316,7 +8257,7 @@ window.lunrData = {
                         },
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 50.32051282051282
+                          "tf": 50.59880239520958
                         }
                       }
                     }
@@ -7341,8 +8282,8 @@ window.lunrData = {
           },
           "m": {
             "docs": {
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
                 "tf": 0.8620689655172413
               }
             }
@@ -7364,12 +8305,16 @@ window.lunrData = {
                         "ref": "GlobalController.html#register",
                         "tf": 2.9850746268656714
                       },
-                      "HttpParser.html#prepareResponse": {
-                        "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                      "CodeHelper.html#register": {
+                        "ref": "CodeHelper.html#register",
+                        "tf": 1.3513513513513513
                       },
-                      "HandlerBarHelper.html#requestHelper": {
-                        "ref": "HandlerBarHelper.html#requestHelper",
+                      "InjectHelper.html#register": {
+                        "ref": "InjectHelper.html#register",
+                        "tf": 2.631578947368421
+                      },
+                      "RequestHelper.html#register": {
+                        "ref": "RequestHelper.html#register",
                         "tf": 1.0869565217391304
                       },
                       "HandlerBarHelper.html#codeHelper": {
@@ -7379,6 +8324,10 @@ window.lunrData = {
                       "HandlerBarHelper.html#injectHelper": {
                         "ref": "HandlerBarHelper.html#injectHelper",
                         "tf": 2.631578947368421
+                      },
+                      "HttpParser.html#prepareResponse": {
+                        "ref": "HttpParser.html#prepareResponse",
+                        "tf": 0.29940119760479045
                       },
                       "Protocols.html#initGrpc": {
                         "ref": "Protocols.html#initGrpc",
@@ -7390,8 +8339,36 @@ window.lunrData = {
               }
             }
           },
+          "f": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 6.896551724137931
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "n": {
             "docs": {
+              "CsvHelper.html#register": {
+                "ref": "CsvHelper.html#register",
+                "tf": 0.9090909090909091
+              },
+              "HttpParser.html#prepareResponse": {
+                "ref": "HttpParser.html#prepareResponse",
+                "tf": 0.29940119760479045
+              },
               "Protocols.html#initGrpc": {
                 "ref": "Protocols.html#initGrpc",
                 "tf": 0.5747126436781609
@@ -7445,27 +8422,7 @@ window.lunrData = {
                     "docs": {
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "f": {
-            "docs": {},
-            "f": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 6.896551724137931
+                        "tf": 0.29940119760479045
                       }
                     }
                   }
@@ -7507,7 +8464,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.9615384615384616
+                    "tf": 0.8982035928143712
                   }
                 },
                 "e": {
@@ -7532,7 +8489,7 @@ window.lunrData = {
                       },
                       "HttpParser.html#prepareResponse": {
                         "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
+                        "tf": 0.29940119760479045
                       }
                     }
                   },
@@ -7548,7 +8505,7 @@ window.lunrData = {
                             "docs": {
                               "HttpParser.html#prepareResponse": {
                                 "ref": "HttpParser.html#prepareResponse",
-                                "tf": 1.6025641025641024
+                                "tf": 1.4970059880239521
                               }
                             }
                           }
@@ -7562,7 +8519,7 @@ window.lunrData = {
                 "docs": {
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.641025641025641
+                    "tf": 0.5988023952095809
                   }
                 }
               }
@@ -7574,6 +8531,30 @@ window.lunrData = {
                   "GlobalController.html#register": {
                     "ref": "GlobalController.html#register",
                     "tf": 0.7462686567164178
+                  },
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 1.3513513513513513
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 1.8181818181818181
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 4.761904761904762
+                  },
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
+                    "tf": 2.1739130434782608
+                  },
+                  "HandlerBarHelper.html#fileHelper": {
+                    "ref": "HandlerBarHelper.html#fileHelper",
+                    "tf": 4.761904761904762
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 1.3513513513513513
                   },
                   "GrpcParser.html#camouflageMock": {
                     "ref": "GrpcParser.html#camouflageMock",
@@ -7590,18 +8571,23 @@ window.lunrData = {
                   "GrpcParser.html#camouflageMockBidiStream": {
                     "ref": "GrpcParser.html#camouflageMockBidiStream",
                     "tf": 0.9259259259259258
-                  },
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
-                    "tf": 2.1739130434782608
-                  },
-                  "HandlerBarHelper.html#fileHelper": {
-                    "ref": "HandlerBarHelper.html#fileHelper",
-                    "tf": 4.761904761904762
-                  },
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 1.3513513513513513
+                  }
+                }
+              },
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 0.9090909090909091
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -7610,8 +8596,24 @@ window.lunrData = {
               "docs": {},
               "s": {
                 "docs": {
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 2.7027027027027026
+                  },
+                  "InjectHelper.html#register": {
+                    "ref": "InjectHelper.html#register",
+                    "tf": 2.631578947368421
+                  },
+                  "NumBetweenHelper.html#register": {
+                    "ref": "NumBetweenHelper.html#register",
+                    "tf": 2.7777777777777777
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 2.380952380952381
+                  },
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
                     "tf": 4.3478260869565215
                   },
                   "HandlerBarHelper.html#numBetweenHelper": {
@@ -7746,28 +8748,53 @@ window.lunrData = {
               }
             }
           },
-          "i": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "g": {
-                "docs": {
-                  "MockController.html#register": {
-                    "ref": "MockController.html#register",
-                    "tf": 5
-                  },
-                  "GrpcParser.html#camouflageMockBidiStream": {
-                    "ref": "GrpcParser.html#camouflageMockBidiStream",
-                    "tf": 0.9259259259259258
-                  }
-                }
-              }
-            }
-          },
           "r": {
             "docs": {},
             "o": {
               "docs": {},
+              "c": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "CodeHelper.html#register": {
+                          "ref": "CodeHelper.html#register",
+                          "tf": 1.3513513513513513
+                        },
+                        "FileHelper.html#register": {
+                          "ref": "FileHelper.html#register",
+                          "tf": 2.380952380952381
+                        },
+                        "HandlerBarHelper.html#fileHelper": {
+                          "ref": "HandlerBarHelper.html#fileHelper",
+                          "tf": 2.380952380952381
+                        },
+                        "HandlerBarHelper.html#codeHelper": {
+                          "ref": "HandlerBarHelper.html#codeHelper",
+                          "tf": 1.3513513513513513
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "v": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 0.8620689655172413
+                      }
+                    }
+                  }
+                }
+              },
               "t": {
                 "docs": {},
                 "o": {
@@ -7890,41 +8917,6 @@ window.lunrData = {
                     }
                   }
                 }
-              },
-              "v": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 0.8620689655172413
-                      }
-                    }
-                  }
-                }
-              },
-              "c": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "s": {
-                      "docs": {
-                        "HandlerBarHelper.html#fileHelper": {
-                          "ref": "HandlerBarHelper.html#fileHelper",
-                          "tf": 2.380952380952381
-                        },
-                        "HandlerBarHelper.html#codeHelper": {
-                          "ref": "HandlerBarHelper.html#codeHelper",
-                          "tf": 1.3513513513513513
-                        }
-                      }
-                    }
-                  }
-                }
               }
             },
             "e": {
@@ -8001,6 +8993,35 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "g": {
+                "docs": {
+                  "MockController.html#register": {
+                    "ref": "MockController.html#register",
+                    "tf": 5
+                  },
+                  "GrpcParser.html#camouflageMockBidiStream": {
+                    "ref": "GrpcParser.html#camouflageMockBidiStream",
+                    "tf": 0.9259259259259258
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "k": {
+                "docs": {
+                  "HttpParser.html#prepareResponse": {
+                    "ref": "HttpParser.html#prepareResponse",
+                    "tf": 0.29940119760479045
+                  }
+                }
+              }
+            }
           }
         },
         "s": {
@@ -8015,6 +9036,10 @@ window.lunrData = {
                     "ref": "GlobalController.html#register",
                     "tf": 0.7462686567164178
                   },
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 1.3513513513513513
+                  },
                   "WebsocketParser.html#send": {
                     "ref": "WebsocketParser.html#send",
                     "tf": 672.3809523809524
@@ -8022,6 +9047,18 @@ window.lunrData = {
                   "WebsocketParser.html#sendConnect": {
                     "ref": "WebsocketParser.html#sendConnect",
                     "tf": 4.166666666666666
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 2.380952380952381
+                  },
+                  "HandlerBarHelper.html#fileHelper": {
+                    "ref": "HandlerBarHelper.html#fileHelper",
+                    "tf": 2.380952380952381
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 1.3513513513513513
                   },
                   "GrpcParser.html#camouflageMock": {
                     "ref": "GrpcParser.html#camouflageMock",
@@ -8045,15 +9082,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.641025641025641
-                  },
-                  "HandlerBarHelper.html#fileHelper": {
-                    "ref": "HandlerBarHelper.html#fileHelper",
-                    "tf": 2.380952380952381
-                  },
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 1.3513513513513513
+                    "tf": 0.5988023952095809
                   }
                 },
                 "c": {
@@ -8092,6 +9121,63 @@ window.lunrData = {
                 }
               }
             },
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "NowHelper.html#register": {
+                        "ref": "NowHelper.html#register",
+                        "tf": 0.8620689655172413
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {
+                "NowHelper.html#register": {
+                  "ref": "NowHelper.html#register",
+                  "tf": 1.7241379310344827
+                },
+                "RandomValueHelper.html#register": {
+                  "ref": "RandomValueHelper.html#register",
+                  "tf": 2.857142857142857
+                },
+                "HttpParser.html#prepareResponse": {
+                  "ref": "HttpParser.html#prepareResponse",
+                  "tf": 2.3952095808383236
+                },
+                "Protocols.html#initGrpc": {
+                  "ref": "Protocols.html#initGrpc",
+                  "tf": 0.5747126436781609
+                }
+              }
+            },
+            "q": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "c": {
+                      "docs": {
+                        "RandomValueHelper.html#randomString": {
+                          "ref": "RandomValueHelper.html#randomString",
+                          "tf": 12.5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "l": {
               "docs": {},
               "f": {
@@ -8112,8 +9198,8 @@ window.lunrData = {
                       "docs": {},
                       "r": {
                         "docs": {
-                          "HandlerBarHelper.html#requestHelper": {
-                            "ref": "HandlerBarHelper.html#requestHelper",
+                          "RequestHelper.html#register": {
+                            "ref": "RequestHelper.html#register",
                             "tf": 1.0869565217391304
                           }
                         }
@@ -8175,6 +9261,23 @@ window.lunrData = {
                 }
               }
             },
+            "a": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "CsvHelper.html#register": {
+                        "ref": "CsvHelper.html#register",
+                        "tf": 0.9090909090909091
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "p": {
               "docs": {},
               "a": {
@@ -8183,64 +9286,7 @@ window.lunrData = {
                   "docs": {
                     "HttpParser.html#prepareResponse": {
                       "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.3205128205128205
-                    }
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {
-                "HttpParser.html#prepareResponse": {
-                  "ref": "HttpParser.html#prepareResponse",
-                  "tf": 2.564102564102564
-                },
-                "HandlerBarHelper.html#nowHelper": {
-                  "ref": "HandlerBarHelper.html#nowHelper",
-                  "tf": 1.7241379310344827
-                },
-                "HandlerBarHelper.html#randomValueHelper": {
-                  "ref": "HandlerBarHelper.html#randomValueHelper",
-                  "tf": 2.857142857142857
-                },
-                "Protocols.html#initGrpc": {
-                  "ref": "Protocols.html#initGrpc",
-                  "tf": 0.5747126436781609
-                }
-              }
-            },
-            "c": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "HandlerBarHelper.html#nowHelper": {
-                        "ref": "HandlerBarHelper.html#nowHelper",
-                        "tf": 0.8620689655172413
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "q": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "c": {
-                      "docs": {
-                        "HandlerBarHelper.html#randomString": {
-                          "ref": "HandlerBarHelper.html#randomString",
-                          "tf": 12.5
-                        }
-                      }
+                      "tf": 0.29940119760479045
                     }
                   }
                 }
@@ -8268,13 +9314,17 @@ window.lunrData = {
                           "ref": "GlobalController.html#register",
                           "tf": 0.7462686567164178
                         },
-                        "HandlerBarHelper.html#nowHelper": {
-                          "ref": "HandlerBarHelper.html#nowHelper",
+                        "NowHelper.html#register": {
+                          "ref": "NowHelper.html#register",
                           "tf": 1.7241379310344827
                         },
-                        "HandlerBarHelper.html#randomValueHelper": {
-                          "ref": "HandlerBarHelper.html#randomValueHelper",
+                        "RandomValueHelper.html#register": {
+                          "ref": "RandomValueHelper.html#register",
                           "tf": 5.714285714285714
+                        },
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 0.9090909090909091
                         },
                         "BackupScheduler.html#schedule": {
                           "ref": "BackupScheduler.html#schedule",
@@ -8298,37 +9348,94 @@ window.lunrData = {
                 }
               }
             },
-            "l": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "GrpcParser.html#camouflageMockServerStream": {
-                      "ref": "GrpcParser.html#camouflageMockServerStream",
-                      "tf": 0.9803921568627451
-                    },
-                    "HttpParser.html#prepareResponse": {
-                      "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.9615384615384616
-                    },
-                    "HandlerBarHelper.html#nowHelper": {
-                      "ref": "HandlerBarHelper.html#nowHelper",
-                      "tf": 0.8620689655172413
-                    }
-                  }
-                }
-              }
-            },
             "a": {
               "docs": {},
               "c": {
                 "docs": {},
                 "e": {
                   "docs": {
-                    "HandlerBarHelper.html#nowHelper": {
-                      "ref": "HandlerBarHelper.html#nowHelper",
+                    "NowHelper.html#register": {
+                      "ref": "NowHelper.html#register",
                       "tf": 0.8620689655172413
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "NowHelper.html#register": {
+                      "ref": "NowHelper.html#register",
+                      "tf": 0.8620689655172413
+                    },
+                    "GrpcParser.html#camouflageMockServerStream": {
+                      "ref": "GrpcParser.html#camouflageMockServerStream",
+                      "tf": 0.9803921568627451
+                    },
+                    "HttpParser.html#prepareResponse": {
+                      "ref": "HttpParser.html#prepareResponse",
+                      "tf": 1.1976047904191618
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "CodeHelper.html#register": {
+                      "ref": "CodeHelper.html#register",
+                      "tf": 1.3513513513513513
+                    },
+                    "InjectHelper.html#register": {
+                      "ref": "InjectHelper.html#register",
+                      "tf": 2.631578947368421
+                    },
+                    "CsvHelper.html#register": {
+                      "ref": "CsvHelper.html#register",
+                      "tf": 0.9090909090909091
+                    },
+                    "HandlerBarHelper.html#codeHelper": {
+                      "ref": "HandlerBarHelper.html#codeHelper",
+                      "tf": 1.3513513513513513
+                    },
+                    "HandlerBarHelper.html#injectHelper": {
+                      "ref": "HandlerBarHelper.html#injectHelper",
+                      "tf": 2.631578947368421
+                    }
+                  }
+                }
+              }
+            },
+            "h": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "l": {
+                      "docs": {
+                        "BackupScheduler.html": {
+                          "ref": "BackupScheduler.html",
+                          "tf": 8.333333333333332
+                        },
+                        "BackupScheduler.html#schedule": {
+                          "ref": "BackupScheduler.html#schedule",
+                          "tf": 677.6923076923077
+                        }
+                      }
                     }
                   }
                 }
@@ -8337,50 +9444,15 @@ window.lunrData = {
           },
           "t": {
             "docs": {},
-            "a": {
+            "o": {
               "docs": {},
-              "t": {
-                "docs": {},
-                "u": {
-                  "docs": {
-                    "WebsocketParser.html#sendConnect": {
-                      "ref": "WebsocketParser.html#sendConnect",
-                      "tf": 18.45238095238095
-                    },
-                    "HttpParser.html#prepareResponse": {
-                      "ref": "HttpParser.html#prepareResponse",
-                      "tf": 0.641025641025641
-                    }
-                  }
-                }
-              },
-              "n": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "HttpParser.html#prepareResponse": {
-                            "ref": "HttpParser.html#prepareResponse",
-                            "tf": 0.3205128205128205
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
               "r": {
                 "docs": {},
-                "t": {
+                "e": {
                   "docs": {
-                    "BackupScheduler.html#schedule": {
-                      "ref": "BackupScheduler.html#schedule",
-                      "tf": 3.8461538461538463
+                    "NowHelper.html#register": {
+                      "ref": "NowHelper.html#register",
+                      "tf": 0.8620689655172413
                     },
                     "Protocols.html#initGrpc": {
                       "ref": "Protocols.html#initGrpc",
@@ -8392,6 +9464,36 @@ window.lunrData = {
             },
             "r": {
               "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "RandomValueHelper.html#randomString": {
+                        "ref": "RandomValueHelper.html#randomString",
+                        "tf": 25
+                      },
+                      "RandomValueHelper.html#genCharArray": {
+                        "ref": "RandomValueHelper.html#genCharArray",
+                        "tf": 40.47619047619047
+                      },
+                      "HttpParser.html#getMatchedDir": {
+                        "ref": "HttpParser.html#getMatchedDir",
+                        "tf": 50
+                      },
+                      "HttpParser.html#getResponse": {
+                        "ref": "HttpParser.html#getResponse",
+                        "tf": 33.33333333333333
+                      },
+                      "HttpParser.html#prepareResponse": {
+                        "ref": "HttpParser.html#prepareResponse",
+                        "tf": 0.29940119760479045
+                      }
+                    }
+                  }
+                }
+              },
               "e": {
                 "docs": {},
                 "a": {
@@ -8441,47 +9543,52 @@ window.lunrData = {
                     }
                   }
                 }
-              },
-              "i": {
+              }
+            },
+            "a": {
+              "docs": {},
+              "t": {
                 "docs": {},
-                "n": {
+                "u": {
+                  "docs": {
+                    "WebsocketParser.html#sendConnect": {
+                      "ref": "WebsocketParser.html#sendConnect",
+                      "tf": 18.45238095238095
+                    },
+                    "HttpParser.html#prepareResponse": {
+                      "ref": "HttpParser.html#prepareResponse",
+                      "tf": 0.5988023952095809
+                    }
+                  }
+                }
+              },
+              "n": {
+                "docs": {},
+                "d": {
                   "docs": {},
-                  "g": {
-                    "docs": {
-                      "HttpParser.html#getMatchedDir": {
-                        "ref": "HttpParser.html#getMatchedDir",
-                        "tf": 50
-                      },
-                      "HttpParser.html#getResponse": {
-                        "ref": "HttpParser.html#getResponse",
-                        "tf": 33.33333333333333
-                      },
-                      "HttpParser.html#prepareResponse": {
-                        "ref": "HttpParser.html#prepareResponse",
-                        "tf": 0.3205128205128205
-                      },
-                      "HandlerBarHelper.html#randomString": {
-                        "ref": "HandlerBarHelper.html#randomString",
-                        "tf": 25
-                      },
-                      "HandlerBarHelper.html#genCharArray": {
-                        "ref": "HandlerBarHelper.html#genCharArray",
-                        "tf": 40.47619047619047
+                  "a": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "HttpParser.html#prepareResponse": {
+                            "ref": "HttpParser.html#prepareResponse",
+                            "tf": 0.29940119760479045
+                          }
+                        }
                       }
                     }
                   }
                 }
-              }
-            },
-            "o": {
-              "docs": {},
+              },
               "r": {
                 "docs": {},
-                "e": {
+                "t": {
                   "docs": {
-                    "HandlerBarHelper.html#nowHelper": {
-                      "ref": "HandlerBarHelper.html#nowHelper",
-                      "tf": 0.8620689655172413
+                    "BackupScheduler.html#schedule": {
+                      "ref": "BackupScheduler.html#schedule",
+                      "tf": 3.8461538461538463
                     },
                     "Protocols.html#initGrpc": {
                       "ref": "Protocols.html#initGrpc",
@@ -8513,51 +9620,6 @@ window.lunrData = {
                   "GrpcParser.html#camouflageMockBidiStream": {
                     "ref": "GrpcParser.html#camouflageMockBidiStream",
                     "tf": 0.9259259259259258
-                  }
-                }
-              }
-            }
-          },
-          "c": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "HandlerBarHelper.html#codeHelper": {
-                      "ref": "HandlerBarHelper.html#codeHelper",
-                      "tf": 1.3513513513513513
-                    },
-                    "HandlerBarHelper.html#injectHelper": {
-                      "ref": "HandlerBarHelper.html#injectHelper",
-                      "tf": 2.631578947368421
-                    }
-                  }
-                }
-              }
-            },
-            "h": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "l": {
-                      "docs": {
-                        "BackupScheduler.html": {
-                          "ref": "BackupScheduler.html",
-                          "tf": 8.333333333333332
-                        },
-                        "BackupScheduler.html#schedule": {
-                          "ref": "BackupScheduler.html#schedule",
-                          "tf": 677.6923076923077
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -8604,20 +9666,40 @@ window.lunrData = {
                     "ref": "GlobalController.html#register",
                     "tf": 50
                   },
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 50
+                  },
+                  "InjectHelper.html#register": {
+                    "ref": "InjectHelper.html#register",
+                    "tf": 50
+                  },
                   "MockController.html#register": {
                     "ref": "MockController.html#register",
                     "tf": 50
                   },
-                  "HandlerBarHelper.html#nowHelper": {
-                    "ref": "HandlerBarHelper.html#nowHelper",
+                  "NowHelper.html#register": {
+                    "ref": "NowHelper.html#register",
                     "tf": 50
                   },
-                  "HandlerBarHelper.html#randomValueHelper": {
-                    "ref": "HandlerBarHelper.html#randomValueHelper",
+                  "NumBetweenHelper.html#register": {
+                    "ref": "NumBetweenHelper.html#register",
                     "tf": 50
                   },
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
+                  "RandomValueHelper.html#register": {
+                    "ref": "RandomValueHelper.html#register",
+                    "tf": 50
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 50
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 50
+                  },
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
                     "tf": 50
                   },
                   "HandlerBarHelper.html#numBetweenHelper": {
@@ -8654,6 +9736,46 @@ window.lunrData = {
               "docs": {},
               "u": {
                 "docs": {
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 1.3513513513513513
+                  },
+                  "NowHelper.html#register": {
+                    "ref": "NowHelper.html#register",
+                    "tf": 2.586206896551724
+                  },
+                  "NumBetweenHelper.html#register": {
+                    "ref": "NumBetweenHelper.html#register",
+                    "tf": 8.333333333333332
+                  },
+                  "RandomValueHelper.html#register": {
+                    "ref": "RandomValueHelper.html#register",
+                    "tf": 1.4285714285714286
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 1.8181818181818181
+                  },
+                  "FileHelper.html#register": {
+                    "ref": "FileHelper.html#register",
+                    "tf": 2.380952380952381
+                  },
+                  "RequestHelper.html#register": {
+                    "ref": "RequestHelper.html#register",
+                    "tf": 3.260869565217391
+                  },
+                  "HandlerBarHelper.html#numBetweenHelper": {
+                    "ref": "HandlerBarHelper.html#numBetweenHelper",
+                    "tf": 8.333333333333332
+                  },
+                  "HandlerBarHelper.html#fileHelper": {
+                    "ref": "HandlerBarHelper.html#fileHelper",
+                    "tf": 2.380952380952381
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 1.3513513513513513
+                  },
                   "GrpcParser.html#camouflageMock": {
                     "ref": "GrpcParser.html#camouflageMock",
                     "tf": 1.3157894736842104
@@ -8672,31 +9794,7 @@ window.lunrData = {
                   },
                   "HttpParser.html#prepareResponse": {
                     "ref": "HttpParser.html#prepareResponse",
-                    "tf": 0.9615384615384616
-                  },
-                  "HandlerBarHelper.html#nowHelper": {
-                    "ref": "HandlerBarHelper.html#nowHelper",
-                    "tf": 2.586206896551724
-                  },
-                  "HandlerBarHelper.html#randomValueHelper": {
-                    "ref": "HandlerBarHelper.html#randomValueHelper",
-                    "tf": 1.4285714285714286
-                  },
-                  "HandlerBarHelper.html#requestHelper": {
-                    "ref": "HandlerBarHelper.html#requestHelper",
-                    "tf": 3.260869565217391
-                  },
-                  "HandlerBarHelper.html#numBetweenHelper": {
-                    "ref": "HandlerBarHelper.html#numBetweenHelper",
-                    "tf": 8.333333333333332
-                  },
-                  "HandlerBarHelper.html#fileHelper": {
-                    "ref": "HandlerBarHelper.html#fileHelper",
-                    "tf": 2.380952380952381
-                  },
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 1.3513513513513513
+                    "tf": 0.8982035928143712
                   }
                 }
               }
@@ -8716,9 +9814,13 @@ window.lunrData = {
                     "docs": {},
                     "l": {
                       "docs": {
+                        "CsvHelper.html#register": {
+                          "ref": "CsvHelper.html#register",
+                          "tf": 0.9090909090909091
+                        },
                         "HttpParser.html#prepareResponse": {
                           "ref": "HttpParser.html#prepareResponse",
-                          "tf": 0.641025641025641
+                          "tf": 0.5988023952095809
                         }
                       }
                     }
@@ -8728,8 +9830,440 @@ window.lunrData = {
             }
           }
         },
+        "u": {
+          "docs": {},
+          "s": {
+            "docs": {
+              "CodeHelper.html#register": {
+                "ref": "CodeHelper.html#register",
+                "tf": 1.3513513513513513
+              },
+              "NowHelper.html#register": {
+                "ref": "NowHelper.html#register",
+                "tf": 1.7241379310344827
+              },
+              "RandomValueHelper.html#genCharArray": {
+                "ref": "RandomValueHelper.html#genCharArray",
+                "tf": 7.142857142857142
+              },
+              "CsvHelper.html#register": {
+                "ref": "CsvHelper.html#register",
+                "tf": 1.8181818181818181
+              },
+              "RequestHelper.html#register": {
+                "ref": "RequestHelper.html#register",
+                "tf": 1.0869565217391304
+              },
+              "HandlerBarHelper.html#codeHelper": {
+                "ref": "HandlerBarHelper.html#codeHelper",
+                "tf": 1.3513513513513513
+              },
+              "HttpParser.html#prepareResponse": {
+                "ref": "HttpParser.html#prepareResponse",
+                "tf": 0.5988023952095809
+              },
+              "BackupScheduler.html": {
+                "ref": "BackupScheduler.html",
+                "tf": 8.333333333333332
+              },
+              "Protocols.html#initGrpc": {
+                "ref": "Protocols.html#initGrpc",
+                "tf": 0.5747126436781609
+              }
+            },
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "CodeHelper.html#register": {
+                    "ref": "CodeHelper.html#register",
+                    "tf": 1.3513513513513513
+                  },
+                  "CsvHelper.html#register": {
+                    "ref": "CsvHelper.html#register",
+                    "tf": 0.9090909090909091
+                  },
+                  "HandlerBarHelper.html#codeHelper": {
+                    "ref": "HandlerBarHelper.html#codeHelper",
+                    "tf": 1.3513513513513513
+                  },
+                  "BackupScheduler.html#createBackup": {
+                    "ref": "BackupScheduler.html#createBackup",
+                    "tf": 1.7241379310344827
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "NowHelper.html#register": {
+                    "ref": "NowHelper.html#register",
+                    "tf": 0.8620689655172413
+                  }
+                }
+              }
+            },
+            "a": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "GrpcParser.html": {
+                      "ref": "GrpcParser.html",
+                      "tf": 2.7777777777777777
+                    },
+                    "Protocols.html#initGrpc": {
+                      "ref": "Protocols.html#initGrpc",
+                      "tf": 0.5747126436781609
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {
+              "BackupScheduler.html#schedule": {
+                "ref": "BackupScheduler.html#schedule",
+                "tf": 3.8461538461538463
+              }
+            },
+            "p": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "NumBetweenHelper.html#register": {
+                      "ref": "NumBetweenHelper.html#register",
+                      "tf": 5.555555555555555
+                    },
+                    "HandlerBarHelper.html#numBetweenHelper": {
+                      "ref": "HandlerBarHelper.html#numBetweenHelper",
+                      "tf": 5.555555555555555
+                    }
+                  },
+                  "c": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "s": {
+                        "docs": {
+                          "RandomValueHelper.html#register": {
+                            "ref": "RandomValueHelper.html#register",
+                            "tf": 1.4285714285714286
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "RandomValueHelper.html#register": {
+                    "ref": "RandomValueHelper.html#register",
+                    "tf": 2.857142857142857
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "l": {
+              "docs": {
+                "HttpParser.html": {
+                  "ref": "HttpParser.html",
+                  "tf": 2.941176470588235
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "w": {
+              "docs": {
+                "NowHelper.html": {
+                  "ref": "NowHelper.html",
+                  "tf": 8.333333333333332
+                },
+                "NowHelper.html#register": {
+                  "ref": "NowHelper.html#register",
+                  "tf": 1.7241379310344827
+                },
+                "HandlerBarHelper.html": {
+                  "ref": "HandlerBarHelper.html",
+                  "tf": 5.555555555555555
+                }
+              },
+              "h": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "l": {
+                    "docs": {},
+                    "p": {
+                      "docs": {
+                        "NowHelper.html": {
+                          "ref": "NowHelper.html",
+                          "tf": 1900
+                        }
+                      },
+                      "e": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "#": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {
+                                          "NowHelper.html#register": {
+                                            "ref": "NowHelper.html#register",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "_": {
+                "docs": {},
+                "b": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "w": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {
+                                "NumBetweenHelper.html": {
+                                  "ref": "NumBetweenHelper.html",
+                                  "tf": 8.333333333333332
+                                },
+                                "NumBetweenHelper.html#register": {
+                                  "ref": "NumBetweenHelper.html#register",
+                                  "tf": 2.7777777777777777
+                                },
+                                "HandlerBarHelper.html": {
+                                  "ref": "HandlerBarHelper.html",
+                                  "tf": 5.555555555555555
+                                },
+                                "HandlerBarHelper.html#numBetweenHelper": {
+                                  "ref": "HandlerBarHelper.html#numBetweenHelper",
+                                  "tf": 2.7777777777777777
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "w": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "h": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "p": {
+                                    "docs": {
+                                      "NumBetweenHelper.html": {
+                                        "ref": "NumBetweenHelper.html",
+                                        "tf": 1900
+                                      },
+                                      "HandlerBarHelper.html#numBetweenHelper": {
+                                        "ref": "HandlerBarHelper.html#numBetweenHelper",
+                                        "tf": 700
+                                      }
+                                    },
+                                    "e": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "#": {
+                                          "docs": {},
+                                          "r": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "g": {
+                                                "docs": {},
+                                                "i": {
+                                                  "docs": {},
+                                                  "s": {
+                                                    "docs": {},
+                                                    "t": {
+                                                      "docs": {
+                                                        "NumBetweenHelper.html#register": {
+                                                          "ref": "NumBetweenHelper.html#register",
+                                                          "tf": 1150
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "r": {
+                    "docs": {
+                      "RandomValueHelper.html#randomFixedInteger": {
+                        "ref": "RandomValueHelper.html#randomFixedInteger",
+                        "tf": 43.33333333333333
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "/": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "d": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "f": {
+                            "docs": {},
+                            "i": {
+                              "docs": {},
+                              "n": {
+                                "docs": {
+                                  "RequestHelper.html#register": {
+                                    "ref": "RequestHelper.html#register",
+                                    "tf": 1.0869565217391304
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "w": {
+              "docs": {
+                "WebsocketParser.html#sendConnect": {
+                  "ref": "WebsocketParser.html#sendConnect",
+                  "tf": 4.166666666666666
+                }
+              }
+            }
+          }
+        },
         "w": {
           "docs": {},
+          "i": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "NowHelper.html#register": {
+                          "ref": "NowHelper.html#register",
+                          "tf": 0.8620689655172413
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "e": {
             "docs": {},
             "b": {
@@ -8922,386 +10456,12 @@ window.lunrData = {
                           "docs": {
                             "HttpParser.html#prepareResponse": {
                               "ref": "HttpParser.html#prepareResponse",
-                              "tf": 0.3205128205128205
+                              "tf": 0.29940119760479045
                             }
                           }
                         }
                       }
                     }
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "HandlerBarHelper.html#nowHelper": {
-                          "ref": "HandlerBarHelper.html#nowHelper",
-                          "tf": 0.8620689655172413
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "k": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "y": {
-              "docs": {
-                "WebsocketParser.html#send": {
-                  "ref": "WebsocketParser.html#send",
-                  "tf": 2.380952380952381
-                },
-                "GrpcParser.html#camouflageMock": {
-                  "ref": "GrpcParser.html#camouflageMock",
-                  "tf": 1.3157894736842104
-                },
-                "GrpcParser.html#camouflageMockServerStream": {
-                  "ref": "GrpcParser.html#camouflageMockServerStream",
-                  "tf": 0.9803921568627451
-                },
-                "GrpcParser.html#camouflageMockClientStream": {
-                  "ref": "GrpcParser.html#camouflageMockClientStream",
-                  "tf": 1.0416666666666665
-                },
-                "GrpcParser.html#camouflageMockBidiStream": {
-                  "ref": "GrpcParser.html#camouflageMockBidiStream",
-                  "tf": 0.9259259259259258
-                },
-                "HttpParser.html#prepareResponse": {
-                  "ref": "HttpParser.html#prepareResponse",
-                  "tf": 0.3205128205128205
-                },
-                "HandlerBarHelper.html#requestHelper": {
-                  "ref": "HandlerBarHelper.html#requestHelper",
-                  "tf": 1.0869565217391304
-                },
-                "Protocols.html#initHttps": {
-                  "ref": "Protocols.html#initHttps",
-                  "tf": 25
-                }
-              }
-            }
-          }
-        },
-        "n": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "w": {
-              "docs": {
-                "WebsocketParser.html#sendConnect": {
-                  "ref": "WebsocketParser.html#sendConnect",
-                  "tf": 4.166666666666666
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "w": {
-              "docs": {
-                "HandlerBarHelper.html": {
-                  "ref": "HandlerBarHelper.html",
-                  "tf": 5.555555555555555
-                },
-                "HandlerBarHelper.html#nowHelper": {
-                  "ref": "HandlerBarHelper.html#nowHelper",
-                  "tf": 1.7241379310344827
-                }
-              },
-              "h": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "l": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "HandlerBarHelper.html#nowHelper": {
-                          "ref": "HandlerBarHelper.html#nowHelper",
-                          "tf": 700
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "_": {
-                "docs": {},
-                "b": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "w": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "n": {
-                              "docs": {
-                                "HandlerBarHelper.html": {
-                                  "ref": "HandlerBarHelper.html",
-                                  "tf": 5.555555555555555
-                                },
-                                "HandlerBarHelper.html#numBetweenHelper": {
-                                  "ref": "HandlerBarHelper.html#numBetweenHelper",
-                                  "tf": 2.7777777777777777
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "b": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "w": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "n": {
-                            "docs": {},
-                            "h": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "p": {
-                                    "docs": {
-                                      "HandlerBarHelper.html#numBetweenHelper": {
-                                        "ref": "HandlerBarHelper.html#numBetweenHelper",
-                                        "tf": 700
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "r": {
-                    "docs": {
-                      "HandlerBarHelper.html#randomFixedInteger": {
-                        "ref": "HandlerBarHelper.html#randomFixedInteger",
-                        "tf": 43.33333333333333
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "/": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "d": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "f": {
-                            "docs": {},
-                            "i": {
-                              "docs": {},
-                              "n": {
-                                "docs": {
-                                  "HandlerBarHelper.html#requestHelper": {
-                                    "ref": "HandlerBarHelper.html#requestHelper",
-                                    "tf": 1.0869565217391304
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "u": {
-          "docs": {},
-          "n": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "i": {
-                  "docs": {
-                    "GrpcParser.html": {
-                      "ref": "GrpcParser.html",
-                      "tf": 2.7777777777777777
-                    },
-                    "Protocols.html#initGrpc": {
-                      "ref": "Protocols.html#initGrpc",
-                      "tf": 0.5747126436781609
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "HandlerBarHelper.html#nowHelper": {
-                    "ref": "HandlerBarHelper.html#nowHelper",
-                    "tf": 0.8620689655172413
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "l": {
-              "docs": {
-                "HttpParser.html": {
-                  "ref": "HttpParser.html",
-                  "tf": 2.941176470588235
-                }
-              }
-            }
-          },
-          "s": {
-            "docs": {
-              "HttpParser.html#prepareResponse": {
-                "ref": "HttpParser.html#prepareResponse",
-                "tf": 0.3205128205128205
-              },
-              "HandlerBarHelper.html#nowHelper": {
-                "ref": "HandlerBarHelper.html#nowHelper",
-                "tf": 1.7241379310344827
-              },
-              "HandlerBarHelper.html#requestHelper": {
-                "ref": "HandlerBarHelper.html#requestHelper",
-                "tf": 1.0869565217391304
-              },
-              "HandlerBarHelper.html#codeHelper": {
-                "ref": "HandlerBarHelper.html#codeHelper",
-                "tf": 1.3513513513513513
-              },
-              "HandlerBarHelper.html#genCharArray": {
-                "ref": "HandlerBarHelper.html#genCharArray",
-                "tf": 7.142857142857142
-              },
-              "BackupScheduler.html": {
-                "ref": "BackupScheduler.html",
-                "tf": 8.333333333333332
-              },
-              "Protocols.html#initGrpc": {
-                "ref": "Protocols.html#initGrpc",
-                "tf": 0.5747126436781609
-              }
-            },
-            "e": {
-              "docs": {},
-              "r": {
-                "docs": {
-                  "HandlerBarHelper.html#codeHelper": {
-                    "ref": "HandlerBarHelper.html#codeHelper",
-                    "tf": 1.3513513513513513
-                  },
-                  "BackupScheduler.html#createBackup": {
-                    "ref": "BackupScheduler.html#createBackup",
-                    "tf": 1.7241379310344827
-                  }
-                }
-              }
-            }
-          },
-          "p": {
-            "docs": {
-              "BackupScheduler.html#schedule": {
-                "ref": "BackupScheduler.html#schedule",
-                "tf": 3.8461538461538463
-              }
-            },
-            "p": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "HandlerBarHelper.html#numBetweenHelper": {
-                      "ref": "HandlerBarHelper.html#numBetweenHelper",
-                      "tf": 5.555555555555555
-                    }
-                  },
-                  "c": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "s": {
-                        "docs": {
-                          "HandlerBarHelper.html#randomValueHelper": {
-                            "ref": "HandlerBarHelper.html#randomValueHelper",
-                            "tf": 1.4285714285714286
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "d": {
-                "docs": {
-                  "HandlerBarHelper.html#randomValueHelper": {
-                    "ref": "HandlerBarHelper.html#randomValueHelper",
-                    "tf": 2.857142857142857
                   }
                 }
               }
@@ -9310,8 +10470,8 @@ window.lunrData = {
         },
         "x": {
           "docs": {
-            "HandlerBarHelper.html#nowHelper": {
-              "ref": "HandlerBarHelper.html#nowHelper",
+            "NowHelper.html#register": {
+              "ref": "NowHelper.html#register",
               "tf": 1.7241379310344827
             }
           }
@@ -9324,8 +10484,8 @@ window.lunrData = {
               "docs": {},
               "i": {
                 "docs": {
-                  "HandlerBarHelper.html#nowHelper": {
-                    "ref": "HandlerBarHelper.html#nowHelper",
+                  "NowHelper.html#register": {
+                    "ref": "NowHelper.html#register",
                     "tf": 0.8620689655172413
                   }
                 }
@@ -9345,12 +10505,58 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "HandlerBarHelper.html#randomValueHelper": {
-                        "ref": "HandlerBarHelper.html#randomValueHelper",
+                      "RandomValueHelper.html#register": {
+                        "ref": "RandomValueHelper.html#register",
                         "tf": 1.4285714285714286
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        },
+        "k": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "y": {
+              "docs": {
+                "WebsocketParser.html#send": {
+                  "ref": "WebsocketParser.html#send",
+                  "tf": 2.380952380952381
+                },
+                "CsvHelper.html#register": {
+                  "ref": "CsvHelper.html#register",
+                  "tf": 1.8181818181818181
+                },
+                "RequestHelper.html#register": {
+                  "ref": "RequestHelper.html#register",
+                  "tf": 1.0869565217391304
+                },
+                "GrpcParser.html#camouflageMock": {
+                  "ref": "GrpcParser.html#camouflageMock",
+                  "tf": 1.3157894736842104
+                },
+                "GrpcParser.html#camouflageMockServerStream": {
+                  "ref": "GrpcParser.html#camouflageMockServerStream",
+                  "tf": 0.9803921568627451
+                },
+                "GrpcParser.html#camouflageMockClientStream": {
+                  "ref": "GrpcParser.html#camouflageMockClientStream",
+                  "tf": 1.0416666666666665
+                },
+                "GrpcParser.html#camouflageMockBidiStream": {
+                  "ref": "GrpcParser.html#camouflageMockBidiStream",
+                  "tf": 0.9259259259259258
+                },
+                "HttpParser.html#prepareResponse": {
+                  "ref": "HttpParser.html#prepareResponse",
+                  "tf": 0.29940119760479045
+                },
+                "Protocols.html#initHttps": {
+                  "ref": "Protocols.html#initHttps",
+                  "tf": 25
                 }
               }
             }
@@ -9366,8 +10572,8 @@ window.lunrData = {
                 "docs": {},
                 "i": {
                   "docs": {
-                    "HandlerBarHelper.html#requestHelper": {
-                      "ref": "HandlerBarHelper.html#requestHelper",
+                    "RequestHelper.html#register": {
+                      "ref": "RequestHelper.html#register",
                       "tf": 2.1739130434782608
                     }
                   }
@@ -9377,7 +10583,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 811
+      "length": 996
     },
     "corpusTokens": [
       "0",
@@ -9403,6 +10609,7 @@ window.lunrData = {
       "append",
       "appli",
       "applic",
+      "appropri",
       "array",
       "attach",
       "automat",
@@ -9442,6 +10649,7 @@ window.lunrData = {
       "closest",
       "code",
       "codehelp",
+      "codehelper#regist",
       "compil",
       "concaten",
       "condit",
@@ -9458,6 +10666,9 @@ window.lunrData = {
       "creat",
       "createbackup",
       "cron",
+      "csv",
+      "csvhelper",
+      "csvhelper#regist",
       "current",
       "custom",
       "day",
@@ -9468,6 +10679,7 @@ window.lunrData = {
       "delay",
       "delet",
       "delete.mock",
+      "delimit",
       "depend",
       "deprec",
       "detail",
@@ -9494,10 +10706,12 @@ window.lunrData = {
       "exist",
       "express.respons",
       "fals",
+      "fetch",
       "file",
       "filecontent.data",
       "filecontent.end",
       "filehelp",
+      "filehelper#regist",
       "filter",
       "final",
       "find",
@@ -9542,14 +10756,8 @@ window.lunrData = {
       "handlerbarhelp",
       "handlerbarhelper#codehelp",
       "handlerbarhelper#filehelp",
-      "handlerbarhelper#genchararray",
       "handlerbarhelper#injecthelp",
-      "handlerbarhelper#nowhelp",
       "handlerbarhelper#numbetweenhelp",
-      "handlerbarhelper#randomfixedinteg",
-      "handlerbarhelper#randomstr",
-      "handlerbarhelper#randomvaluehelp",
-      "handlerbarhelper#requesthelp",
       "header",
       "headerkey",
       "headervalu",
@@ -9582,6 +10790,7 @@ window.lunrData = {
       "initw",
       "inject",
       "injecthelp",
+      "injecthelper#regist",
       "input",
       "insecur",
       "it'",
@@ -9622,10 +10831,12 @@ window.lunrData = {
       "new",
       "now",
       "nowhelp",
+      "nowhelper#regist",
       "null/undefin",
       "num_between",
       "number",
       "numbetweenhelp",
+      "numbetweenhelper#regist",
       "object",
       "offset",
       "on",
@@ -9640,6 +10851,8 @@ window.lunrData = {
       "part",
       "pass",
       "path",
+      "pattern",
+      "pick",
       "ping",
       "pong",
       "port",
@@ -9664,6 +10877,10 @@ window.lunrData = {
       "randomstr",
       "randomvalu",
       "randomvaluehelp",
+      "randomvaluehelper#genchararray",
+      "randomvaluehelper#randomfixedinteg",
+      "randomvaluehelper#randomstr",
+      "randomvaluehelper#regist",
       "raw",
       "read",
       "reader",
@@ -9676,6 +10893,7 @@ window.lunrData = {
       "req",
       "request",
       "requesthelp",
+      "requesthelper#regist",
       "requir",
       "respond",
       "respons",
@@ -9686,10 +10904,12 @@ window.lunrData = {
       "result",
       "return",
       "rout",
+      "row",
       "run",
       "same",
       "schedul",
       "scope",
+      "search",
       "second",
       "selector",
       "self",
@@ -9718,6 +10938,7 @@ window.lunrData = {
       "tell",
       "templat",
       "template({request",
+      "throw",
       "till",
       "timeout",
       "transform",
@@ -9813,6 +11034,48 @@ window.lunrData = {
       "summary": "",
       "description": "Define a generic route for all requests Following holds true for all the generic routes i.e. GET, POST, DELETE, PUT We create a parser object by initializing our Parser class with request, response and mocksDir objects The parser object in turn will give us access to the path of a matched directory for an incoming request. Depending on the HTTP Method of the incoming request we append /GET.mock, /POST.mock, /DELETE.mock or /PUT.mock to the matched directory Parse object also gives us access to a method getResponse which does the following tasks: Read the response from the specified file Run all the handlebars compilations as required. Generate a HTTP Response Send the response to client."
     },
+    "CodeHelper.html": {
+      "id": "CodeHelper.html",
+      "kind": "class",
+      "title": "CodeHelper",
+      "longname": "CodeHelper",
+      "name": "CodeHelper",
+      "tags": "CodeHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - code",
+      "body": ""
+    },
+    "CodeHelper.html#register": {
+      "id": "CodeHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "CodeHelper#register",
+      "name": "register",
+      "tags": "CodeHelper#register register",
+      "summary": "",
+      "description": "Registers code helper Define request and logger in the scope of the code helper context, allowing user to use request, logger in their mock files If file path is passed, check if file exists and send the return value to HttpParser to process Evaluate the response of the function passed in and return the resulting response object to HttpParser"
+    },
+    "InjectHelper.html": {
+      "id": "InjectHelper.html",
+      "kind": "class",
+      "title": "InjectHelper",
+      "longname": "InjectHelper",
+      "name": "InjectHelper",
+      "tags": "InjectHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - inject",
+      "body": ""
+    },
+    "InjectHelper.html#register": {
+      "id": "InjectHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "InjectHelper#register",
+      "name": "register",
+      "tags": "InjectHelper#register register",
+      "summary": "",
+      "description": "Registers inject helper Define request and logger in the scope of the code helper context Evaluate the response of the function passed in and return the resulting response object to HttpParser"
+    },
     "MockController.html": {
       "id": "MockController.html",
       "kind": "class",
@@ -9833,6 +11096,99 @@ window.lunrData = {
       "tags": "MockController#register register",
       "summary": "",
       "description": "Registers management endpoints: GET /mocks - DEPRECATED DELETE /mocks - DEPRECATED GET /restart GET /ping"
+    },
+    "NowHelper.html": {
+      "id": "NowHelper.html",
+      "kind": "class",
+      "title": "NowHelper",
+      "longname": "NowHelper",
+      "name": "NowHelper",
+      "tags": "NowHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - now",
+      "body": ""
+    },
+    "NowHelper.html#register": {
+      "id": "NowHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "NowHelper#register",
+      "name": "register",
+      "tags": "NowHelper#register register",
+      "summary": "",
+      "description": "Registers now helper If now helper is called without a format, set a default format as YYYY-MM-DD hh:mm:ss else use the format provided Set default offset to be used if offset is not specified. Default offset is 0s i.e. no offset If offset is defined the value will be stored in context.hash.offset, eg X days. Split value by a space, first element will be the amount of offset i.e. X, second element will be unit of offset, i.e. days Return a value with specified format and added offset"
+    },
+    "NumBetweenHelper.html": {
+      "id": "NumBetweenHelper.html",
+      "kind": "class",
+      "title": "NumBetweenHelper",
+      "longname": "NumBetweenHelper",
+      "name": "NumBetweenHelper",
+      "tags": "NumBetweenHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - num_between",
+      "body": ""
+    },
+    "NumBetweenHelper.html#register": {
+      "id": "NumBetweenHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "NumBetweenHelper#register",
+      "name": "register",
+      "tags": "NumBetweenHelper#register register",
+      "summary": "",
+      "description": "Registers num_between helper If lower or upper value is not passed, return 0 If lower value is greater than upper value, log error and return 0"
+    },
+    "RandomValueHelper.html": {
+      "id": "RandomValueHelper.html",
+      "kind": "class",
+      "title": "RandomValueHelper",
+      "longname": "RandomValueHelper",
+      "name": "RandomValueHelper",
+      "tags": "RandomValueHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - randomValue",
+      "body": ""
+    },
+    "RandomValueHelper.html#register": {
+      "id": "RandomValueHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "RandomValueHelper#register",
+      "name": "register",
+      "tags": "RandomValueHelper#register register",
+      "summary": "",
+      "description": "Registers randomValue helper If length of randomValue is not specified, set default length to 16 If type of randomValue is not specified, set default type to ALPHANUMERIC If uppercase is specified, and is of ALPHABETICAL or ALPHANUMERIC type, add _UPPER to the type If type is UUID, return UUID, else generate a random value with specified type and length"
+    },
+    "RandomValueHelper.html#randomString": {
+      "id": "RandomValueHelper.html#randomString",
+      "kind": "function",
+      "title": "randomString( length, chars ) → {string}",
+      "longname": "RandomValueHelper#randomString",
+      "name": "randomString",
+      "tags": "RandomValueHelper#randomString randomString",
+      "summary": "",
+      "description": "Generates an random sequence of characters"
+    },
+    "RandomValueHelper.html#randomFixedInteger": {
+      "id": "RandomValueHelper.html#randomFixedInteger",
+      "kind": "function",
+      "title": "randomFixedInteger( length ) → {number}",
+      "longname": "RandomValueHelper#randomFixedInteger",
+      "name": "randomFixedInteger",
+      "tags": "RandomValueHelper#randomFixedInteger randomFixedInteger",
+      "summary": "",
+      "description": "Generates an random number of given length"
+    },
+    "RandomValueHelper.html#genCharArray": {
+      "id": "RandomValueHelper.html#genCharArray",
+      "kind": "function",
+      "title": "genCharArray( type ) → {string}",
+      "longname": "RandomValueHelper#genCharArray",
+      "name": "genCharArray",
+      "tags": "RandomValueHelper#genCharArray genCharArray",
+      "summary": "",
+      "description": "Generates an string of characters to be used by randomString function for randomizing."
     },
     "WebsocketParser.html": {
       "id": "WebsocketParser.html",
@@ -9864,6 +11220,120 @@ window.lunrData = {
       "tags": "WebsocketParser#sendConnect sendConnect",
       "summary": "",
       "description": "Sends a list of current clients connected to the server, id of the new client, and status (joining or leaving)"
+    },
+    "CsvHelper.html": {
+      "id": "CsvHelper.html",
+      "kind": "class",
+      "title": "CsvHelper",
+      "longname": "CsvHelper",
+      "name": "CsvHelper",
+      "tags": "CsvHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - csv",
+      "body": ""
+    },
+    "CsvHelper.html#register": {
+      "id": "CsvHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "CsvHelper#register",
+      "name": "register",
+      "tags": "CsvHelper#register register",
+      "summary": "",
+      "description": "Registers csv helper Define request and logger in the scope of the code helper context, allowing user to use request, logger in their mock files Fetch the file path, key, value and random variables from the the helper Throw error if file path not defined log and return appropriate error if random is true, evaluate response for one random row from csv file else, evaluate response for all rows from csv file matching a search pattern using specified key and value"
+    },
+    "FileHelper.html": {
+      "id": "FileHelper.html",
+      "kind": "class",
+      "title": "FileHelper",
+      "longname": "FileHelper",
+      "name": "FileHelper",
+      "tags": "FileHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - file",
+      "body": ""
+    },
+    "FileHelper.html#register": {
+      "id": "FileHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "FileHelper#register",
+      "name": "register",
+      "tags": "FileHelper#register register",
+      "summary": "",
+      "description": "Registers file helper If file path is not included in the defined handlebar, log an error. If file path is passed, check if file exists and send the return value to HttpParser to process"
+    },
+    "RequestHelper.html": {
+      "id": "RequestHelper.html",
+      "kind": "class",
+      "title": "RequestHelper",
+      "longname": "RequestHelper",
+      "name": "RequestHelper",
+      "tags": "RequestHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helper - csv",
+      "body": ""
+    },
+    "RequestHelper.html#register": {
+      "id": "RequestHelper.html#register",
+      "kind": "function",
+      "title": "register() → {void}",
+      "longname": "RequestHelper#register",
+      "name": "register",
+      "tags": "RequestHelper#register register",
+      "summary": "",
+      "description": "Registers capture helper Get the request object passed in from the context by calling template({request: req}) Get the from value passed in while calling {{capture from=}}, accepted values query, headers, path, body For query and headers, key is required, else if not found a null/undefined value will be automatically returned. For path additional input regex is mandatory, if not passed return error For body additional inputs using and selector are mandatory, if not passed return error"
+    },
+    "HandlerBarHelper.html": {
+      "id": "HandlerBarHelper.html",
+      "kind": "class",
+      "title": "HandlerBarHelper",
+      "longname": "HandlerBarHelper",
+      "name": "HandlerBarHelper",
+      "tags": "HandlerBarHelper",
+      "summary": "",
+      "description": "Defines and registers custom handlebar helpers now, randomValue, capture and num_between",
+      "body": ""
+    },
+    "HandlerBarHelper.html#numBetweenHelper": {
+      "id": "HandlerBarHelper.html#numBetweenHelper",
+      "kind": "function",
+      "title": "numBetweenHelper() → {void}",
+      "longname": "HandlerBarHelper#numBetweenHelper",
+      "name": "numBetweenHelper",
+      "tags": "HandlerBarHelper#numBetweenHelper numBetweenHelper",
+      "summary": "",
+      "description": "Registers num_between helper If lower or upper value is not passed, return 0 If lower value is greater than upper value, log error and return 0"
+    },
+    "HandlerBarHelper.html#fileHelper": {
+      "id": "HandlerBarHelper.html#fileHelper",
+      "kind": "function",
+      "title": "fileHelper() → {void}",
+      "longname": "HandlerBarHelper#fileHelper",
+      "name": "fileHelper",
+      "tags": "HandlerBarHelper#fileHelper fileHelper",
+      "summary": "",
+      "description": "Registers file helper If file path is not included in the defined handlebar, log an error. If file path is passed, check if file exists and send the return value to HttpParser to process"
+    },
+    "HandlerBarHelper.html#codeHelper": {
+      "id": "HandlerBarHelper.html#codeHelper",
+      "kind": "function",
+      "title": "codeHelper() → {void}",
+      "longname": "HandlerBarHelper#codeHelper",
+      "name": "codeHelper",
+      "tags": "HandlerBarHelper#codeHelper codeHelper",
+      "summary": "",
+      "description": "Registers code helper Define request and logger in the scope of the code helper context, allowing user to use request, logger in their mock files If file path is passed, check if file exists and send the return value to HttpParser to process Evaluate the response of the function passed in and return the resulting response object to HttpParser"
+    },
+    "HandlerBarHelper.html#injectHelper": {
+      "id": "HandlerBarHelper.html#injectHelper",
+      "kind": "function",
+      "title": "injectHelper() → {void}",
+      "longname": "HandlerBarHelper#injectHelper",
+      "name": "injectHelper",
+      "tags": "HandlerBarHelper#injectHelper injectHelper",
+      "summary": "",
+      "description": "Registers inject helper Define request and logger in the scope of the code helper context Evaluate the response of the function passed in and return the resulting response object to HttpParser"
     },
     "GrpcParser.html": {
       "id": "GrpcParser.html",
@@ -9955,118 +11425,7 @@ window.lunrData = {
       "name": "prepareResponse",
       "tags": "HttpParser#prepareResponse prepareResponse",
       "summary": "",
-      "description": "Since response file contains headers and body both, a PARSE_BODY flag is required to tell the logic if it's currently parsing headers or body Set responseBody to an empty string and set a default response object Set default response Compile the handlebars used in the contents of mockFile Generate actual response i.e. replace handlebars with their actual values and split the content into lines Split file contents by os.EOL and read file line by line Set PARSE_BODY flag to try when reader finds a blank line, since according to standard format of a raw HTTP Response, headers and body are separated by a blank line. If line includes HTTP/HTTPS i.e. first line. Get the response status code If following conditions are met: Line is not blank; and Parser is not currently parsing response body yet i.e. PARSE_BODY === false Then: Split line by :, of which first part will be header key and 2nd part will be header value If headerKey is response delay, set variable DELAY to headerValue If parsing response body, i.e. PARSE_BODY === true. Concatenate every line till last line to a responseBody variable If on last line of response, do following: Trim and remove whitespaces from the responseBody Compile the Handlebars to generate a final response Set PARSE_BODY flag back to false and responseBody to blank Set express.Response Status code to response.status Send the generated Response, from a timeout set to send the response after a DELAY value"
-    },
-    "HandlerBarHelper.html": {
-      "id": "HandlerBarHelper.html",
-      "kind": "class",
-      "title": "HandlerBarHelper",
-      "longname": "HandlerBarHelper",
-      "name": "HandlerBarHelper",
-      "tags": "HandlerBarHelper",
-      "summary": "",
-      "description": "Defines and registers custom handlebar helpers now, randomValue, capture and num_between",
-      "body": ""
-    },
-    "HandlerBarHelper.html#nowHelper": {
-      "id": "HandlerBarHelper.html#nowHelper",
-      "kind": "function",
-      "title": "nowHelper() → {void}",
-      "longname": "HandlerBarHelper#nowHelper",
-      "name": "nowHelper",
-      "tags": "HandlerBarHelper#nowHelper nowHelper",
-      "summary": "",
-      "description": "Registers now helper If now helper is called without a format, set a default format as YYYY-MM-DD hh:mm:ss else use the format provided Set default offset to be used if offset is not specified. Default offset is 0s i.e. no offset If offset is defined the value will be stored in context.hash.offset, eg X days. Split value by a space, first element will be the amount of offset i.e. X, second element will be unit of offset, i.e. days Return a value with specified format and added offset"
-    },
-    "HandlerBarHelper.html#randomValueHelper": {
-      "id": "HandlerBarHelper.html#randomValueHelper",
-      "kind": "function",
-      "title": "randomValueHelper() → {void}",
-      "longname": "HandlerBarHelper#randomValueHelper",
-      "name": "randomValueHelper",
-      "tags": "HandlerBarHelper#randomValueHelper randomValueHelper",
-      "summary": "",
-      "description": "Registers randomValue helper If length of randomValue is not specified, set default length to 16 If type of randomValue is not specified, set default type to ALPHANUMERIC If uppercase is specified, and is of ALPHABETICAL or ALPHANUMERIC type, add _UPPER to the type If type is UUID, return UUID, else generate a random value with specified type and length"
-    },
-    "HandlerBarHelper.html#requestHelper": {
-      "id": "HandlerBarHelper.html#requestHelper",
-      "kind": "function",
-      "title": "requestHelper() → {void}",
-      "longname": "HandlerBarHelper#requestHelper",
-      "name": "requestHelper",
-      "tags": "HandlerBarHelper#requestHelper requestHelper",
-      "summary": "",
-      "description": "Registers capture helper Get the request object passed in from the context by calling template({request: req}) Get the from value passed in while calling {{capture from=}}, accepted values query, headers, path, body For query and headers, key is required, else if not found a null/undefined value will be automatically returned. For path additional input regex is mandatory, if not passed return error For body additional inputs using and selector are mandatory, if not passed return error"
-    },
-    "HandlerBarHelper.html#numBetweenHelper": {
-      "id": "HandlerBarHelper.html#numBetweenHelper",
-      "kind": "function",
-      "title": "numBetweenHelper() → {void}",
-      "longname": "HandlerBarHelper#numBetweenHelper",
-      "name": "numBetweenHelper",
-      "tags": "HandlerBarHelper#numBetweenHelper numBetweenHelper",
-      "summary": "",
-      "description": "Registers num_between helper If lower or upper value is not passed, return 0 If lower value is greater than upper value, log error and return 0"
-    },
-    "HandlerBarHelper.html#fileHelper": {
-      "id": "HandlerBarHelper.html#fileHelper",
-      "kind": "function",
-      "title": "fileHelper() → {void}",
-      "longname": "HandlerBarHelper#fileHelper",
-      "name": "fileHelper",
-      "tags": "HandlerBarHelper#fileHelper fileHelper",
-      "summary": "",
-      "description": "Registers file helper If file path is not included in the defined handlebar, log an error. If file path is passed, check if file exists and send the return value to HttpParser to process"
-    },
-    "HandlerBarHelper.html#codeHelper": {
-      "id": "HandlerBarHelper.html#codeHelper",
-      "kind": "function",
-      "title": "codeHelper() → {void}",
-      "longname": "HandlerBarHelper#codeHelper",
-      "name": "codeHelper",
-      "tags": "HandlerBarHelper#codeHelper codeHelper",
-      "summary": "",
-      "description": "Registers code helper Define request and logger in the scope of the code helper context, allowing user to use request, logger in their mock files If file path is passed, check if file exists and send the return value to HttpParser to process Evaluate the response of the function passed in and return the resulting response object to HttpParser"
-    },
-    "HandlerBarHelper.html#injectHelper": {
-      "id": "HandlerBarHelper.html#injectHelper",
-      "kind": "function",
-      "title": "injectHelper() → {void}",
-      "longname": "HandlerBarHelper#injectHelper",
-      "name": "injectHelper",
-      "tags": "HandlerBarHelper#injectHelper injectHelper",
-      "summary": "",
-      "description": "Registers inject helper Define request and logger in the scope of the code helper context Evaluate the response of the function passed in and return the resulting response object to HttpParser"
-    },
-    "HandlerBarHelper.html#randomString": {
-      "id": "HandlerBarHelper.html#randomString",
-      "kind": "function",
-      "title": "randomString( length, chars ) → {string}",
-      "longname": "HandlerBarHelper#randomString",
-      "name": "randomString",
-      "tags": "HandlerBarHelper#randomString randomString",
-      "summary": "",
-      "description": "Generates an random sequence of characters"
-    },
-    "HandlerBarHelper.html#randomFixedInteger": {
-      "id": "HandlerBarHelper.html#randomFixedInteger",
-      "kind": "function",
-      "title": "randomFixedInteger( length ) → {number}",
-      "longname": "HandlerBarHelper#randomFixedInteger",
-      "name": "randomFixedInteger",
-      "tags": "HandlerBarHelper#randomFixedInteger randomFixedInteger",
-      "summary": "",
-      "description": "Generates an random number of given length"
-    },
-    "HandlerBarHelper.html#genCharArray": {
-      "id": "HandlerBarHelper.html#genCharArray",
-      "kind": "function",
-      "title": "genCharArray( type ) → {string}",
-      "longname": "HandlerBarHelper#genCharArray",
-      "name": "genCharArray",
-      "tags": "HandlerBarHelper#genCharArray genCharArray",
-      "summary": "",
-      "description": "Generates an string of characters to be used by randomString function for randomizing."
+      "description": "Since response file contains headers and body both, a PARSE_BODY flag is required to tell the logic if it's currently parsing headers or body Set responseBody to an empty string and set a default response object Set default response Compile the handlebars used in the contents of mockFile Generate actual response i.e. replace handlebars with their actual values and split the content into lines If the mockfile contains the delimiter ====, split the content using the delimiter and pick one of the responses at random Split file contents by os.EOL and read file line by line Set PARSE_BODY flag to try when reader finds a blank line, since according to standard format of a raw HTTP Response, headers and body are separated by a blank line. If line includes HTTP/HTTPS i.e. first line. Get the response status code If following conditions are met: Line is not blank; and Parser is not currently parsing response body yet i.e. PARSE_BODY === false Then: Split line by :, of which first part will be header key and 2nd part will be header value If headerKey is response delay, set variable DELAY to headerValue If parsing response body, i.e. PARSE_BODY === true. Concatenate every line till last line to a responseBody variable If on last line of response, do following: Trim and remove whitespaces from the responseBody Compile the Handlebars to generate a final response Set PARSE_BODY flag back to false and responseBody to blank Set express.Response Status code to response.status Send the generated Response, from a timeout set to send the response after a DELAY value"
     },
     "BackupScheduler.html": {
       "id": "BackupScheduler.html",

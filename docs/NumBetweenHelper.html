@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>WebsocketParser</title>
+		<title>NumBetweenHelper</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -92,7 +92,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">WebsocketParser</span></h1>
+				<h1><span class="name">NumBetweenHelper</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -101,38 +101,17 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">WebsocketParser</li>
+							<li class="active">NumBetweenHelper</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">WebsocketParser</span><span class="signature-params">( <span class="signature-param">wss</span>&nbsp;)</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">NumBetweenHelper</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Parser class for Websocket Protocol mocks</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>wss</code></td>
-							<td><span class="param-type">any</span></td>
-							<td class="last">
-									<p>Instance of WebSocket server</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Defines and registers custom handlebar helper - num_between</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -152,7 +131,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_parser_WebsocketParser.js.html">dist/parser/WebsocketParser.js</a>, <a href="dist_parser_WebsocketParser.js.html#line-13">line 13</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_NumBetweenHelper.js.html">dist/handlebar/NumBetweenHelper.js</a>, <a href="dist_handlebar_NumBetweenHelper.js.html#line-12">line 12</a></p>
 								</div>
 							</div>
 			
@@ -168,154 +147,24 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="send" class="function public"><span class="name">send</span><span class="signature-params">( <span class="signature-param">mockFile</span>, <span class="signature-param">ws</span>, <span class="signature-param">request</span>, <span class="signature-param">incomingMessage</span>&nbsp;)</span><span class="signature-type"></span></h4>
+			<h4 id="register" class="function public"><span class="name">register</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Compiles and transforms the handlerbars in a given mockfile and according to the key, i.e.</p>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Registers num_between helper</p>
 			<ul>
-			<li>broadcast</li>
-			<li>emit; or</li>
-			<li>self
-			sends the message from message.mock
-			If it's the first message to be sent after connection, mockfile would be connection.mock</li>
+			<li>If lower or upper value is not passed, return 0</li>
+			<li>If lower value is greater than upper value, log error and return 0</li>
 			</ul></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>mockFile</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>mockFile for the current connection</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>ws</code></td>
-							<td><span class="param-type">WebSocket</span></td>
-							<td class="last">
-									<p>current socket</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>request</code></td>
-							<td><span class="param-type">IncomingMessage</span></td>
-							<td class="last">
-									<p>incoming request</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>incomingMessage</code></td>
-							<td><span class="param-type">any</span></td>
-							<td class="last">
-									<p>incoming data</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_parser_WebsocketParser.js.html">dist/parser/WebsocketParser.js</a>, <a href="dist_parser_WebsocketParser.js.html#line-31">line 31</a></p>
+									<div class="form-control-static returns-description"></div>
 								</div>
 							</div>
-			
-			
-			
-			
 					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="sendConnect" class="function public"><span class="name">sendConnect</span><span class="signature-params">( <span class="signature-param">ws</span>, <span class="signature-param">request</span>, <span class="signature-param">clients</span>, <span class="signature-param">clientId</span>, <span class="signature-param">status</span>, <span class="signature-param">mockFile</span>&nbsp;)</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sends a list of current clients connected to the server, id of the new client, and status (joining or leaving)</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>ws</code></td>
-							<td><span class="param-type">WebSocket</span></td>
-							<td class="last">
-									<p>current socket</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>request</code></td>
-							<td><span class="param-type">IncomingMessage</span></td>
-							<td class="last">
-									<p>Incoming request</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>clients</code></td>
-							<td><span class="param-type">Array.&lt;string></span></td>
-							<td class="last">
-									<p>List of existin clients</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>clientId</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>new clientId</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>status</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>joining or leaving</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>mockFile</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>mockfile, i.e. connection.mock</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -335,7 +184,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_parser_WebsocketParser.js.html">dist/parser/WebsocketParser.js</a>, <a href="dist_parser_WebsocketParser.js.html#line-79">line 79</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_NumBetweenHelper.js.html">dist/handlebar/NumBetweenHelper.js</a>, <a href="dist_handlebar_NumBetweenHelper.js.html#line-20">line 20</a></p>
 								</div>
 							</div>
 			
