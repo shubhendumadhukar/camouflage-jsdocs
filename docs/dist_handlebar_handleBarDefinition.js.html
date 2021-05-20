@@ -1,43 +1,113 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>JSDoc: Source: dist/handlebar/handleBarDefinition.js</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>dist/handlebar/handleBarDefinition.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":true,"cleverLinks":true};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
 </head>
-
 <body>
-
-<div id="main">
-
-    <h1 class="page-title">Source: dist/handlebar/handleBarDefinition.js</h1>
-
-    
-
-
-
-    
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>"use strict";
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					FooDoc
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#app">app</a></li>
+											<li><a href="global.html#config">config</a></li>
+											<li><a href="global.html#inputs">inputs</a></li>
+											<li><a href="global.html#inputsKeys">inputsKeys</a></li>
+											<li><a href="global.html#logger">logger</a></li>
+											<li><a href="global.html#logger">logger</a></li>
+											<li><a href="global.html#numCPUs">numCPUs</a></li>
+											<li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li>
+											<li><a href="global.html#registerHandlebars">registerHandlebars</a></li>
+											<li><a href="global.html#setLogLevel">setLogLevel</a></li>
+											<li><a href="global.html#start">start</a></li>
+											<li><a href="global.html#start">start</a></li>
+											<li><a href="global.html#ui_root">ui_root</a></li>
+											<li><a href="global.html#walk">walk</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="BackupScheduler.html">BackupScheduler</a></li>
+											<li><a href="CodeHelper.html">CodeHelper</a></li>
+											<li><a href="CsvHelper.html">CsvHelper</a></li>
+											<li><a href="FileHelper.html">FileHelper</a></li>
+											<li><a href="GlobalController.html">GlobalController</a></li>
+											<li><a href="GrpcParser.html">GrpcParser</a></li>
+											<li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li>
+											<li><a href="HttpParser.html">HttpParser</a></li>
+											<li><a href="InjectHelper.html">InjectHelper</a></li>
+											<li><a href="MockController.html">MockController</a></li>
+											<li><a href="NowHelper.html">NowHelper</a></li>
+											<li><a href="NumBetweenHelper.html">NumBetweenHelper</a></li>
+											<li><a href="Protocols.html">Protocols</a></li>
+											<li><a href="RandomValueHelper.html">RandomValueHelper</a></li>
+											<li><a href="RequestHelper.html">RequestHelper</a></li>
+											<li><a href="WebsocketParser.html">WebsocketParser</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">dist/handlebar/handleBarDefinition.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">"use strict";
 var __importDefault = (this &amp;&amp; this.__importDefault) || function (mod) {
     return (mod &amp;&amp; mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.HandlerBarHelper = void 0;
 const handlebars_1 = __importDefault(require("handlebars"));
-const moment_1 = __importDefault(require("moment"));
-// @ts-ignore
-const uuid_1 = require("uuid");
-// @ts-ignore
-const jsonpath_1 = __importDefault(require("jsonpath"));
 const logger_1 = __importDefault(require("../logger"));
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
@@ -46,126 +116,6 @@ const path_1 = __importDefault(require("path"));
  */
 class HandlerBarHelper {
     constructor() {
-        /**
-         * Registers now helper
-         * - If now helper is called without a format, set a default format as YYYY-MM-DD hh:mm:ss else use the format provided
-         * - Set default offset to be used if offset is not specified. Default offset is 0s i.e. no offset
-         * - If offset is defined the value will be stored in context.hash.offset, eg X days.
-         * - Split value by a space, first element will be the amount of offset i.e. X, second element will be unit of offset, i.e. days
-         * - Return a value with specified format and added offset
-         * @returns {void}
-         */
-        this.nowHelper = () => {
-            handlebars_1.default.registerHelper("now", (context) => {
-                const format = typeof context.hash.format === "undefined" ? "YYYY-MM-DD hh:mm:ss" : context.hash.format;
-                let offsetUnit = "s";
-                let offsetAmount = 0;
-                if (typeof context.hash.offset !== "undefined") {
-                    let offset = context.hash.offset.split(" ");
-                    offsetAmount = offset[0];
-                    offsetUnit = offset[1];
-                }
-                switch (format) {
-                    case "epoch":
-                        return moment_1.default().add(offsetAmount, offsetUnit).format("x");
-                    case "unix":
-                        return moment_1.default().add(offsetAmount, offsetUnit).format("X");
-                    default:
-                        return moment_1.default().add(offsetAmount, offsetUnit).format(format);
-                }
-            });
-        };
-        /**
-         * Registers randomValue helper
-         * - If length of randomValue is not specified, set default length to 16
-         * - If type of randomValue is not specified, set default type to ALPHANUMERIC
-         * - If uppercase is specified, and is of ALPHABETICAL or ALPHANUMERIC type, add _UPPER to the type
-         * - If type is UUID, return UUID, else generate a random value with specified type and length
-         * @returns {void}
-         */
-        this.randomValueHelper = () => {
-            handlebars_1.default.registerHelper("randomValue", (context) => {
-                let length = typeof context.hash.length === "undefined" ? 16 : context.hash.length;
-                let type = typeof context.hash.type === "undefined" ? "ALPHANUMERIC" : context.hash.type;
-                if (context.hash.uppercase &amp;&amp; type.includes("ALPHA")) {
-                    type = type + "_UPPER";
-                }
-                if (type === "UUID") {
-                    return uuid_1.v4();
-                }
-                else {
-                    return this.randomString(length, this.genCharArray(type));
-                }
-            });
-        };
-        /**
-         * Registers capture helper
-         * - Get the request object passed in from the context by calling template({request: req})
-         * - Get the from value passed in while calling {{capture from=}}, accepted values query, headers, path, body
-         * - For query and headers, key is required, else if not found a null/undefined value will be automatically returned.
-         * - For path additional input regex is mandatory, if not passed return error
-         * - For body additional inputs using and selector are mandatory, if not passed return error
-         * @returns {void}
-         */
-        this.requestHelper = () => {
-            handlebars_1.default.registerHelper("capture", (context) => {
-                const request = context.data.root.request;
-                const from = context.hash.from;
-                switch (from) {
-                    case "query":
-                        return request.query[context.hash.key];
-                    case "headers":
-                        return request.headers[context.hash.key];
-                    case "path":
-                        if (typeof context.hash.regex === "undefined") {
-                            logger_1.default.debug("ERROR: No regex specified");
-                            return "Please specify a regex with path";
-                        }
-                        else {
-                            let regex = new RegExp(context.hash.regex);
-                            if (regex.test(request.path)) {
-                                return regex.exec(request.path)[1];
-                            }
-                            else {
-                                logger_1.default.debug(`ERROR: No match found for specified regex ${context.hash.regex}`);
-                                return "No match found.";
-                            }
-                        }
-                    case "body":
-                        if (typeof context.hash.using === "undefined" || typeof context.hash.selector == "undefined") {
-                            logger_1.default.debug("ERROR: No selector or using values specified");
-                            return "Please specify using and selector fields.";
-                        }
-                        else {
-                            switch (context.hash.using) {
-                                case "regex":
-                                    const regex = new RegExp(context.hash.selector);
-                                    const body = JSON.stringify(request.body, null, 2);
-                                    if (regex.test(body)) {
-                                        return regex.exec(body)[1];
-                                    }
-                                    else {
-                                        logger_1.default.debug(`ERROR: No match found for specified regex ${context.hash.selector}`);
-                                        return "No match found.";
-                                    }
-                                case "jsonpath":
-                                    try {
-                                        return jsonpath_1.default.query(request.body, context.hash.selector);
-                                    }
-                                    catch (err) {
-                                        logger_1.default.debug(`ERROR: No match found for specified jsonpath ${context.hash.selector}`);
-                                        logger_1.default.error(`ERROR: ${err}`);
-                                        return "some error occuered";
-                                    }
-                                default:
-                                    return null;
-                            }
-                        }
-                    default:
-                        return null;
-                }
-            });
-        };
         /**
          * Registers num_between helper
          * - If lower or upper value is not passed, return 0
@@ -217,8 +167,10 @@ class HandlerBarHelper {
          */
         this.codeHelper = () => {
             handlebars_1.default.registerHelper("code", (context) => {
+                /* eslint-disable no-unused-vars */
                 const request = context.data.root.request;
                 const logger = context.data.root.logger;
+                /* eslint-disable no-unused-vars */
                 const code = eval(context.fn(this));
                 code["CamouflageResponseType"] = "code";
                 return JSON.stringify(code);
@@ -238,87 +190,41 @@ class HandlerBarHelper {
                 return result;
             });
         };
-        /**
-         * Generates an random sequence of characters
-         * @param {number} length - length of generated string
-         * @param {string} chars - A sequence of valid characters for a specified type returned by genCharArray
-         * @returns {string} A random sequence of characters of specified length
-         */
-        this.randomString = (length, chars) => {
-            var result = "";
-            if (typeof chars === "undefined") {
-                this.randomFixedInteger(length);
-            }
-            else {
-                for (var i = length; i > 0; --i)
-                    result += chars[Math.floor(Math.random() * chars.length)];
-            }
-            return result;
-        };
-        /**
-         * Generates an random number of given length
-         * @param {number} length - length of number of be generated
-         * @returns {number} A number of specified length. i.e. 10 digit number: 2341912498
-         */
-        this.randomFixedInteger = (length) => {
-            return Math.floor(Math.pow(10, length - 1) + Math.random() * (Math.pow(10, length) - Math.pow(10, length - 1) - 1));
-        };
-        /**
-         * Generates an string of characters to be used by randomString function for randomizing.
-         * @param {string} type - Type of random value to be generated
-         * @returns {string} A string of squence of valid characters according to type
-         */
-        this.genCharArray = (type) => {
-            let alphabet;
-            //Create a numbers array of [0...9]
-            let numbers = [...Array(10)].map((x, i) => i);
-            switch (type) {
-                case "ALPHANUMERIC":
-                    // If type is ALPHANUMERIC, return a string with characters [a-z][A-Z][0-9]
-                    alphabet = [...Array(26)].map((x, i) => String.fromCharCode(i + 97) + String.fromCharCode(i + 65));
-                    return alphabet.join("") + numbers.join("");
-                case "ALPHANUMERIC_UPPER":
-                    // If type is ALPHANUMERIC_UPPER, return a string with characters [A-Z][0-9]
-                    alphabet = [...Array(26)].map((x, i) => String.fromCharCode(i + 65));
-                    return alphabet.join("") + numbers.join("");
-                case "ALPHABETIC":
-                    // If type is ALPHABETIC, return a string with characters [a-z][A-Z]
-                    alphabet = [...Array(26)].map((x, i) => String.fromCharCode(i + 97) + String.fromCharCode(i + 65));
-                    return alphabet.join("");
-                case "ALPHABETIC_UPPER":
-                    // If type is ALPHABETIC_UPPER, return a string with characters [A-Z]
-                    alphabet = [...Array(26)].map((x, i) => String.fromCharCode(i + 65));
-                    return alphabet.join("");
-                case "NUMERIC":
-                    // If type is NUMERIC, return a string with characters [0-9]
-                    return numbers.join("");
-                default:
-                    break;
-            }
-        };
     }
 }
 exports.HandlerBarHelper = HandlerBarHelper;
 //# sourceMappingURL=handleBarDefinition.js.map</code></pre>
-        </article>
-    </section>
-
-
-
-
-</div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BackupScheduler.html">BackupScheduler</a></li><li><a href="GlobalController.html">GlobalController</a></li><li><a href="GrpcParser.html">GrpcParser</a></li><li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li><li><a href="HttpParser.html">HttpParser</a></li><li><a href="MockController.html">MockController</a></li><li><a href="Protocols.html">Protocols</a></li><li><a href="WebsocketParser.html">WebsocketParser</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#inputs">inputs</a></li><li><a href="global.html#inputsKeys">inputsKeys</a></li><li><a href="global.html#logger">logger</a></li><li><a href="global.html#numCPUs">numCPUs</a></li><li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li><li><a href="global.html#registerHandlebars">registerHandlebars</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#ui_root">ui_root</a></li><li><a href="global.html#walk">walk</a></li></ul>
-</nav>
-
-<br class="clear">
-
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat May 15 2021 22:08:02 GMT+0530 (India Standard Time)
-</footer>
-
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

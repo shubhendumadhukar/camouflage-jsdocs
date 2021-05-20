@@ -1,1077 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>JSDoc: Class: Protocols</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Protocols</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":true,"cleverLinks":true};
+			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
 </head>
-
 <body>
-
-<div id="main">
-
-    <h1 class="page-title">Class: Protocols</h1>
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2><span class="attribs"><span class="type-signature"></span></span>Protocols<span class="signature">(grpcMocksDir)</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>Defines all protocols:
-Currently active:</p>
-<ul>
-<li>HTTP</li>
-<li>HTTPS</li>
-<li>HTTP2</li>
-<li>gRPC</li>
-<li>Websocket</li>
-</ul></div>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-    
-    <h2>Constructor</h2>
-    
-
-    
-    <h4 class="name" id="Protocols"><span class="type-signature"></span>new Protocols<span class="signature">(grpcMocksDir)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>grpcMocksDir</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>location of grpc mocks, not initialized as constructor variable, because grpc is an optional protocol
-instead it will be initialized in initGRPC method, if called.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line50">line 50</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="initGrpc"><span class="type-signature"></span>initGrpc<span class="signature">(grpcProtosDir, grpcMocksDir, grpcHost, grpcPort)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Initializes a gRPC server at specified host and port</p>
-<ul>
-<li>Set location of gRPC mocks to be used by metod camouflageMock</li>
-<li>Get an array of all .protofile in specified protos directory</li>
-<li>Run forEach on the array and read and load package definition for each protofile in protos dir</li>
-<li>For each definition, get the package details from all .proto files and store in a master packages object</li>
-<li>Initialize a grpcServer</li>
-<li>Create an insecure binding to given grpc host and port, and start the server</li>
-<li>For each package, filter out objects with service definition, discard rest</li>
-<li>For each method in the service definition, attach a generic handler, finally add service to running server</li>
-<li>Handlers will vary based on the type of request, i.e. unary, bidi streams or one sided streams</li>
-<li>Finally add all services to the server</li>
-</ul>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>grpcProtosDir</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>location of proto files</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>grpcMocksDir</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>location of mock files for grpc</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>grpcHost</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>grpc host</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>grpcPort</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>grpc port</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line99">line 99</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="initHttp"><span class="type-signature"></span>initHttp<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Initialize HTTP server at specified port</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line62">line 62</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">void</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="initHttp2"><span class="type-signature"></span>initHttp2<span class="signature">(http2Port, http2key, http2cert)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Initializes an HTTP2 server</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>http2Port</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>http2key</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>http2cert</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line159">line 159</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="initHttps"><span class="type-signature"></span>initHttps<span class="signature">(key, cert)</span><span class="type-signature"> &rarr; {void}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Initialize HTTPs server at specified port</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>key</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>location of server.key file</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cert</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>location of server.cert file</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line74">line 74</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">void</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="initws"><span class="type-signature"></span>initws<span class="signature">(wsPort, wsMockDir)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Initializes a WebSocketserver</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>wsPort</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>wsMockDir</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line176">line 176</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-</div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BackupScheduler.html">BackupScheduler</a></li><li><a href="GlobalController.html">GlobalController</a></li><li><a href="GrpcParser.html">GrpcParser</a></li><li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li><li><a href="HttpParser.html">HttpParser</a></li><li><a href="MockController.html">MockController</a></li><li><a href="Protocols.html">Protocols</a></li><li><a href="WebsocketParser.html">WebsocketParser</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#inputs">inputs</a></li><li><a href="global.html#inputsKeys">inputsKeys</a></li><li><a href="global.html#logger">logger</a></li><li><a href="global.html#numCPUs">numCPUs</a></li><li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li><li><a href="global.html#registerHandlebars">registerHandlebars</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#ui_root">ui_root</a></li><li><a href="global.html#walk">walk</a></li></ul>
-</nav>
-
-<br class="clear">
-
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat May 15 2021 22:08:02 GMT+0530 (India Standard Time)
-</footer>
-
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					FooDoc
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#app">app</a></li>
+											<li><a href="global.html#config">config</a></li>
+											<li><a href="global.html#inputs">inputs</a></li>
+											<li><a href="global.html#inputsKeys">inputsKeys</a></li>
+											<li><a href="global.html#logger">logger</a></li>
+											<li><a href="global.html#logger">logger</a></li>
+											<li><a href="global.html#numCPUs">numCPUs</a></li>
+											<li><a href="global.html#registerCustomHandlebars">registerCustomHandlebars</a></li>
+											<li><a href="global.html#registerHandlebars">registerHandlebars</a></li>
+											<li><a href="global.html#setLogLevel">setLogLevel</a></li>
+											<li><a href="global.html#start">start</a></li>
+											<li><a href="global.html#start">start</a></li>
+											<li><a href="global.html#ui_root">ui_root</a></li>
+											<li><a href="global.html#walk">walk</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="BackupScheduler.html">BackupScheduler</a></li>
+											<li><a href="CodeHelper.html">CodeHelper</a></li>
+											<li><a href="CsvHelper.html">CsvHelper</a></li>
+											<li><a href="FileHelper.html">FileHelper</a></li>
+											<li><a href="GlobalController.html">GlobalController</a></li>
+											<li><a href="GrpcParser.html">GrpcParser</a></li>
+											<li><a href="HandlerBarHelper.html">HandlerBarHelper</a></li>
+											<li><a href="HttpParser.html">HttpParser</a></li>
+											<li><a href="InjectHelper.html">InjectHelper</a></li>
+											<li><a href="MockController.html">MockController</a></li>
+											<li><a href="NowHelper.html">NowHelper</a></li>
+											<li><a href="NumBetweenHelper.html">NumBetweenHelper</a></li>
+											<li><a href="Protocols.html">Protocols</a></li>
+											<li><a href="RandomValueHelper.html">RandomValueHelper</a></li>
+											<li><a href="RequestHelper.html">RequestHelper</a></li>
+											<li><a href="WebsocketParser.html">WebsocketParser</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">class</span>
+				<h1><span class="name">Protocols</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active">Protocols</li>
+						</ol>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class collapsible-symbol expanded">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Protocols</span><span class="signature-params">( <span class="signature-param">grpcMocksDir</span>&nbsp;)</span><span class="signature-type"></span></h2>
+</dt>
+<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Defines all protocols:
+			Currently active:</p>
+			<ul>
+			<li>HTTP</li>
+			<li>HTTPS</li>
+			<li>HTTP2</li>
+			<li>gRPC</li>
+			<li>Websocket</li>
+			</ul></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>grpcMocksDir</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>location of grpc mocks, not initialized as constructor variable, because grpc is an optional protocol
+			instead it will be initialized in initGRPC method, if called.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-50">line 50</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="initHttp" class="function public"><span class="name">initHttp</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initialize HTTP server at specified port</p></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-62">line 62</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="initHttps" class="function public"><span class="name">initHttps</span><span class="signature-params">( <span class="signature-param">key</span>, <span class="signature-param">cert</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initialize HTTPs server at specified port</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>key</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>location of server.key file</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>cert</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>location of server.cert file</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-74">line 74</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="initGrpc" class="function public"><span class="name">initGrpc</span><span class="signature-params">( <span class="signature-param">grpcProtosDir</span>, <span class="signature-param">grpcMocksDir</span>, <span class="signature-param">grpcHost</span>, <span class="signature-param">grpcPort</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initializes a gRPC server at specified host and port</p>
+			<ul>
+			<li>Set location of gRPC mocks to be used by metod camouflageMock</li>
+			<li>Get an array of all .protofile in specified protos directory</li>
+			<li>Run forEach on the array and read and load package definition for each protofile in protos dir</li>
+			<li>For each definition, get the package details from all .proto files and store in a master packages object</li>
+			<li>Initialize a grpcServer</li>
+			<li>Create an insecure binding to given grpc host and port, and start the server</li>
+			<li>For each package, filter out objects with service definition, discard rest</li>
+			<li>For each method in the service definition, attach a generic handler, finally add service to running server</li>
+			<li>Handlers will vary based on the type of request, i.e. unary, bidi streams or one sided streams</li>
+			<li>Finally add all services to the server</li>
+			</ul></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>grpcProtosDir</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>location of proto files</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>grpcMocksDir</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>location of mock files for grpc</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>grpcHost</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>grpc host</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>grpcPort</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+									<p>grpc port</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-99">line 99</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="initHttp2" class="function public"><span class="name">initHttp2</span><span class="signature-params">( <span class="signature-param">http2Port</span>, <span class="signature-param">http2key</span>, <span class="signature-param">http2cert</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initializes an HTTP2 server</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>http2Port</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>http2key</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>http2cert</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-159">line 159</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="initws" class="function public"><span class="name">initws</span><span class="signature-params">( <span class="signature-param">wsPort</span>, <span class="signature-param">wsMockDir</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initializes a WebSocketserver</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>wsPort</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>wsMockDir</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_protocols_index.js.html">dist/protocols/index.js</a>, <a href="dist_protocols_index.js.html#line-176">line 176</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>
