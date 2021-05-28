@@ -131,7 +131,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-14">line 14</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-19">line 19</a></p>
 								</div>
 							</div>
 			
@@ -145,6 +145,161 @@
 							<article class="secondary">
 									<h3>Methods</h3>
 									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="nowHelper" class="function public"><span class="name">nowHelper</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Registers now helper</p>
+			<ul>
+			<li>If now helper is called without a format, set a default format as YYYY-MM-DD hh:mm:ss else use the format provided</li>
+			<li>Set default offset to be used if offset is not specified. Default offset is 0s i.e. no offset</li>
+			<li>If offset is defined the value will be stored in context.hash.offset, eg X days.</li>
+			<li>Split value by a space, first element will be the amount of offset i.e. X, second element will be unit of offset, i.e. days</li>
+			<li>Return a value with specified format and added offset</li>
+			</ul></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-30">line 30</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="randomValueHelper" class="function public"><span class="name">randomValueHelper</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Registers randomValue helper</p>
+			<ul>
+			<li>If length of randomValue is not specified, set default length to 16</li>
+			<li>If type of randomValue is not specified, set default type to ALPHANUMERIC</li>
+			<li>If uppercase is specified, and is of ALPHABETICAL or ALPHANUMERIC type, add _UPPER to the type</li>
+			<li>If type is UUID, return UUID, else generate a random value with specified type and length</li>
+			</ul></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-58">line 58</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="requestHelper" class="function public"><span class="name">requestHelper</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Registers capture helper</p>
+			<ul>
+			<li>Get the request object passed in from the context by calling template({request: req})</li>
+			<li>Get the from value passed in while calling {{capture from=}}, accepted values query, headers, path, body</li>
+			<li>For query and headers, key is required, else if not found a null/undefined value will be automatically returned.</li>
+			<li>For path additional input regex is mandatory, if not passed return error</li>
+			<li>For body additional inputs using and selector are mandatory, if not passed return error</li>
+			</ul></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-82">line 82</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
 											<hr/>
 											<dt class="symbol-title function public collapsible-symbol">
 			<h4 id="numBetweenHelper" class="function public"><span class="name">numBetweenHelper</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
@@ -184,7 +339,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-22">line 22</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-149">line 149</a></p>
 								</div>
 							</div>
 			
@@ -233,7 +388,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-46">line 46</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-173">line 173</a></p>
 								</div>
 							</div>
 			
@@ -283,7 +438,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-65">line 65</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-192">line 192</a></p>
 								</div>
 							</div>
 			
@@ -332,7 +487,212 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-82">line 82</a></p>
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-209">line 209</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="randomString" class="function public"><span class="name">randomString</span><span class="signature-params">( <span class="signature-param">length</span>, <span class="signature-param">chars</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Generates an random sequence of characters</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>length</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+									<p>length of generated string</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>chars</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>A sequence of valid characters for a specified type returned by genCharArray</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>A random sequence of characters of specified length</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-223">line 223</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="randomFixedInteger" class="function public"><span class="name">randomFixedInteger</span><span class="signature-params">( <span class="signature-param">length</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{number}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Generates an random number of given length</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>length</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+									<p>length of number of be generated</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">number</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>A number of specified length. i.e. 10 digit number: 2341912498</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-239">line 239</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="genCharArray" class="function public"><span class="name">genCharArray</span><span class="signature-params">( <span class="signature-param">type</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Generates an string of characters to be used by randomString function for randomizing.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>type</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Type of random value to be generated</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>A string of squence of valid characters according to type</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="dist_handlebar_handleBarDefinition.js.html">dist/handlebar/handleBarDefinition.js</a>, <a href="dist_handlebar_handleBarDefinition.js.html#line-247">line 247</a></p>
 								</div>
 							</div>
 			
@@ -353,7 +713,7 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 28th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
